@@ -2,7 +2,7 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
 const slug = 'calculadora-racion-diaria-mascotas';
-const title = 'Calculadora de Ración Diaria para Mascotas | Nutrición Canina y Felina';
+const title = 'Calculadora de Ración Diaria para Mascotas';
 const description = 'Calcula la cantidad exacta de comida que necesita tu perro o gato. Herramienta basada en fórmulas veterinarias RER y DER para un peso saludable.';
 
 const ui: PetRationUI = {

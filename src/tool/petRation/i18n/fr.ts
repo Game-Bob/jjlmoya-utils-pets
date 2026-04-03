@@ -2,7 +2,7 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
 const slug = 'calculatrice-ration-quotidienne-animaux';
-const title = 'Calculatrice de Ration Quotidienne pour Animaux | Nutrition Canine et Féline';
+const title = 'Calculatrice de Ration Quotidienne pour Animaux';
 const description = 'Calculez la quantité exacte de nourriture dont votre chien ou chat a besoin. Outil basé sur les formules vétérinaires RER et DER pour un poids sain.';
 
 const ui: PetRationUI = {

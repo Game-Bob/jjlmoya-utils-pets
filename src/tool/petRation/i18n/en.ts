@@ -2,7 +2,7 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
 const slug = 'pet-daily-ration-calculator';
-const title = 'Pet Daily Ration Calculator | Canine and Feline Nutrition';
+const title = 'Pet Daily Ration Calculator';
 const description = 'Calculate the exact amount of food your dog or cat needs. Tool based on veterinary RER and DER formulas for a healthy weight.';
 
 const ui: PetRationUI = {

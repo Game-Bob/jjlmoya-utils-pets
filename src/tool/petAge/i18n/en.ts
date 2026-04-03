@@ -2,7 +2,7 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
 const slug = 'pet-age-calculator';
-const title = 'Pet Age Calculator | Dogs and Cats to Human Years';
+const title = 'Pet Age Calculator';
 const description = 'Find out your dog or cat\'s real age in human years. Forget the multiply-by-7 rule. Use our calculator based on current veterinary science.';
 
 const ui: PetAgeUI = {

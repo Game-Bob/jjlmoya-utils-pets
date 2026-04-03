@@ -2,7 +2,7 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
 const slug = 'calculatrice-age-animaux';
-const title = 'Calculatrice d\'Âge des Animaux | Chiens et Chats en Années Humaines';
+const title = 'Calculatrice d\'Âge des Animaux';
 const description = 'Découvrez l\'âge réel de votre chien ou chat en années humaines. Oubliez la règle de multiplier par 7. Utilisez notre calculatrice basée sur la science vétérinaire actuelle.';
 
 const ui: PetAgeUI = {

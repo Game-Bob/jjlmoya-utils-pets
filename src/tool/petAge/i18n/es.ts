@@ -2,7 +2,7 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
 const slug = 'calculadora-edad-mascotas';
-const title = 'Calculadora de Edad de Mascotas | Perros y Gatos a Años Humanos';
+const title = 'Calculadora de Edad de Mascotas';
 const description = 'Descubre la edad real de tu perro o gato en años humanos. Olvida la regla de multiplicar por 7. Usa nuestra calculadora basada en ciencia veterinaria actual.';
 
 const ui: PetAgeUI = {
