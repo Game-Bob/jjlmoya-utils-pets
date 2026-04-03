@@ -21,7 +21,7 @@ const { ui } = Astro.props;
           </div>
           <div id="share-icon-cat" class="hidden"><Icon name="mdi:cat" /></div>
         </div>
-        <h1 id="share-pet-name"></h1>
+        <h2 id="share-pet-name"></h2>
       </div>
       <div class="age-share-card-body">
         <p class="age-share-human-label">{ui.humanAgeLabel}</p>
@@ -164,21 +164,30 @@ const { ui } = Astro.props;
     type PetAgeState,
   } from "./handlers";
 
-  function setupPetTypeListener(state: PetAgeState, els: Required<ReturnType<typeof getElements>>, onUpdate: () => void) {
+  function setupPetTypeListener(
+    state: PetAgeState,
+    els: Required<ReturnType<typeof getElements>>,
+    onUpdate: () => void,
+  ) {
     els.petBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
         state.petType = (btn.dataset.type || "dog") as PetSpecies;
         els.petBtns.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
         if (els.dogSizeSelector) {
-          els.dogSizeSelector.style.display = state.petType === "dog" ? "block" : "none";
+          els.dogSizeSelector.style.display =
+            state.petType === "dog" ? "block" : "none";
         }
         onUpdate();
       });
     });
   }
 
-  function setupSizeListener(state: PetAgeState, els: Required<ReturnType<typeof getElements>>, onUpdate: () => void) {
+  function setupSizeListener(
+    state: PetAgeState,
+    els: Required<ReturnType<typeof getElements>>,
+    onUpdate: () => void,
+  ) {
     els.sizeBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
         state.dogSize = (btn.dataset.size || "small") as DogSize;
@@ -189,22 +198,40 @@ const { ui } = Astro.props;
     });
   }
 
-  function setupBirthYearListener(state: PetAgeState, birthYearInput: HTMLInputElement, currentYear: number, onUpdate: () => void) {
+  function setupBirthYearListener(
+    state: PetAgeState,
+    birthYearInput: HTMLInputElement,
+    currentYear: number,
+    onUpdate: () => void,
+  ) {
     birthYearInput.addEventListener("input", (e) => {
       const val = (e.target as HTMLInputElement).value;
       state.birthYear = validateBirthYear(val, currentYear);
-      birthYearInput.classList.toggle("age-input-valid", state.birthYear !== null);
-      birthYearInput.classList.toggle("age-input-error", val.length === 4 && !state.birthYear);
+      birthYearInput.classList.toggle(
+        "age-input-valid",
+        state.birthYear !== null,
+      );
+      birthYearInput.classList.toggle(
+        "age-input-error",
+        val.length === 4 && !state.birthYear,
+      );
       onUpdate();
     });
   }
 
-  function setupShareListener(state: PetAgeState, els: Required<ReturnType<typeof getElements>>, birthYearInput: HTMLInputElement) {
+  function setupShareListener(
+    state: PetAgeState,
+    els: Required<ReturnType<typeof getElements>>,
+    birthYearInput: HTMLInputElement,
+  ) {
     els.shareBtn?.addEventListener("click", async () => {
       if (!state.birthYear) {
         birthYearInput.focus();
         birthYearInput.classList.add("age-input-error");
-        setTimeout(() => birthYearInput.classList.remove("age-input-error"), 500);
+        setTimeout(
+          () => birthYearInput.classList.remove("age-input-error"),
+          500,
+        );
         return;
       }
 
@@ -221,7 +248,9 @@ const { ui } = Astro.props;
   }
 
   function initPetAge() {
-    const birthYearInput = document.getElementById("birth-year-input") as HTMLInputElement;
+    const birthYearInput = document.getElementById(
+      "birth-year-input",
+    ) as HTMLInputElement;
     const container = document.getElementById("calculator-container");
 
     if (!birthYearInput || !container) return;
@@ -230,7 +259,12 @@ const { ui } = Astro.props;
     const els = getElements() as Required<ReturnType<typeof getElements>>;
     const currentYear = new Date().getFullYear();
 
-    const state: PetAgeState = { petType: "dog", dogSize: "small", birthYear: null, petName: "" };
+    const state: PetAgeState = {
+      petType: "dog",
+      dogSize: "small",
+      birthYear: null,
+      petName: "",
+    };
 
     birthYearInput.max = currentYear.toString();
     showShareMode(state, els, uiData, currentYear);
@@ -238,7 +272,8 @@ const { ui } = Astro.props;
     const shareDomain = document.getElementById("share-domain");
     if (shareDomain) shareDomain.textContent = window.location.hostname;
 
-    const onUpdate = () => updateResultsDisplay(state, els, uiData, currentYear);
+    const onUpdate = () =>
+      updateResultsDisplay(state, els, uiData, currentYear);
 
     document.getElementById("create-new-btn")?.addEventListener("click", () => {
       window.location.href = window.location.origin + window.location.pathname;
