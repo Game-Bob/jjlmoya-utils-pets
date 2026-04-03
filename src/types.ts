@@ -60,8 +60,8 @@ export interface PetToolEntry<TUI extends Record<string, string> = Record<string
 export interface ToolDefinition {
   entry: PetToolEntry;
   Component: unknown;
-  SEOComponent?: unknown;
-  BibliographyComponent?: unknown;
+  SEOComponent: unknown;
+  BibliographyComponent: unknown;
 }
 
 export interface PetCategoryEntry {
