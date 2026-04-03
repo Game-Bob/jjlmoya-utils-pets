@@ -27,20 +27,23 @@ export function calculatePetHumanAge(species: PetSpecies, chronologicalAge: numb
   return calculateDogHumanAge(chronologicalAge, dogSize);
 }
 
-export function getDogLifeStage(humanAge: number): string {
-  if (humanAge < 15) return 'Cachorro Juguetón';
-  if (humanAge < 24) return 'Adolescencia Rebelde';
-  if (humanAge < 60) return 'Adultez Plena';
-  if (humanAge < 80) return 'Madurez Distinguida';
-  return 'Sabiduría Senior';
+export type DogStageKey = 'stageDogPuppy' | 'stageDogTeen' | 'stageDogAdult' | 'stageDogMature' | 'stageDogSenior';
+export type CatStageKey = 'stageCatKitten' | 'stageCatYouth' | 'stageCatReign' | 'stageCatVeteran' | 'stageCatVenerable';
+
+export function getDogStageKey(humanAge: number): DogStageKey {
+  if (humanAge < 15) return 'stageDogPuppy';
+  if (humanAge < 24) return 'stageDogTeen';
+  if (humanAge < 60) return 'stageDogAdult';
+  if (humanAge < 80) return 'stageDogMature';
+  return 'stageDogSenior';
 }
 
-export function getCatLifeStage(humanAge: number): string {
-  if (humanAge < 15) return 'Curiosidad Infantil';
-  if (humanAge < 24) return 'Juventud Felina';
-  if (humanAge < 60) return 'Reinado Doméstico';
-  if (humanAge < 80) return 'Veteranía Consentida';
-  return 'Venerable Felino';
+export function getCatStageKey(humanAge: number): CatStageKey {
+  if (humanAge < 15) return 'stageCatKitten';
+  if (humanAge < 24) return 'stageCatYouth';
+  if (humanAge < 60) return 'stageCatReign';
+  if (humanAge < 80) return 'stageCatVeteran';
+  return 'stageCatVenerable';
 }
 
 export function getDogMilestone(chronologicalAge: number): string {

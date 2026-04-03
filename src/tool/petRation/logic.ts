@@ -34,9 +34,11 @@ export function calculateRation(der: number, wetPct: number): { dryGrams: number
   };
 }
 
-export function getStatusMessage(species: RationSpecies, stage: LifeStage, weightKg: number): string {
-  if (stage === 'puppy') return 'Fase de crecimiento rápido';
-  if (stage === 'senior') return 'Metabolismo maduro';
-  if (weightKg > 40 && species === 'dog') return 'Raza grande: Control articular';
-  return 'Peso equilibrado';
+export type StatusKey = 'statusPuppy' | 'statusSenior' | 'statusLargeDog' | 'statusDefault';
+
+export function getStatusKey(species: RationSpecies, stage: LifeStage, weightKg: number): StatusKey {
+  if (stage === 'puppy') return 'statusPuppy';
+  if (stage === 'senior') return 'statusSenior';
+  if (weightKg > 40 && species === 'dog') return 'statusLargeDog';
+  return 'statusDefault';
 }

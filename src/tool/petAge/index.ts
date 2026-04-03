@@ -24,6 +24,19 @@ export interface PetAgeUI {
   shareSuccess: string;
   humanAgeTitle: string;
   humanAgeYears: string;
+  recalculateBtn: string;
+  realAgeLabel: string;
+  defaultPetName: string;
+  stageDogPuppy: string;
+  stageDogTeen: string;
+  stageDogAdult: string;
+  stageDogMature: string;
+  stageDogSenior: string;
+  stageCatKitten: string;
+  stageCatYouth: string;
+  stageCatReign: string;
+  stageCatVeteran: string;
+  stageCatVenerable: string;
 }
 
 export type PetAgeLocaleContent = ToolLocaleContent<PetAgeUI>;

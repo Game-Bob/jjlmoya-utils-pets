@@ -32,6 +32,11 @@ const ui: PetRationUI = {
   tagDry: 'Seco',
   tagWet: 'Húmedo',
   totalKcal: 'Total',
+  kcalUnit: 'kcal/día',
+  statusPuppy: 'Fase de crecimiento rápido',
+  statusSenior: 'Metabolismo maduro',
+  statusLargeDog: 'Raza grande: Control articular',
+  statusDefault: 'Peso equilibrado',
 };
 
 const faq: PetRationLocaleContent['faq'] = [
@@ -147,7 +152,9 @@ export const content: PetRationLocaleContent = {
   description,
   ui,
   seo,
+  faqTitle: 'Preguntas Frecuentes',
   faq,
+  bibliographyTitle: 'Referencias Bibliográficas',
   bibliography,
   howTo,
   schemas,

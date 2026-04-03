@@ -31,6 +31,11 @@ export interface PetRationUI {
   tagDry: string;
   tagWet: string;
   totalKcal: string;
+  kcalUnit: string;
+  statusPuppy: string;
+  statusSenior: string;
+  statusLargeDog: string;
+  statusDefault: string;
 }
 
 export type PetRationLocaleContent = ToolLocaleContent<PetRationUI>;
@@ -38,7 +43,7 @@ export type PetRationLocaleContent = ToolLocaleContent<PetRationUI>;
 export const petRation: PetToolEntry<PetRationUI> = {
   id: 'pet-ration',
   icons: {
-    bg: 'mdi:food-dog-bowl',
+    bg: 'mdi:dog',
     fg: 'mdi:scale',
   },
   i18n: {

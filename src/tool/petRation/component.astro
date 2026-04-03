@@ -10,7 +10,7 @@ interface Props {
 const { ui } = Astro.props;
 ---
 
-<div class="pet-ration-calculator-final" id="calcWrapper">
+<div class="pet-ration-calculator-final" id="calcWrapper" data-ui={JSON.stringify(ui)}>
   <div class="calc-loader" id="calcLoader">
     <Icon name="mdi:loading" class="loader-spinner" />
   </div>
@@ -110,9 +110,9 @@ const { ui } = Astro.props;
       <div class="res-footer-v2">
         <div class="total-info">
           <Icon name="mdi:chart-donut" class="footer-icon" />
-          {ui.totalKcal}: <strong id="kcalTotalVal">0</strong> kcal/día
+          {ui.totalKcal}: <strong id="kcalTotalVal">0</strong> {ui.kcalUnit}
         </div>
-        <div class="status-box-v2" id="statusBoxV2">Mantenimiento ideal</div>
+        <div class="status-box-v2" id="statusBoxV2">{ui.statusDefault}</div>
       </div>
     </div>
   </div>
@@ -123,7 +123,7 @@ const { ui } = Astro.props;
     calculateRER,
     calculateDER,
     calculateRation,
-    getStatusMessage,
+    getStatusKey,
     WEIGHT_RANGES,
   } from './logic';
   import type { RationSpecies, LifeStage, ActivityLevel } from './logic';
@@ -131,6 +131,9 @@ const { ui } = Astro.props;
   function initPetRation() {
     const weightRange = document.getElementById('weightRange') as HTMLInputElement;
     if (!weightRange) return;
+
+    const calcWrapper = document.getElementById('calcWrapper');
+    const uiData: Record<string, string> = JSON.parse(calcWrapper?.dataset.ui || '{}');
 
     const weightLabel = document.getElementById('weightDisplay');
     const ratioRange = document.getElementById('dietRatioRange') as HTMLInputElement;
@@ -166,7 +169,7 @@ const { ui } = Astro.props;
       const dryPct = 1 - wetPct;
       if (dryCard) dryCard.style.display = dryPct > 0 ? 'flex' : 'none';
       if (wetCard) wetCard.style.display = wetPct > 0 ? 'flex' : 'none';
-      if (status) status.innerText = getStatusMessage(species, stage, weight);
+      if (status) status.innerText = uiData[getStatusKey(species, stage, weight)] || '';
 
       localStorage.setItem('pet_v2_state', JSON.stringify({ species, stage, activity, weight, wetPct }));
       const url = new URL(window.location.href);

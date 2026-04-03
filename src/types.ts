@@ -29,7 +29,9 @@ export interface ToolLocaleContent<TUI extends Record<string, string> = Record<s
   description: string;
   ui: TUI;
   seo: SEOSection[];
+  faqTitle?: string;
   faq: FAQItem[];
+  bibliographyTitle?: string;
   bibliography: BibliographyEntry[];
   howTo: HowToStep[];
   schemas: WithContext<Thing>[];
@@ -53,6 +55,13 @@ export interface PetToolEntry<TUI extends Record<string, string> = Record<string
     fg: string;
   };
   i18n: LocaleMap<ToolLocaleContent<TUI>>;
+}
+
+export interface ToolDefinition {
+  entry: PetToolEntry;
+  Component: unknown;
+  SEOComponent?: unknown;
+  BibliographyComponent?: unknown;
 }
 
 export interface PetCategoryEntry {
