@@ -119,130 +119,63 @@ const { ui } = Astro.props;
 </div>
 
 <script>
-  import {
-    calculateRER,
-    calculateDER,
-    calculateRation,
-    getStatusKey,
-    WEIGHT_RANGES,
-  } from './logic';
-  import type { RationSpecies, LifeStage, ActivityLevel } from './logic';
+  import { getFormState, setRadioValue, setMaxWeightRange, getStoredConfig, applyPresetLogic, updateDisplay } from "./handlers";
 
-  function initPetRation() {
-    const weightRange = document.getElementById('weightRange') as HTMLInputElement;
-    if (!weightRange) return;
+  function setupRationListeners(calculate: () => void, weightRange: HTMLInputElement, ratioRange: HTMLInputElement) {
+    document.getElementById("calcWrapper")?.addEventListener("input", calculate);
+    document.getElementById("calcWrapper")?.addEventListener("change", calculate);
 
-    const calcWrapper = document.getElementById('calcWrapper');
-    const uiData: Record<string, string> = JSON.parse(calcWrapper?.dataset.ui || '{}');
-
-    const weightLabel = document.getElementById('weightDisplay');
-    const ratioRange = document.getElementById('dietRatioRange') as HTMLInputElement;
-    const ratioLabel = document.getElementById('ratioValDisplay');
-    const presets = document.getElementsByName('dietRatioPreset') as NodeListOf<HTMLInputElement>;
-    const manualBox = document.getElementById('manualSliderBox');
-    const showManual = document.getElementById('showManualSlider');
-    const dryCard = document.getElementById('dryResCard');
-    const wetCard = document.getElementById('wetResCard');
-    const dryVal = document.getElementById('dryResVal');
-    const wetVal = document.getElementById('wetResVal');
-    const kcalTotal = document.getElementById('kcalTotalVal');
-    const status = document.getElementById('statusBoxV2');
-    const loader = document.getElementById('calcLoader');
-
-    function calculate() {
-      const species = ((document.querySelector('input[name="petType"]:checked') as HTMLInputElement)?.value || 'dog') as RationSpecies;
-      const stage = ((document.querySelector('input[name="lifeStage"]:checked') as HTMLInputElement)?.value || 'adult') as LifeStage;
-      const activity = ((document.querySelector('input[name="activity"]:checked') as HTMLInputElement)?.value || 'mod') as ActivityLevel;
-      const weight = parseFloat(weightRange.value) || 0;
-      const wetPct = parseInt(ratioRange.value) / 100;
-
-      const rer = calculateRER(weight);
-      const der = calculateDER(rer, species, stage, activity);
-      const { dryGrams, wetGrams } = calculateRation(der, wetPct);
-
-      if (weightLabel) weightLabel.innerText = weight.toString();
-      if (ratioLabel) ratioLabel.innerText = `${Math.round(wetPct * 100)}%`;
-      if (dryVal) dryVal.innerText = dryGrams.toString();
-      if (wetVal) wetVal.innerText = wetGrams.toString();
-      if (kcalTotal) kcalTotal.innerText = Math.round(der).toString();
-
-      const dryPct = 1 - wetPct;
-      if (dryCard) dryCard.style.display = dryPct > 0 ? 'flex' : 'none';
-      if (wetCard) wetCard.style.display = wetPct > 0 ? 'flex' : 'none';
-      if (status) status.innerText = uiData[getStatusKey(species, stage, weight)] || '';
-
-      localStorage.setItem('pet_v2_state', JSON.stringify({ species, stage, activity, weight, wetPct }));
-      const url = new URL(window.location.href);
-      url.searchParams.set('w', weight.toString());
-      url.searchParams.set('s', species);
-      url.searchParams.set('st', stage);
-      url.searchParams.set('a', activity);
-      url.searchParams.set('r', ratioRange.value);
-      window.history.replaceState({}, '', url.toString());
-    }
-
-    const params = new URLSearchParams(window.location.search);
-    const stored = JSON.parse(localStorage.getItem('pet_v2_state') || '{}');
-
-    const setRadio = (name: string, val: string) => {
-      const el = document.querySelector(`input[name="${name}"][value="${val}"]`) as HTMLInputElement;
-      if (el) el.checked = true;
-    };
-
-    const config = {
-      s: params.get('s') || stored.species || 'dog',
-      st: params.get('st') || stored.stage || 'adult',
-      a: params.get('a') || stored.activity || 'mod',
-      w: params.get('w') || stored.weight || '10',
-      r: params.get('r') || (stored.wetPct !== undefined ? (stored.wetPct * 100).toString() : '0'),
-    };
-
-    setRadio('petType', config.s);
-    setRadio('lifeStage', config.st);
-    setRadio('activity', config.a);
-    weightRange.value = config.w;
-    ratioRange.value = config.r;
-
-    const preset = Array.from(presets).find((p) => p.value === config.r);
-    if (preset) preset.checked = true;
-    else if (manualBox && config.r !== '0' && config.r !== '100') {
-      manualBox.style.display = 'block';
-      if (showManual) showManual.style.display = 'none';
-    }
-
-    const setMaxWeight = (sp: string) => {
-      weightRange.max = WEIGHT_RANGES[sp as RationSpecies]?.toString() ?? '85';
-    };
-    setMaxWeight(config.s);
-
-    document.querySelector('.pet-ration-calculator-final')?.addEventListener('input', calculate);
-    document.querySelector('.pet-ration-calculator-final')?.addEventListener('change', calculate);
-
-    showManual?.addEventListener('click', () => {
-      if (manualBox) manualBox.style.display = 'block';
-      if (showManual) showManual.style.display = 'none';
+    const manualBox = document.getElementById("manualSliderBox");
+    const showManual = document.getElementById("showManualSlider");
+    showManual?.addEventListener("click", () => {
+      if (manualBox) manualBox.style.display = "block";
+      if (showManual) showManual.style.display = "none";
     });
 
-    presets.forEach((p) => p.addEventListener('change', (e) => {
-      ratioRange.value = (e.target as HTMLInputElement).value;
-      calculate();
-    }));
-
-    document.getElementsByName('petType').forEach((r) => {
-      r.addEventListener('change', (e) => {
-        setMaxWeight((e.target as HTMLInputElement).value);
+    const presets = document.getElementsByName("dietRatioPreset") as NodeListOf<HTMLInputElement>;
+    presets.forEach((preset) => {
+      preset.addEventListener("change", () => {
+        ratioRange.value = preset.value;
         calculate();
       });
     });
 
-    calculate();
-    setTimeout(() => { if (loader) loader.classList.add('hidden'); }, 50);
+    document.getElementsByName("petType").forEach((radio) => {
+      radio.addEventListener("change", () => {
+        setMaxWeightRange((radio as HTMLInputElement).value);
+        calculate();
+      });
+    });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initPetRation);
+  function initPetRation() {
+    const wrapper = document.getElementById("calcWrapper");
+    const weightRange = document.getElementById("weightRange") as HTMLInputElement;
+    const ratioRange = document.getElementById("dietRatioRange") as HTMLInputElement;
+    if (!wrapper || !weightRange || !ratioRange) return;
+
+    const uiData = JSON.parse(wrapper.dataset.ui || "{}");
+    const config = getStoredConfig();
+
+    setRadioValue("petType", config.s);
+    setRadioValue("lifeStage", config.st);
+    setRadioValue("activity", config.a);
+    weightRange.value = config.w;
+    ratioRange.value = config.r;
+    setMaxWeightRange(config.s);
+    applyPresetLogic(config.r);
+
+    const calculate = () => updateDisplay(getFormState(), uiData);
+    setupRationListeners(calculate, weightRange, ratioRange);
+
+    calculate();
+    document.getElementById("calcLoader")?.classList.add("hidden");
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPetRation);
   } else {
     initPetRation();
   }
-  document.addEventListener('astro:page-load', initPetRation);
+  document.addEventListener("astro:page-load", initPetRation);
 </script>

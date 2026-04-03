@@ -2,7 +2,7 @@
     position: relative;
     max-width: 650px;
     margin: 2rem auto;
-    background: var(--color-surface, #ffffff);
+    background: var(--color-surface, #fff);
     border-radius: 2rem;
     padding: 2.5rem;
     box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.08);
@@ -17,7 +17,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--color-surface, #ffffff);
+    background: var(--color-surface, #fff);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,8 +63,14 @@
 }
 
 @keyframes fade-in-up {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .section-title {
@@ -146,7 +152,7 @@
 }
 
 .species-selector-v2 input:checked + .btn-species {
-    background: var(--color-surface, #ffffff);
+    background: var(--color-surface, #fff);
     border-color: var(--color-accent, #f59e0b);
     color: var(--color-accent, #f59e0b);
     box-shadow: 0 4px 15px rgba(245, 158, 11, 0.15);
