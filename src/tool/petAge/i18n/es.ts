@@ -2,99 +2,109 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
 const slug = 'calculadora-edad-mascotas';
-const title = 'Calculadora de Edad de Mascotas';
-const description = 'Descubre la edad real de tu perro o gato en años humanos. Olvida la regla de multiplicar por 7. Usa nuestra calculadora basada en ciencia veterinaria actual.';
+const title = 'Calculadora de Edad para Mascotas';
+const description = 'Descubre la edad real de tu perro o gato en años humanos. Olvida la "regla del 7". Usa nuestra calculadora basada en la ciencia veterinaria actual para obtener resultados precisos.';
 
 const ui: PetAgeUI = {
   toolTitle: 'Calculadora de Edad',
-  toolSubtitle: '¿Cuántos años humanos tiene realmente tu peludo?',
+  toolSubtitle: '¿Cuántos años humanos tiene realmente tu amigo peludo?',
   petNameLabel: 'Nombre (Opcional)',
-  petNamePlaceholder: 'Ej. Toby',
+  petNamePlaceholder: 'ej. Buddy',
   petTypeDog: 'Perro',
   petTypeCat: 'Gato',
-  sizeSmall: 'Peque',
-  sizeMedium: 'Med',
+  sizeSmall: 'Pequeño',
+  sizeMedium: 'Mediano',
   sizeLarge: 'Grande',
   sizeGiant: 'Gigante',
   birthYearLabel: 'Año de nacimiento',
   humanAgeLabel: 'La edad humana de',
   humanAgeUnit: 'años',
   humanAgeYears: 'años',
-  lifeStageLabel: 'Etapa Vital',
-  milestoneLabel: 'Próximo Hito',
-  shareBtn: 'Compartir Resultado',
+  lifeStageLabel: 'Etapa de vida',
+  milestoneLabel: 'Próximo hito',
+  shareBtn: 'Compartir resultado',
   shareSuccess: '¡Copiado! Abriendo tarjeta...',
   humanAgeTitle: 'Edad Mágica',
   recalculateBtn: 'Calcular otra edad',
   realAgeLabel: 'Edad Real',
   defaultPetName: 'Tu mascota',
   stageDogPuppy: 'Cachorro Juguetón',
-  stageDogTeen: 'Adolescencia Rebelde',
-  stageDogAdult: 'Adultez Plena',
+  stageDogTeen: 'Adolescente Rebelde',
+  stageDogAdult: 'Adulto en Forma',
   stageDogMature: 'Madurez Distinguida',
   stageDogSenior: 'Sabiduría Senior',
   stageCatKitten: 'Curiosidad Infantil',
   stageCatYouth: 'Juventud Felina',
   stageCatReign: 'Reinado Doméstico',
-  stageCatVeteran: 'Veteranía Consentida',
-  stageCatVenerable: 'Venerable Felino',
+  stageCatVeteran: 'Veterano Consentido',
+  stageCatVenerable: 'Venerable Anciano',
 };
 
 const faq: PetAgeLocaleContent['faq'] = [
   {
-    question: '¿Es cierto que un año de perro equivale a 7 años humanos?',
-    answer: 'No. Esa es una regla simplificada que la ciencia veterinaria moderna ha desmentido. Los perros maduran muy rápido en sus dos primeros años y luego el proceso se ralentiza, variando mucho según el peso y la raza.',
+    question: '¿Es cierto que un año de perro equivale a siete años humanos?',
+    answer: 'No. Es una regla simplificada que la ciencia veterinaria moderna ha desmentido. Los perros maduran muy rápido los primeros dos años, y el proceso se ralentiza después, variando según el peso y la raza. Estudios recientes sobre metilación del ADN han permitido desarrollar fórmulas de envejecimiento mucho más precisas que reflejan el desarrollo biológico real de los animales a lo largo de su vida.',
   },
   {
-    question: '¿Por qué los perros grandes envejecen antes?',
-    answer: 'Los perros de razas grandes tienen un metabolismo y un crecimiento más acelerado, lo que provoca un estrés oxidativo mayor en sus células. Esto hace que su esperanza de vida sea menor que la de perros pequeños.',
+    question: '¿Por qué los perros grandes envejecen más rápido?',
+    answer: 'Las razas de perros grandes tienen un metabolismo y crecimiento más acelerados, lo que provoca un estrés oxidativo mayor en sus células. Esto significa que su esperanza de vida es más corta que la de los perros pequeños. Los marcadores biológicos muestran que las razas gigantes pueden alcanzar el estatus de senior a los 5 años, mientras que las razas pequeñas podrían no alcanzarlo hasta los 10 u 11 años.',
   },
   {
-    question: '¿Cómo envejecen los gatos comparados con los humanos?',
-    answer: 'Un gato termina su infancia al mes de vida, su adolescencia a los 6 meses y alcanza la mayoría de edad (equiv. 24 años humanos) a los 2 años. A partir de ahí, cada año gatuno equivale a unos 4 años humanos.',
+    question: '¿Cómo envejecen los gatos en comparación con los humanos?',
+    answer: 'Un gato termina su infancia al mes, su adolescencia a los 6 meses y alcanza la edad adulta (24 años humanos) a los 2 años. Después, cada año de vida de un gato equivale a unos 4 años humanos. Este modelo es bastante constante en las diferentes razas de gatos, a diferencia de la gran variación observada en los perros.',
   },
   {
     question: '¿A qué edad se considera a una mascota como Senior?',
-    answer: 'Generalmente, un perro se considera senior cuando ha cumplido el 75% de su esperanza de vida esperada. En gatos, suele ser a partir de los 7-11 años, dependiendo de su estado de salud.',
+    answer: 'Generalmente un perro es senior cuando alcanza el 75% de su esperanza de vida prevista. Para los gatos suele ser de los 7 a 11 años, según su salud. Los exámenes veterinarios regulares son críticos en esta fase para vigilar problemas comunes como enfermedades renales o el declive cognitivo.',
   },
 ];
 
 const howTo: PetAgeLocaleContent['howTo'] = [
-  { name: 'Elegir tipo de mascota', text: 'Selecciona si tienes un perro o un gato para aplicar la fórmula biológica correcta.' },
-  { name: 'Introducir tamaño (solo perros)', text: 'En perros, el peso es fundamental. Indica si es pequeño (hasta 10kg), mediano (10-25kg), grande (25-45kg) o gigante (+45kg).' },
-  { name: 'Indicar año de nacimiento', text: 'Introduce el año de nacimiento de tu mascota para calcular su edad cronológica.' },
-  { name: 'Analizar etapa vital', text: 'Consulta el resultado para saber si tu mascota está en etapa infantil, joven, adulta o senior en comparación con un humano.' },
+  { name: 'Selecciona la especie', text: 'Elige si tienes un perro o gato para aplicar la fórmula biológica correcta según su tasa metabólica.' },
+  { name: 'Indica el tamaño', text: 'Para perros, el peso es clave para determinar la edad biológica. Indica si es pequeño (hasta 10kg), mediano (10-25kg), grande (25-45kg) o gigante (más de 45kg).' },
+  { name: 'Introduce el año de nacimiento', text: 'Entra el año de tu mascota para calcular su edad cronológica. Nuestro sistema procesará esta información frente a las curvas de envejecimiento establecidas.' },
+  { name: 'Analiza su etapa de vida', text: 'Revisa el resultado para conocer si tu mascota está en etapa de cachorro, joven, adulto o senior frente a un humano y comprende sus necesidades actuales.' },
 ];
 
 const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA Senior Care Guidelines for Dogs and Cats', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: How to Calculate Dog Years to Human Years', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
+  { name: 'Pautas de la AAHA sobre el cuidado de personas mayores para perros y gatos', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
+  { name: 'AKC: Cómo calcular los años de perro en años humanos', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
   {
     type: 'summary',
-    title: 'Lo Que Debes Saber Sobre el Envejecimiento de las Mascotas',
+    title: 'Lo que debes saber sobre el envejecimiento animal',
     items: [
-      'La regla del "por 7" es un mito: los perros maduran de forma exponencial los primeros 2 años.',
-      'Un perro de 1 año equivale a 15 años humanos; uno de 2 años, a 24 años humanos.',
+      'La "regla del 7" es un mito: los perros maduran de forma exponencial los 2 primeros años.',
+      'Un perro de 1 año equivale a 15 años humanos; un perro de 2 años equivale a 24 años humanos.',
       'Los perros grandes envejecen más rápido que los pequeños tras los 2 años.',
-      'Los gatos siguen una curva más lineal: cada año felino equivale a 4 años humanos después de los 2.',
+      'Los gatos siguen una curva más lineal: cada año de gato equivale a 4 humanos tras los 2 años.',
+      'La edad biológica es mejor predictor de necesidades de salud que la edad cronológica.',
+      'Chequeos regulares ayudan a detectar problemas antes de que sean graves.',
     ],
   },
-  { type: 'title', text: 'La Verdad Científica Sobre la Edad de tu Mascota', level: 2 },
+  { type: 'title', text: 'La Verdad Científica sobre la Edad de tu Mascota', level: 2 },
   {
     type: 'paragraph',
-    html: '¿Sabías que un gato de 2 años ya tiene la madurez de una persona de 24? Descubre por qué la regla de multiplicar por 7 es un mito. El viejo mito de "1 año de perro equivale a 7 años humanos" es una simplificación excesiva. La realidad biológica es mucho más fascinante: las mascotas maduran a una velocidad vertiginosa durante sus dos primeros años, alcanzando la madurez sexual y física muy rápido. Después, esta curva de envejecimiento se aplana y ralentiza.',
+    html: '¿Sabías que un gato de 2 años ya tiene la madurez de una persona de 24 años? Descubre por qué la regla de multiplicar por 7 es un mito y cómo entender la realidad biológica puede mejorar los cuidados de tu mascota. El viejo mito de que "1 año de perro equivale a 7 años humanos" es una simplificación que no tiene en cuenta los cambios de desarrollo masivos al inicio de la vida. Los animales maduran a gran velocidad los primeros dos años de vida, alcanzando la madurez física muy rápido. Después, esta curva de envejecimiento se aplana y ralentiza.',
   },
-  { type: 'title', text: 'La Ciencia tras el Cálculo', level: 3 },
   {
     type: 'paragraph',
-    html: 'Esta herramienta utiliza las directrices oficiales de la <strong>Asociación Americana de Hospitales Médicos Veterinarios (AAHA)</strong> y los últimos estudios sobre metilación del ADN canino para ofrecerte la estimación más precisa posible.',
+    html: 'La investigación moderna, incluyendo estudios sobre relojes epigenéticos y metilación del ADN, nos ha dado una visión matizada. Estos estudios muestran que los cambios químicos en el ADN de un perro cambian a ritmos distintos. En etapa de cachorro los cambios son rápidos, mientras que en la edad adulta los cambios metabólicos son más graduales. Esta comprensión ha permitido a los científicos desarrollar fórmulas que son mucho más precisas que cualquier multiplicación lineal.',
+  },
+  { type: 'title', text: 'La Ciencia detrás del Cálculo', level: 3 },
+  {
+    type: 'paragraph',
+    html: 'Esta herramienta usa las pautas oficiales de la <strong>American Animal Hospital Association (AAHA)</strong> y los últimos estudios sobre metilación de ADN en perros para darte la estimación más precisa posible. Al combinar datos específicos de tamaño con marcadores biológicos, creamos un modelo completo del desarrollo del animal. Este enfoque reconoce que un Chihuahua y un Gran Danés tienen perfiles de envejecimiento muy distintos desde su nacimiento.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Entender estas diferencias es crucial para los dueños responsables. Esto permite ajustar las intervenciones veterinarias, como el cambio a una dieta senior o el inicio de suplementos para articulaciones. Nuestro calculador une la ciencia compleja con el conocimiento práctico diario para los amantes de los animales de todo el mundo.',
   },
   {
     type: 'table',
-    headers: ['Especie', 'Año 1', 'Año 2', 'Año 3+'],
+    headers: ['Especie', 'Año 1', 'Año 2', 'Año 3 y más'],
     rows: [
       ['Gato', '15 años humanos', '24 años humanos', '+4 años por año'],
       ['Perro pequeño', '15 años humanos', '24 años humanos', '+5 años por año'],
@@ -103,33 +113,33 @@ const seo: PetAgeLocaleContent['seo'] = [
       ['Perro gigante', '15 años humanos', '24 años humanos', '+8 años por año'],
     ],
   },
-  { type: 'title', text: 'Etapas de Vida: ¿Qué esperar?', level: 3 },
+  { type: 'title', text: 'Etapas de la Vida y Preparación', level: 3 },
   {
     type: 'paragraph',
-    html: 'Saber la edad real te ayuda a entender las necesidades médicas y emocionales de tu compañero en cada fase.',
+    html: 'Conocer la edad real de tu mascota te ayuda a entender sus necesidades médicas en cada fase. Igual que los humanos pasamos por etapas, perros y gatos tienen cambios fisiológicos específicos al crecer. Ser consciente de estas transiciones te permite dar el apoyo correcto en el momento adecuado, ya sean juegos para un adolescente o cuidados para un senior.',
   },
   {
     type: 'card',
-    title: 'Cachorro / Junior (0 - 1 año)',
+    title: 'Cachorro o Junior',
     icon: 'mdi:star-shooting',
-    html: 'Es la etapa de crecimiento explosivo. Sus huesos crecen, sus dientes cambian y su cerebro absorbe información como una esponja. La vacunación y la socialización temprana son críticas aquí.',
+    html: 'Es la etapa de crecimiento explosivo. Sus huesos crecen a gran ritmo y sus dientes de leche caen para dejar sitio a los definitivos. La vacunación y socialización temprana son críticas aquí para asegurar que sean adultos equilibrados. Es también el mejor momento para crear buenos hábitos para toda la vida.',
   },
   {
     type: 'card',
-    title: 'Adulto (2 - 6 años)',
+    title: 'Adulto',
     icon: 'mdi:shield-check',
-    html: 'Plenitud física y mental. Ya tienen su personalidad definida. Es el momento dorado para disfrutar de actividades físicas intensas y mantener su peso ideal para prevenir enfermedades futuras.',
+    html: 'Es el pico de forma física para la mayoría de animales. Su personalidad está definida y suelen estar en su momento más activo. Es el momento ideal para disfrutar de actividad intensa y mantener un peso ideal para prevenir futuras enfermedades. El ejercicio constante y el alimento equilibrado son los pilares de la salud en estos años.',
   },
   {
     type: 'card',
-    title: 'Senior (+7 años)',
+    title: 'Senior',
     icon: 'mdi:heart-pulse',
-    html: 'Empiezan a aparecer canas en el hocico y duermen más. El metabolismo se ralentiza. A partir de aquí, los chequeos veterinarios deben ser cada 6 meses. Atención a artritis y salud dental.',
+    html: 'Empiezan las canas en el morro y el animal tiende a dormir más. Su metabolismo se ralentiza y pueden mostrar menos interés por el juego. Desde aquí, los chequeos deberían ser cada seis meses. Vigila signos de artritis y cualquier cambio de conducta. La detección temprana de males senior es la mejor vía para asegurar que su calidad de vida siga siendo alta.',
   },
   {
     type: 'tip',
     title: 'Consejo Veterinario',
-    html: 'La edad calculada es una estimación biológica promedio. Factores como la raza, la genética y el estilo de vida pueden influir en el envejecimiento real de tu mascota. Consulta siempre con tu veterinario.',
+    html: 'La edad calculada es una estimación biológica media. Factores como raza, genética y estilo de vida pueden impactar en el envejecimiento real de tu mascota. Para consejos personalizados y evaluación de salud, consulta a tu veterinario.',
   },
 ];
 
@@ -143,6 +153,25 @@ const schemas: PetAgeLocaleContent['schemas'] = [
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
   } as WithContext<SoftwareApplication>,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  } as any,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    step: howTo.map((h) => ({
+      '@type': 'HowToStep',
+      name: h.name,
+      text: h.text,
+    })),
+  } as any,
 ];
 
 export const content: PetAgeLocaleContent = {
@@ -153,7 +182,7 @@ export const content: PetAgeLocaleContent = {
   seo,
   faqTitle: 'Preguntas Frecuentes',
   faq,
-  bibliographyTitle: 'Referencias Bibliográficas',
+  bibliographyTitle: 'Bibliografía',
   bibliography,
   howTo,
   schemas,
