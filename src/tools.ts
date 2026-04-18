@@ -11,3 +11,5 @@ export {
   PET_AGE_TOOL,
   PET_RATION_TOOL,
 };
+
+export const ALL_ENTRIES = ALL_TOOLS.map(t => t.entry);

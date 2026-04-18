@@ -17,4 +17,4 @@ export type {
   PetCategoryEntry,
 } from './types';
 
-export { ALL_TOOLS } from './tools';
+export { ALL_ENTRIES, ALL_TOOLS } from './tools';
