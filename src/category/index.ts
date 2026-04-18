@@ -1,6 +1,6 @@
 import type { PetCategoryEntry } from '../types';
-import { petAge } from '../tool/petAge';
-import { petRation } from '../tool/petRation';
+import { petAge } from '../tool/petAge/entry';
+import { petRation } from '../tool/petRation/entry';
 
 export const petsCategory: PetCategoryEntry = {
   icon: 'mdi:paw',
