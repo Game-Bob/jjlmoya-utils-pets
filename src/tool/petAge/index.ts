@@ -1,3 +1,4 @@
+import { petAge } from './entry';
 export * from './entry';
 export const PET_AGE_TOOL: ToolDefinition = {
   entry: petAge,
