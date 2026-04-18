@@ -2,7 +2,7 @@ export * from './tool/petAge';
 export * from './tool/petRation';
 
 export { petsCategory } from './category';
-export { default as PetsCategorySEO } from './category/seo.astro';
+export const PetsCategorySEO = () => import('./category/seo.astro').then((m) => m.default);
 
 export type {
   KnownLocale,

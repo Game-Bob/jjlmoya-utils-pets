@@ -1,7 +1,4 @@
 import type { PetToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
-import PetAgeCalculator from './component.astro';
-import PetAgeSEO from './seo.astro';
-import PetAgeBibliography from './bibliography.astro';
 
 export interface PetAgeUI {
   [key: string]: string;
@@ -66,11 +63,10 @@ export const petAge: PetToolEntry<PetAgeUI> = {
   },
 };
 
-export { PetAgeCalculator, PetAgeSEO, PetAgeBibliography };
 
 export const PET_AGE_TOOL: ToolDefinition = {
   entry: petAge,
-  Component: PetAgeCalculator,
-  SEOComponent: PetAgeSEO,
-  BibliographyComponent: PetAgeBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

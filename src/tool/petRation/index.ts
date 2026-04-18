@@ -1,7 +1,4 @@
 import type { PetToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
-import PetRationCalculator from './component.astro';
-import PetRationSEO from './seo.astro';
-import PetRationBibliography from './bibliography.astro';
 
 export interface PetRationUI {
   [key: string]: string;
@@ -65,11 +62,10 @@ export const petRation: PetToolEntry<PetRationUI> = {
   },
 };
 
-export { PetRationCalculator, PetRationSEO, PetRationBibliography };
 
 export const PET_RATION_TOOL: ToolDefinition = {
   entry: petRation,
-  Component: PetRationCalculator,
-  SEOComponent: PetRationSEO,
-  BibliographyComponent: PetRationBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };
