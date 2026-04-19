@@ -15,7 +15,7 @@
     min-height: 400px;
   }
 
-  :global(.theme-dark) .pet-age-calculator {
+  .theme-dark .pet-age-calculator {
     background: var(--color-surface-dark, #1e293b);
     color: var(--color-text-dark, #e2e8f0);
     border-color: var(--color-border-dark, #334155);
@@ -39,7 +39,7 @@
       visibility 0.4s;
   }
 
-  :global(.theme-dark) .age-loader {
+  .theme-dark .age-loader {
     background: var(--color-surface-dark, #1e293b);
   }
 
@@ -92,7 +92,7 @@
     border-bottom: none;
   }
 
-  :global(.theme-dark) .age-section {
+  .theme-dark .age-section {
     border-bottom-color: var(--color-border-dark, #334155);
   }
 
@@ -108,7 +108,7 @@
     letter-spacing: 0.05em;
   }
 
-  :global(.theme-dark) .age-section-title {
+  .theme-dark .age-section-title {
     color: var(--color-heading-dark, #f8fafc);
   }
 
@@ -161,7 +161,7 @@
     box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.1);
   }
 
-  :global(.theme-dark) .age-text-input {
+  .theme-dark .age-text-input {
     background: var(--color-btn-bg-dark, #0f172a);
     border-color: var(--color-btn-border-dark, #334155);
     color: var(--color-text-dark, #e2e8f0);
@@ -189,7 +189,7 @@
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  :global(.theme-dark) .pet-type-btn {
+  .theme-dark .pet-type-btn {
     background: var(--color-btn-bg-dark, #0f172a);
     border-color: var(--color-btn-border-dark, #334155);
     color: var(--color-text-dark, #e2e8f0);
@@ -203,7 +203,7 @@
     transform: translateY(-2px);
   }
 
-  :global(.theme-dark) .pet-type-btn.active {
+  .theme-dark .pet-type-btn.active {
     background: var(--color-surface-elevated-dark, #1e293b);
   }
 
@@ -220,7 +220,7 @@
     border: 1px solid var(--color-btn-border, #e2e8f0);
   }
 
-  :global(.theme-dark) .age-segmented {
+  .theme-dark .age-segmented {
     background: var(--color-btn-bg-dark, #0f172a);
     border-color: var(--color-btn-border-dark, #334155);
   }
@@ -284,7 +284,7 @@
     box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
   }
 
-  :global(.theme-dark) .age-year-input {
+  .theme-dark .age-year-input {
     background: var(--color-btn-bg-dark, #0f172a);
     border-color: var(--color-btn-border-dark, #334155);
     color: var(--color-text-dark, #e2e8f0);
@@ -307,7 +307,7 @@
     box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.3);
   }
 
-  :global(.theme-dark) .age-results {
+  .theme-dark .age-results {
     background: var(--color-accent, #f59e0b);
     color: var(--color-results-text-dark, #0f172a);
     box-shadow: 0 20px 40px -10px rgba(245, 158, 11, 0.2);
@@ -328,7 +328,7 @@
     margin-bottom: 0.5rem;
   }
 
-  :global(.theme-dark) .age-res-label {
+  .theme-dark .age-res-label {
     color: var(--color-results-bg, #0f172a);
     opacity: 0.7;
   }
@@ -355,7 +355,7 @@
     margin: 1.5rem 0;
   }
 
-  :global(.theme-dark) .age-res-divider {
+  .theme-dark .age-res-divider {
     background: rgba(0, 0, 0, 0.1);
   }
 
@@ -378,7 +378,7 @@
     text-align: center;
   }
 
-  :global(.theme-dark) .age-res-card {
+  .theme-dark .age-res-card {
     background: rgba(0, 0, 0, 0.1);
     border-color: rgba(0, 0, 0, 0.1);
   }
@@ -404,7 +404,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  :global(.theme-dark) .age-res-footer {
+  .theme-dark .age-res-footer {
     border-top-color: rgba(0, 0, 0, 0.1);
   }
 
@@ -427,7 +427,7 @@
     background: rgba(255, 255, 255, 0.2);
   }
 
-  :global(.theme-dark) .age-share-btn {
+  .theme-dark .age-share-btn {
     background: rgba(0, 0, 0, 0.15);
     border-color: rgba(0, 0, 0, 0.2);
     color: var(--color-results-bg, #0f172a);
