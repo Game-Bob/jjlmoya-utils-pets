@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: '現在 の 体重 で スライダー を 調整', text: 'スライダー を 使って、 ペット の 現在 の 正確な 体重 （ kg ） を 設定 して ください。 正確な エネルギー 要求 量 を 算出 する には、 最近 測定 した 体重 データ が 不可欠 です。' },
   { name: '実際 の 活動 レベル を 定義 して ください', text: '1日 の 散歩 時間 や 普段 の エネルギー レベル を 考慮 して、 低い ・ 普通 ・ 高い から 最も 適切 な ライフスタイル を 選びます。' },
   { name: 'フード パッケージ の カロリー を 入力', text: 'フード の 袋 に 記載 されている kcal/kg の 数値 を 確認 して 入力 して ください。 この 数値 が 正確 で ある こと で、 グラム 単位 の 給餌 量 が 健康 に 最適 な 値 で 算出 されます。' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA： 栄養 ツールキット と カロリー 推奨 事項 ガイド', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF： 総合 および 補完 フード 用 栄養 ガイドライン 指針', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'よく ある 質問 ( FAQ )',
-  bibliographyTitle: '関連 参考文献',
+  faqTitle: 'よく ある 質問 ( FAQ )': '関連 参考文献',
   slug,
   title,
   description,

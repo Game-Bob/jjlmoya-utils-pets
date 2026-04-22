@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Ange storlek (endast hundar)', text: 'För hundar är vikten nyckelfaktorn när man bestämmer biologisk ålder. Ange om den är liten (upp till 10 kg), medium (10 till 25 kg), stor (25 till 45 kg) eller jätte (över 45 kg).' },
   { name: 'Ange födelseår', text: 'Ange ditt husdjurs födelseår för att beräkna deras kronologiska ålder. Vårt system kommer sedan att bearbeta denna information mot de fastställda åldrandekurvorna.' },
   { name: 'Analysera livsstadiet', text: 'Kontrollera resultatet för att veta om ditt husdjur befinner sig i baby-, ung-, vuxen- eller seniorstadiet jämfört med en människa och förstå deras nuvarande behov.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA Senior Care Guidelines för hundar och katter', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: Hur man beräknar hundår till människoår', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Vanliga frågor',
-  faq,
-  bibliographyTitle: 'Bibliografi',
+  faq: 'Bibliografi',
   bibliography,
   howTo,
   schemas,

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: '크기 입력(강아지 전용)', text: '강아지의 경우 몸무게가 핵심입니다. 소형(10kg 미만), 중형(10-25kg), 대형(25-45kg), 초대형(45kg 이상) 중에서 정확히 표시하세요.' },
   { name: '출생 연도 입력', text: '정확한 연대기적 나이를 계산하려면 반려동물이 태어난 연도를 정확하게 입력하세요.' },
   { name: '생애 단계 분석', text: '계산 결과를 확인하여 사람 나이와 비교했을 때 현재 반려동물이 어느 단계에 있는지, 그리고 어떤 관리가 필요한지 분석하세요.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA 강아지 및 고양이 노령 관리 가이드라인', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: 강아지 나이를 사람 나이로 환산하는 방법', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: '자주 묻는 질문',
-  faq,
-  bibliographyTitle: '참고 문헌',
+  faq: '참고 문헌',
   bibliography,
   howTo,
   schemas,

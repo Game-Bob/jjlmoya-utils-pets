@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Justera för exakt vikt', text: 'Flytta reglaget till ditt husdjurs nuvarande vikt i kilogram. Det är viktigt att använda en nyligen uppmätt vikt för att få en korrekt beräkning av energibehovet.' },
   { name: 'Definiera aktivitetsnivå', text: 'Välj mellan låg, normal eller hög aktivitet baserat på den faktiska dagliga motionen och energinivån din fyrbenta följeslagare uppvisar.' },
   { name: 'Ange fodrets energiinnehåll', text: 'Titta på foderförpackningen för det exakta kcal/kg-värdet så att den slutgiltiga ransonen i gram blir så precis som möjligt för optimal hälsa.' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Nutrition Toolkit and Calorie Recommendations', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Nutritional Guidelines for Complete and Complementary Pet Food', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Vanliga Frågor',
-  bibliographyTitle: 'Bibliografi',
+  faqTitle: 'Vanliga Frågor': 'Bibliografi',
   slug,
   title,
   description,

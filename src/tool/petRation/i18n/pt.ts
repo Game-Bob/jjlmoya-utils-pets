@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Ajuste para o peso exato', text: 'Mova o controlo deslizante para o peso atual do seu animal em quilogramas. É vital utilizar um peso medido recentemente para um cálculo preciso do requerimento energético.' },
   { name: 'Defina o seu nível de atividade', text: 'Escolha entre atividade baixa, normal ou alta com base no exercício diário real e nos níveis de energia demonstrados pelo seu companheiro de quatro patas.' },
   { name: 'Introduza as calorias do alimento por kg', text: 'Procure na embalagem do alimento para animais o valor exato de kcal/kg para que o cálculo da ração final em gramas seja o mais preciso possível para uma saúde óptima.' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Kit de ferramentas de nutrição e recomendações calóricas', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Diretrizes Nutricionais para Alimentos Completos e Complementares para Animais de Estimação', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Perguntas Frequentes',
-  bibliographyTitle: 'Bibliografia',
+  faqTitle: 'Perguntas Frequentes': 'Bibliografia',
   slug,
   title,
   description,

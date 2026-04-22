@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Indicate size (dogs only)', text: 'For dogs, weight is the key factor in determining biological age. Specify if it is small (up to 10 kg), medium (10 to 25 kg), large (25 to 45 kg), or giant (over 45 kg).' },
   { name: 'Enter birth year', text: 'Enter your pet\'s birth year to calculate their chronological age. Our system will then process this information against the established aging curves.' },
   { name: 'Analyze life stage', text: 'Check the result to know if your pet is in the infant, young, adult, or senior stage compared to a human and understand their current needs.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA Senior Care Guidelines for Dogs and Cats', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: How to Calculate Dog Years to Human Years', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Frequently Asked Questions',
-  faq,
-  bibliographyTitle: 'Bibliography',
+  faq: 'Bibliography',
   bibliography,
   howTo,
   schemas,

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: '현재 몸무게 로 슬라이더 조정', text: '슬라이더 를 이용 하여 반려동물 의 현재 정확한 몸무게 ( kg ) 를 설정 하세요 . 정확한 에너지 요구량 을 계산 하려면 최근 에 측정 한 몸무게 데이터 가 필수적 입니다 .' },
   { name: '실제 활동 수준 을 정의 하세요', text: '하루 산책 시간 과 평소 의 에너지 수준 을 고려 하여 낮음 , 보통 , 높음 중에서 가장 적합한 라이프스타일 을 선택 하세요 .' },
   { name: '사료 포장지 의 칼로리 입력', text: '사료 포장지 에 적힌 kcal/kg 수치 를 확인 하여 입력 하세요 . 이 정보 가 정확 해야 그람 ( g ) 단위 의 급여량 이 건강 에 최적화 된 값 으로 산출 됩니다 .' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: 영양 툴킷 및 칼로리 권장 사항 가이드', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: 완전 및 보완 사료 를 위한 영양 가이드라인 지침서', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: '자주 묻는 질문 (FAQ)',
-  bibliographyTitle: '관련 참고 문헌',
+  faqTitle: '자주 묻는 질문 (FAQ)': '관련 참고 문헌',
   slug,
   title,
   description,

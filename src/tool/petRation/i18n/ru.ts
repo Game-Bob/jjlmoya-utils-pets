@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Настройте точный вес', text: 'Передвиньте ползунок к текущему весу вашего питомца в килограммах. Важно использовать актуальные данные взвешивания для получения верного результата.' },
   { name: 'Определите уровень активности', text: 'Выберите низкую, нормальную или высокую активность на основе фактических ежедневных упражнений и прогулок вашего компаньона.' },
   { name: 'Введите калорийность корма', text: 'Найдите на упаковке корма значение ккал/кг или ккал/100г, чтобы расчет итоговой массы порции в граммах был максимально точным.' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Инструментарий по питанию и рекомендации по калориям', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Руководство по питанию для полнорационных и дополнительных кормов', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Часто задаваемые вопросы',
-  bibliographyTitle: 'Библиография',
+  faqTitle: 'Часто задаваемые вопросы': 'Библиография',
   slug,
   title,
   description,

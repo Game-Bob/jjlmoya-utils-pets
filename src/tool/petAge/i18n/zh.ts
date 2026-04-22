@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: '输入体型（仅限犬类）', text: '对于 狗 来说， 体重 是 关键 因素。 请 标明 它是 小型 （10 公斤 以下）、 中型 （10 至 25 公斤）、 大型 （25 至 45 公斤） 还是 巨型 （45 公斤 以上）。' },
   { name: '输入出生年份', text: '输入 您的 宠物 出生 的 年份， 以 计算 它们的 年代 龄。' },
   { name: '分析生命阶段', text: '查看 结果 以 了解 您的 宠物 与 人类 相比 处于 幼年 、 青年 、 成年 还是 老年 阶段。' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA 犬猫老年护理指南手册', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC：如何将狗的寿命换算为人类寿命', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: '常见问题',
-  faq,
-  bibliographyTitle: '参考文献',
+  faq: '参考文献',
   bibliography,
   howTo,
   schemas,

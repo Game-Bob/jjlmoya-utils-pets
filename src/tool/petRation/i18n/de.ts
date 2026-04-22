@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Auf exaktes Gewicht einstellen', text: 'Bewegen Sie den Schieberegler auf das aktuelle Gewicht Ihres Haustiers in Kilogramm. Es ist wichtig, ein vor kurzem gemessenes Gewicht für eine genaue Energiebedarfsberechnung zu verwenden.' },
   { name: 'Aktivitätsniveau definieren', text: 'Wählen Sie zwischen niedriger, normaler oder hoher Aktivität, basierend auf der tatsächlichen täglichen Bewegung und dem Energieniveau, das Ihr vierbeiniger Begleiter an den Tag legt.' },
   { name: 'Kalorien des Futters pro kg eingeben', text: 'Suchen Sie auf der Futterverpackung nach dem genauen kcal/kg-Wert, damit die endgültige Ration in Gramm so präzise wie möglich für eine optimale Gesundheit berechnet wird.' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Nutrition Toolkit und Kalorienempfehlungen', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Ernährungsrichtlinien für Alleinfuttermittel und Ergänzungsfuttermittel für Heimtiere', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Häufig gestellte Fragen',
-  bibliographyTitle: 'Bibliographie',
+  faqTitle: 'Häufig gestellte Fragen': 'Bibliographie',
   slug,
   title,
   description,

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Dostosuj do dokładnej wagi', text: 'Przesuń suwak do aktualnej wagi swojego zwierzaka w kilogramach. Ważne jest, aby użyć ostatnio zmierzonej wagi dla dokładnego obliczenia zapotrzebowania na energię.' },
   { name: 'Określ ich poziom aktywności', text: 'Wybierz między niską, normalną lub wysoką aktywnością na podstawie rzeczywistych codziennych ćwiczeń i poziomu energii, jakie wykazuje Twój czworonożny towarzysz.' },
   { name: 'Wprowadź kaloryczność karmy na kg', text: 'Poszukaj na opakowaniu karmy dla zwierząt dokładnej wartości kcal/kg, aby końcowa racja w gramach była jak najbardziej precyzyjna dla optymalnego zdrowia.' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Zestaw narzędzi żywieniowych i rekomendacje kaloryczne', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Wytyczne żywieniowe dla pełnoporcjowych i uzupełniających karm dla zwierząt domowych', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Często Zadawane Pytania',
-  bibliographyTitle: 'Bibliografia',
+  faqTitle: 'Często Zadawane Pytania': 'Bibliografia',
   slug,
   title,
   description,

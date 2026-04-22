@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Wskaż rozmiar (tylko psy)', text: 'W przypadku psów waga jest kluczowym czynnikiem przy określaniu wieku biologicznego. Określ, czy jest mały (do 10 kg), średni (10 do 25 kg), duży (25 do 45 kg) czy olbrzymi (powyżej 45 kg).' },
   { name: 'Wprowadź rok urodzenia', text: 'Wpisz rok urodzenia swojego zwierzęcia, aby obliczyć jego wiek chronologiczny. Nasz system przetworzy te informacje zgodnie z ustalonymi krzywymi starzenia.' },
   { name: 'Przeanalizuj odpowiednik ludzki', text: 'Sprawdź wynik, aby dowiedzieć się, czy Twoje zwierzę jest w fazie szczenięcej, młodej, dorosłej czy starszej w porównaniu z człowiekiem i zrozumieć jego obecne potrzeby.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'Wytyczne AAHA dotyczące opieki nad seniorami dla psów i kotów', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: Jak przeliczyć lata psie na lata ludzkie', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Często Zadawane Pytania',
-  faq,
-  bibliographyTitle: 'Bibliografia',
+  faq: 'Bibliografia',
   bibliography,
   howTo,
   schemas,

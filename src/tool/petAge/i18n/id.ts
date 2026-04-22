@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Tunjukkan ukuran (hanya anjing)', text: 'Untuk anjing, berat badan adalah faktor kunci dalam menentukan usia biologis. Tentukan apakah ukurannya kecil (hingga 10 kg), sedang (10 hingga 25 kg), besar (25 hingga 45 kg), atau raksasa (lebih dari 45 kg).' },
   { name: 'Masukkan tahun kelahiran', text: 'Masukkan tahun kelahiran hewan peliharaan Anda untuk menghitung usia kronologis mereka. Sistem kami kemudian akan memproses informasi ini terhadap kurva penuaan yang ditetapkan.' },
   { name: 'Analisis tahap kehidupan', text: 'Periksa hasilnya untuk mengetahui apakah hewan peliharaan Anda berada dalam tahap bayi, muda, dewasa, atau senior dibandingkan dengan manusia dan pahami kebutuhan mereka saat ini.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'Pedoman Perawatan Senior AAHA untuk Anjing dan Kucing', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: Cara Menghitung Tahun Anjing ke Tahun Manusia', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Pertanyaan yang Sering Diajukan',
-  faq,
-  bibliographyTitle: 'Bibliografi',
+  faq: 'Bibliografi',
   bibliography,
   howTo,
   schemas,

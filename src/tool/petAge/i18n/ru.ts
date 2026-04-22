@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Укажите размер (только для собак)', text: 'Для собак вес является ключевым фактором в определении биологического возраста. Укажите, маленькая она (до 10 кг), средняя (10–25 кг), большая (25–45 кг) или гигантская (более 45 кг).' },
   { name: 'Введите год рождения', text: 'Введите год рождения вашего питомца, чтобы рассчитать его хронологический возраст. Наша система обработает эту информацию с учетом установленных кривых старения.' },
   { name: 'Проанализируйте жизненный этап', text: 'Проверьте результат, чтобы узнать, находится ли ваш питомец в стадии младенчества, юности, взрослости или старости по сравнению с человеком, и поймите его текущие потребности.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'Руководство AAHA по уходу за стареющими собаками и кошками', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: Как перевести собачьи годы в человеческие', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Часто Задаваемые Вопросы',
-  faq,
-  bibliographyTitle: 'Библиография',
+  faq: 'Библиография',
   bibliography,
   howTo,
   schemas,

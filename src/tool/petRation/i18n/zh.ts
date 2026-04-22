@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: '使用 滑块 确认 准确 体重', text: '通过 滑块 将 指标 移动 到 您的 宠物 当前 的 准确 体重 ( kg ) 位置 。 建议 使用 近期 的 称重 数据 以 获得 最佳 的 能量 指引 。' },
   { name: '设定 您 伙伴 的 实际 活动量', text: '根据 您 的 伙伴 每天 在 户外 实际 锻炼 的 情况 ， 在 低 、 常规 或 高 之间 选择 一个 合适 的 选项 。 这 将 修改 最终 的 能量 系数 。' },
   { name: '查阅 并 输入 粮袋 的 卡路里', text: '查阅 宠物 食品 包装 上 标注 的 kcal/kg 数值 后 输入 ， 这样 计算器 就能 自动 算出 精确 到 克 的 每日 喂食 重量 。' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA： 动物 营养 工具包 和 卡路里 指南 书', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF： 全价 及 补充 宠物 食品 营养 标准 指南', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: '常见 问题 与 解答 ( FAQ )',
-  bibliographyTitle: '更多 参考文献',
+  faqTitle: '常见 问题 与 解答 ( FAQ )': '更多 参考文献',
   slug,
   title,
   description,

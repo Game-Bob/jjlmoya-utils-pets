@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Doğru Ağırlığı Ayarlayın', text: 'Kaydırıcıyı evcil hayvanınızın kilogram cinsinden mevcut ağırlığına getirin . Doğru bir enerji gereksinimi hesaplaması için yakın zamanda ölçülmüş bir ağırlık kullanmak hayati önem taşır .' },
   { name: 'Aktivite Seviyesini Belirleyin', text: 'Dört ayaklı dostunuzun gerçek günlük egzersiz ve enerji seviyelerine göre düşük , normal veya yüksek aktivite seçeneklerinden birini seçin .' },
   { name: 'Mamanın Kalorisini Girin', text: 'Mama paketinin üzerindeki kcal/kg değerini bulun ve girin . Bu sayede gram cinsinden sonuç en doğru şekilde hesaplanarak evcil hayvanınızın sağlığını korumaya yardımcı olur .' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Beslenme Araç Seti ve Kalori Önerileri Rehberi', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Tam ve Tamamlayıcı Evcil Hayvan Mamaları İçin Beslenme Kılavuzları', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Sıkça Sorulan Sorular',
-  bibliographyTitle: 'Bibliyografya',
+  faqTitle: 'Sıkça Sorulan Sorular': 'Bibliyografya',
   slug,
   title,
   description,

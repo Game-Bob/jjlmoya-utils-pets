@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Geef de grootte aan (alleen honden)', text: 'Voor honden is gewicht de belangrijkste factor bij het bepalen van de biologische leeftijd. Geef aan of het klein (tot 10 kg), gemiddeld (10 tot 25 kg), groot (25 tot 45 kg) of gigantisch (meer dan 45 kg) is.' },
   { name: 'Voer het geboortejaar in', text: 'Voer het geboortejaar van uw huisdier in om hun chronologische leeftijd te berekenen. Ons systeem zal deze informatie vervolgens verwerken aan de hand van de vastgestelde verouderingscurven.' },
   { name: 'Analyseer de levensfase', text: 'Controleer het resultaat om te weten of uw huisdier zich in de baby-, jonge, volwassen of seniorfase bevindt vergeleken met een mens en begrijp hun huidige behoeften.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA Senior Care Guidelines voor honden en katten', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: Hoe u hondenjaren naar mensenjaren berekent', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Veelgestelde Vragen',
-  faq,
-  bibliographyTitle: 'Bibliografie',
+  faq: 'Bibliografie',
   bibliography,
   howTo,
   schemas,

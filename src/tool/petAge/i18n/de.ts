@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Größe angeben (nur Hunde)', text: 'Bei Hunden ist das Gewicht der Schlüsselfaktor für die Bestimmung des biologischen Alters. Geben Sie an, ob es klein (bis 10 kg), mittel (10 bis 25 kg), groß (25-45 kg) oder riesig (über 45 kg) ist.' },
   { name: 'Geburtsjahr eingeben', text: 'Geben Sie das Geburtsjahr Ihres Haustiers ein, um sein chronologisches Alter zu berechnen. Unser System verarbeitet diese Informationen anhand der etablierten Alterungskurven.' },
   { name: 'Lebensphase analysieren', text: 'Überprüfen Sie das Ergebnis, um zu wissen, ob Ihr Haustier im Vergleich zum Menschen im Säuglings-, Jugend-, Erwachsenen- oder Seniorenstadium ist.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA Senioren-Pflege-Richtlinien für Hunde und Katzen', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: Wie man Hundejahre in Menschenjahre umrechnet', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Häufig gestellte Fragen',
-  faq,
-  bibliographyTitle: 'Bibliographie',
+  faq: 'Bibliographie',
   bibliography,
   howTo,
   schemas,

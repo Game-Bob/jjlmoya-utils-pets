@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Indiquez la taille', text: 'Pour les chiens, le poids est le facteur clé pour déterminer l\'âge biologique. Précisez s\'il est petit (jusqu\'à 10 kg), moyen (10 à 25 kg), grand (25 à 45 kg) ou géant (plus de 45 kg).' },
   { name: 'Entrez l\'année de naissance', text: 'Entrez l\'année de naissance de votre animal pour calculer son âge chronologique. Notre système traitera ces informations par rapport aux courbes de vieillissement établies.' },
   { name: 'Analysez l\'étape de vie', text: 'Vérifiez le résultat pour savoir si votre animal est au stade de chiot, jeune, adulte ou senior par rapport à un humain et comprenez ses besoins actuels.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'Lignes directrices de l\'AAHA sur les soins aux seniors pour chiens et chats', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC : Comment calculer les années de chien en années humaines', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Foire Aux Questions',
-  faq,
-  bibliographyTitle: 'Bibliographie',
+  faq: 'Bibliographie',
   bibliography,
   howTo,
   schemas,

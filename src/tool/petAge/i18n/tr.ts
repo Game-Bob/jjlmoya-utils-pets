@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'Boyutu Belirleyin', text: 'Köpekler için ağırlık, biyolojik yaşı belirlemede temel faktördür. Küçük (10 kg\'a kadar), orta (10-25 kg), büyük (25-45 kg) veya dev (45 kg üzeri) olarak belirtin.' },
   { name: 'Doğum Yılını Giriniz', text: 'Evcil hayvanınızın kronolojik yaşını hesaplamak için doğum yılını girin. Sistemimiz bu bilgiyi yerleşik yaşlanma eğrilerine göre işleyecektir.' },
   { name: 'Yaşam Evresini Analiz Edin', text: 'Evcil hayvanınızın bir insana kıyasla yavru, genç, yetişkin veya kıdemli aşamada olup olmadığını öğrenmek için sonucu kontrol edin ve mevcut ihtiyaçlarını anlayın.' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA Köpek ve Kedi Kıdemli Bakım Rehberi', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC: Köpek Yılları İnsan Yıllarına Nasıl Hesaplanır', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -187,8 +183,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'Sıkça Sorulan Sorular',
-  faq,
-  bibliographyTitle: 'Bibliyografya',
+  faq: 'Bibliyografya',
   bibliography,
   howTo,
   schemas,

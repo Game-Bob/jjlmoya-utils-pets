@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Pas aan voor het exacte gewicht', text: 'Verplaats de schuifregelaar naar het huidige gewicht van uw huisdier in kilogrammen. Het is essentieel om een recent gemeten gewicht te gebruiken voor een nauwkeurige berekening van de energiebehoefte.' },
   { name: 'Definieer hun activiteitsniveau', text: 'Kies tussen lage, normale of hoge activiteit op basis van de werkelijke dagelijkse beweging en het energieniveau dat uw trouwe viervoeter vertoont.' },
   { name: 'Voer de calorieën van de voeding per kg in', text: 'Kijk op de verpakking van het huisdiervoer voor de exacte kcal/kg-waarde, zodat de uiteindelijke hoeveelheid in grammen zo precies mogelijk is voor een optimale gezondheid.' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Nutrition Toolkit en calorieaanbevelingen', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Voedingsrichtlijnen voor volledige en aanvullende diervoeders', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Veelgestelde Vragen',
-  bibliographyTitle: 'Bibliografie',
+  faqTitle: 'Veelgestelde Vragen': 'Bibliografie',
   slug,
   title,
   description,

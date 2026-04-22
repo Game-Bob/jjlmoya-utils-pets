@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetAgeUI, PetAgeLocaleContent } from '../index';
 
@@ -64,11 +65,6 @@ const howTo: PetAgeLocaleContent['howTo'] = [
   { name: 'サイズを入力（犬のみ）', text: '犬 の 場合、 体重 が 重要 です。 小型 （10kg まで） 、 中型 （10-25kg） 、 大型 （25-45kg） 、 超大型 （45kg 以上） から 選択 して ください。' },
   { name: '誕生年を入力', text: 'ペット の 誕生年 を 入力 して、 現在 の 暦 年齢 を 計算 します。' },
   { name: 'ライフステージを確認', text: '計算 結果 から、 人間 と 比較 して 現在 の ペット が 幼少期 、 青年期 、 成人期 、 シニア期 の どの 段階 に ある か を 確認 します。' },
-];
-
-const bibliography: PetAgeLocaleContent['bibliography'] = [
-  { name: 'AAHA 犬と猫のシニアケアガイドライン', url: 'https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2023-aaha-senior-care-guidelines-for-dogs-and-cats/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats.pdf' },
-  { name: 'AKC：犬の年齢を人間の年齢に換算する方法', url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/' },
 ];
 
 const seo: PetAgeLocaleContent['seo'] = [
@@ -181,8 +177,7 @@ export const content: PetAgeLocaleContent = {
   ui,
   seo,
   faqTitle: 'よくある質問',
-  faq,
-  bibliographyTitle: '参考文献',
+  faq: '参考文献',
   bibliography,
   howTo,
   schemas,

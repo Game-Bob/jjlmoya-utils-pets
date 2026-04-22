@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Sesuaikan untuk berat badan yang tepat', text: 'Pindahkan slider ke berat badan hewan peliharaan Anda saat ini dalam kilogram. Sangat penting untuk menggunakan berat badan yang baru diukur untuk perhitungan kebutuhan energi yang akurat.' },
   { name: 'Tentukan tingkat aktivitas mereka', text: 'Pilih antara aktivitas rendah, normal atau tinggi berdasarkan latihan harian yang sebenarnya dan tingkat energi yang ditunjukkan oleh teman berkaki empat Anda.' },
   { name: 'Masukkan kalori makanan per kg', text: 'Lihat pada kemasan makanan hewan untuk nilai kcal/kg yang tepat sehingga penghitungan ransum akhir dalam gram seakurat mungkin untuk kesehatan yang optimal.' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Toolkit Nutrisi dan Rekomendasi Kalori', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Pedoman Nutrisi untuk Makanan Hewan Peliharaan Lengkap dan Pelengkap', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
-  bibliographyTitle: 'Bibliografi',
+  faqTitle: 'Pertanyaan yang Sering Diajukan': 'Bibliografi',
   slug,
   title,
   description,

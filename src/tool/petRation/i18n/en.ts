@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PetRationUI, PetRationLocaleContent } from '../index';
 
@@ -63,11 +64,6 @@ const howTo: PetRationLocaleContent['howTo'] = [
   { name: 'Adjust for exact weight', text: 'Move the slider to your pet\'s current weight in kilograms. It is vital to use a recently measured weight for an accurate energy requirement calculation.' },
   { name: 'Define their activity level', text: 'Choose between low, normal or high activity based on the actual daily exercise and energy levels your four-legged companion exhibits.' },
   { name: 'Enter the food calories per kg', text: 'Look on the pet food packaging for the exact kcal/kg value so the final ration in grams is as precise as possible for optimal health.' },
-];
-
-const bibliography: PetRationLocaleContent['bibliography'] = [
-  { name: 'WSAVA: Nutrition Toolkit and Calorie Recommendations', url: 'https://wsava.org/global-guidelines/global-nutrition-guidelines/' },
-  { name: 'FEDIAF: Nutritional Guidelines for Complete and Complementary Pet Food', url: 'https://fediaf.org/self-regulation/nutrition.html' },
 ];
 
 const seo: PetRationLocaleContent['seo'] = [
@@ -172,8 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Frequently Asked Questions',
-  bibliographyTitle: 'Bibliography',
+  faqTitle: 'Frequently Asked Questions': 'Bibliography',
   slug,
   title,
   description,
