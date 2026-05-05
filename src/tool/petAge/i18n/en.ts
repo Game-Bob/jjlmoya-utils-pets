@@ -176,8 +176,8 @@ export const content: PetAgeLocaleContent = {
   description,
   ui,
   seo,
-  faqTitle: 'Frequently Asked Questions',
-  faq: 'Bibliography',
+  
+  faq,
   bibliography,
   howTo,
   schemas,

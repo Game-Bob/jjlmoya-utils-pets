@@ -1,14 +1,10 @@
 ---
 import { Bibliography as SharedBibliography } from '@jjlmoya/utils-shared';
-import { petAge } from './index';
-import type { KnownLocale } from '../../types';
+import { bibliography } from './bibliography';
 
 interface Props {
   locale?: KnownLocale;
 }
-
-const { locale = 'es' } = Astro.props;
-const content = await petAge.i18n[locale]?.();
 ---
 
-{content && <SharedBibliography links={content.bibliography} />}
+<SharedBibliography links={bibliography} />

@@ -131,8 +131,8 @@ describe('Tool Validation Suite', () => {
         const content = fs.readFileSync(componentPath, 'utf-8');
 
         expect(content).toContain("import { Bibliography as SharedBibliography } from '@jjlmoya/utils-shared'");
-        expect(content).toContain(`import { ${toolVarName} } from './index'`);
-        expect(content).toContain('<SharedBibliography links={content.bibliography} />');
+        expect(content).toContain("import { bibliography } from './bibliography'");
+        expect(content).toContain('<SharedBibliography links={bibliography} />');
       });
     });
   });

@@ -168,7 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'よく ある 質問 ( FAQ )': '関連 参考文献',
+  
   slug,
   title,
   description,

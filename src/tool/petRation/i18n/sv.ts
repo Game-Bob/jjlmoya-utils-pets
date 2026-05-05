@@ -168,7 +168,7 @@ const schemas: PetRationLocaleContent['schemas'] = [
 ];
 
 export const content: PetRationLocaleContent = {
-  faqTitle: 'Vanliga Frågor': 'Bibliografi',
+  
   slug,
   title,
   description,
