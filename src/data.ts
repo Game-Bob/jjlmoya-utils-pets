@@ -1,5 +1,3 @@
-export { petAge } from './tool/petAge';
-export { petRation } from './tool/petRation';
 export { petsCategory } from './category';
 
 export type { PetAgeUI, PetAgeLocaleContent } from './tool/petAge';
