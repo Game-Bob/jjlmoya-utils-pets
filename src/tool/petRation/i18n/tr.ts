@@ -82,16 +82,16 @@ const seo: PetRationLocaleContent['seo'] = [
   { type: 'title', text: 'Evcil Hayvanınızın Sağlığı İçin Günlük Mama Hesaplama Rehberi', level: 2 },
   {
     type: 'paragraph',
-    html: 'Bir köpeği veya kediyi doğru şekilde beslemek , sadece her sabah kasesini doldurmaktan çok daha fazlasıdır . Beslenme , evcil hayvanınızın sağlığının , uzun ömürlülüğünün ve duygusal refahının temel taşıdır . <strong>Evcil hayvan günlük mama hesaplayıcısı</strong> , modern veteriner hekimliğinde en sık karşılaşılan iki sorunu önlemek isteyen her sorumlu sahip için vazgeçilmez bir araçtır : besin eksikliği ve gelişmiş ülkelerdeki hayvanların yarısından fazlasını etkileyen obezite .',
+    html: 'Bir köpeği veya kediyi doğru şekilde beslemek , sadece her sabah kasesini doldurmaktan çok daha fazlasıdır . Beslenme , evcil hayvanınızın sağlığının , uzun ömürlülüğünün ve duygusal refahının temel taşıdır . <strong>Evcil hayvan günlük mama hesaplayıcısı</strong> , modern veteriner hekimliğinde en sık karşılaşılan iki sorunu önlemek isteyen her sorumlu sahip için vazgeçilmez bir araçtır: besin eksikliği ve gelişmiş ülkelerdeki hayvanların yarısından fazlasını etkileyen obezite .',
   },
   {
     type: 'paragraph',
     html: 'Bu kılavuzda , kalori hesaplamalarının arkasındaki bilimsel temelleri , mama etiketlerini nasıl yorumlayacağınızı ve yaş , aktivite seviyesi gibi faktörlerin günlük mama miktarını nasıl etkilediğini inceleyeceğiz . Günlük porsiyondaki küçük ayarlamaların diyabet , eklem sorunları ve kalp sağlığı üzerindeki büyük etkilerini anlamanıza yardımcı olacağız . Evcil hayvanınızın ideal kilosunu koruması , yaşam kalitesini doğrudan artıran en önemli faktördür .',
   },
-  { type: 'title', text: 'Hesaplamaların Arkasındaki Bilim : RER ve DER İlişkisi', level: 3 },
+  { type: 'title', text: 'Hesaplamaların Arkasındaki Bilim: RER ve DER İlişkisi', level: 3 },
   {
     type: 'paragraph',
-    html: 'Bir hayvanın günde ne kadar yemesi gerektiğini hassas bir şekilde belirlemek için veteriner hekimler ve beslenme uzmanları iki ana kavram kullanır : RER ve DER . Bu kısaltmalar sırasıyla Dinlenme Enerji Gereksinimi ve Günlük Enerji Gereksinimi anlamına gelir . Bunların birbiriyle nasıl etkileşime girdiğini anlamak , kilonun güvenli ve kontrollü bir şekilde yönetilmesi için kritik bir adımdır .',
+    html: 'Bir hayvanın günde ne kadar yemesi gerektiğini hassas bir şekilde belirlemek için veteriner hekimler ve beslenme uzmanları iki ana kavram kullanır: RER ve DER . Bu kısaltmalar sırasıyla Dinlenme Enerji Gereksinimi ve Günlük Enerji Gereksinimi anlamına gelir . Bunların birbiriyle nasıl etkileşime girdiğini anlamak , kilonun güvenli ve kontrollü bir şekilde yönetilmesi için kritik bir adımdır .',
   },
   {
     type: 'paragraph',

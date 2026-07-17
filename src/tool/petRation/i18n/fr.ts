@@ -36,7 +36,7 @@ const ui: PetRationUI = {
   kcalUnit: 'kcal/jour',
   statusPuppy: 'Phase de croissance rapide',
   statusSenior: 'Métabolisme mature',
-  statusLargeDog: 'Grande race : Soin articulaire',
+  statusLargeDog: 'Grande race: Soin articulaire',
   statusDefault: 'Poids équilibré',
 };
 
@@ -71,7 +71,7 @@ const seo: PetRationLocaleContent['seo'] = [
     type: 'summary',
     title: 'Principes Clés de la Nutrition Vétérinaire',
     items: [
-      'La formule RER est : 70 × (poids en kg)^0,75. C\'est la base scientifique de tout calcul calorique vétérinaire moderne.',
+      'La formule RER est: 70 × (poids en kg)^0,75. C\'est la base scientifique de tout calcul calorique vétérinaire moderne.',
       'Le DER multiplie le RER par le facteur de mode de vie spécifique de l\'animal pour fournir un besoin quotidien.',
       'Un chien castré a besoin de jusqu\'à 20 pour cent de calories en moins qu\'un chien entier en raison des changements hormonaux.',
       'L\'obésité touche 50 pour cent des animaux de compagnie aujourd\'hui et réduit considérablement leur espérance et leur qualité de vida.',
@@ -82,16 +82,16 @@ const seo: PetRationLocaleContent['seo'] = [
   { type: 'title', text: 'Guide Complet pour Calculer la Ration Journalière de votre Animal pour une Santé Optimale', level: 2 },
   {
     type: 'paragraph',
-    html: 'Nourrir correctement un chien ou un chat n\'est pas seulement une question de remplir son bol chaque matin. La nutrition est le pilier fondamental de sa santé, de sa longévité et de son bien-être émotionnel. Un <strong>calculateur de ration journalière pour animaux</strong> est un outil essentiel pour tout propriétaire responsable qui souhaite éviter les deux problèmes les plus courants de la nutrition vétérinaire actuelle : la malnutrition par manque de nutriments et, surtout, l\'obésité, qui touche plus de 50 % des animaux de compagnie dans les pays développés.',
+    html: 'Nourrir correctement un chien ou un chat n\'est pas seulement une question de remplir son bol chaque matin. La nutrition est le pilier fondamental de sa santé, de sa longévité et de son bien-être émotionnel. Un <strong>calculateur de ration journalière pour animaux</strong> est un outil essentiel pour tout propriétaire responsable qui souhaite éviter les deux problèmes les plus courants de la nutrition vétérinaire actuelle: la malnutrition par manque de nutriments et, surtout, l\'obésité, qui touche plus de 50 % des animaux de compagnie dans les pays développés.',
   },
   {
     type: 'paragraph',
     html: 'Dans ce guide, nous explorerons les fondements scientifiques des calculs caloriques, comment interpréter les étiquettes des aliments et comment des facteurs tels que l\'âge, le niveau d\'activité physique et le statut physiologique influencent la quantité de nourriture dont votre compagnon a besoin chaque jour. Nous vous aiderons à comprendre comment de petits ajustements dans la ration journalière peuvent faire une énorme différence dans la prévention du diabète, des problèmes articulaires et de la santé cardiaque de votre animal.',
   },
-  { type: 'title', text: 'La Science derrière les Calculs : Comprendre le RER et le DER', level: 3 },
+  { type: 'title', text: 'La Science derrière les Calculs: Comprendre le RER et le DER', level: 3 },
   {
     type: 'paragraph',
-    html: 'Pour déterminer exactement combien un animal doit manger chaque jour, les vétérinaires et les nutritionnistes utilisent deux concepts clés : le RER et le DER. Ces acronymes signifient respectivement Besoin Énergétique au Repos et Besoin Énergétique Quotidien. Comprendre comment ils interagissent est crucial pour gérer le poids et le bien-être de votre animal de manière sûre et contrôlée.',
+    html: 'Pour déterminer exactement combien un animal doit manger chaque jour, les vétérinaires et les nutritionnistes utilisent deux concepts clés: le RER et le DER. Ces acronymes signifient respectivement Besoin Énergétique au Repos et Besoin Énergétique Quotidien. Comprendre comment ils interagissent est crucial pour gérer le poids et le bien-être de votre animal de manière sûre et contrôlée.',
   },
   {
     type: 'paragraph',
@@ -100,7 +100,7 @@ const seo: PetRationLocaleContent['seo'] = [
   {
     type: 'stats',
     items: [
-      { label: 'RER : Énergie au repos', value: '70 × kg^0,75' },
+      { label: 'RER: Énergie au repos', value: '70 × kg^0,75' },
       { label: 'Facteur chiot', value: 'de x2.5 à x3.5' },
       { label: 'Facteur adulte actif', value: 'de x1.6 à x2.0' },
       { label: 'Facteur senior', value: 'de x1.0 à x1.4' },

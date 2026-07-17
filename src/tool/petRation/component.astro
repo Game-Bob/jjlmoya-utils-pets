@@ -50,7 +50,7 @@ const { ui } = Astro.props;
 
       <div class="input-item">
         <div class="label-row-v2">
-          <label class="item-label">{ui.labelWeight}</label>
+          <label class="item-label" for="weightRange">{ui.labelWeight}</label>
           <div class="val-badge"><span id="weightDisplay">10</span> kg</div>
         </div>
         <input type="range" id="weightRange" min="1" max="85" step="0.5" value="10" class="range-v2" />
@@ -86,7 +86,7 @@ const { ui } = Astro.props;
         </div>
         <div class="custom-ratio-link" id="showManualSlider">{ui.manualAdjust}</div>
         <div class="manual-slider-box" id="manualSliderBox" style="display: none;">
-          <input type="range" id="dietRatioRange" min="0" max="100" step="5" value="0" class="range-v2 ratio-slider" />
+          <input type="range" id="dietRatioRange" min="0" max="100" step="5" value="0" class="range-v2 ratio-slider" aria-label={ui.wetPercentLabel} />
           <div class="ratio-labels">
             <span>{ui.wetPercentLabel}</span>
             <strong id="ratioValDisplay">0%</strong>

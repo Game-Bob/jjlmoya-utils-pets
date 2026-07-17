@@ -88,7 +88,7 @@ const seo: PetRationLocaleContent['seo'] = [
     type: 'paragraph',
     html: '본 가이드 에서는 칼로리 계산 뒤에 숨겨진 과학적 근거 , 사료 라벨 을 해석 하는 방법 , 그리고 연령 , 활동 수준 , 생리학적 상태 가 매일 필요로 하는 사료 양 에 어떻게 구체적 으로 영향 을 미치 는지 설명 합니다 . 일일 급여량 의 작은 조절 이 당뇨병 , 관절 문제 , 심장 건강 을 예방 하는 데 얼마나 큰 차이 를 만드는지 이해 하도록 도와 드립니다 .',
   },
-  { type: 'title', text: '계산 뒤 의 과학 : RER 과 DER 의 연관성 이해 하기', level: 3 },
+  { type: 'title', text: '계산 뒤 의 과학: RER 과 DER 의 연관성 이해 하기', level: 3 },
   {
     type: 'paragraph',
     html: '동물 이 매일 얼마나 먹어야 하는지 정확히 결정 하기 위해 수의사 와 영양학자 들 은 두 가지 핵심 개념 인 RER 과 DER 을 사용 합니다 . 이러한 약어 는 각각 Resting Energy Requirement ( 휴식기 에너지 요구량 ) 와 Daily Energy Requirement ( 일일 에너지 요구량 ) 를 의미 합니다 . 이들 의 상호작용 을 이해 하는 것 은 반려동물 의 체중 과 건강 을 안전 하고 통제 된 방식 으로 관리 하는 데 중요 합니다 .',

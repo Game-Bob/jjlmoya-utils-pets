@@ -72,10 +72,10 @@ const seo: PetAgeLocaleContent['seo'] = [
     type: 'summary',
     title: 'Ce que vous devez savoir sur le vieillissement des animaux',
     items: [
-      'La "règle de 7" est un mythe : les chiens mûrissent les 2 premières années.',
+      'La "règle de 7" est un mythe: les chiens mûrissent les 2 premières années.',
       'Un chien de 1 an équivaut à 15 ans humains ; un chien de 2 ans équivaut à 24 ans humains.',
       'Les grands chiens vieillissent plus vite que les petits après 2 ans.',
-      'Les chats suivent une courbe plus linéaire : l\'année de chat équivaut à 4 ans humains après 2 ans.',
+      'Les chats suivent une courbe plus linéaire: l\'année de chat équivaut à 4 ans humains après 2 ans.',
       'L\'âge biologique est un meilleur prédicteur des besoins de santé que l\'âge chronologique.',
       'Des dépistages réguliers peuvent aider à détecter les problèmes liés à l\'âge.',
     ],
