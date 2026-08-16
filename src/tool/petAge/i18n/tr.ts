@@ -139,10 +139,6 @@ const seo: PetAgeLocaleContent['seo'] = [
     title: 'Yaşlanma Üzerine Veteriner Önerisi',
     html: 'Hesaplanan yaş, geniş veri setlerine dayanan ortalama bir biyolojik tahmindir. Spesifik ırk, genetik, diyet ve yaşam tarzı gibi faktörlerin tümü evcil hayvanınızın gerçek yaşlanma hızı üzerinde önemli bir etkiye sahip olabilir. Bazı hayvanlar gençliklerini onlu yaşlarının sonuna kadar korurken, diğerleri daha erken ek bakıma ihtiyaç duyabilir. Kişiselleştirilmiş tavsiyeler ve kapsamlı bir sağlık değerlendirmesi için her zaman dostunuzu en iyi tanıyan veteriner hekiminize danışın.',
   },
-  {
-    type: 'paragraph',
-    html: 'Sonuç olarak, evcil hayvanınızın yaşını bilimsel yöntemlerle takip etmek sadece merak gidermek değil, aynı zamanda onun sağlığını proaktif bir şekilde yönetmek anlamına gelir. Yaşa uygun beslenme, egzersiz düzeni ve sağlık kontrolleri ile sevimli dostunuzun ömrünü uzatabilir ve onunla geçirdiğiniz zamanın kalitesini artırabilirsiniz.',
-  },
 ];
 
 const schemas: PetAgeLocaleContent['schemas'] = [
