@@ -1,8 +1,10 @@
 import type { ToolDefinition } from '../../types';
-import { petAge } from './entry';
+import { petGestation } from './entry';
+
 export * from './entry';
-export const PET_AGE_TOOL: ToolDefinition = {
-  entry: petAge,
+
+export const PET_GESTATION_TOOL: ToolDefinition = {
+  entry: petGestation,
   Component: () => import('./component.astro'),
   SEOComponent: () => import('./seo.astro'),
   BibliographyComponent: () => import('./bibliography.astro'),

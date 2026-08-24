@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import * as DATA from '../data';
 
-const TOOLS = [DATA.petAge, DATA.petRation];
+const TOOLS = [DATA.petAge, DATA.petRation, DATA.petGestation];
 
 describe('FAQ Content Validation', () => {
   TOOLS.forEach((entry) => {

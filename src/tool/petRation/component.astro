@@ -120,7 +120,7 @@ const { ui } = Astro.props;
 <script>
   import { getFormState, setRadioValue, setMaxWeightRange, getStoredConfig, applyPresetLogic, updateDisplay } from "./handlers";
 
-  function setupRationListeners(calculate: () => void, weightRange: HTMLInputElement, ratioRange: HTMLInputElement) {
+  function setupRationListeners(calculate: () => void, _weightRange: HTMLInputElement, ratioRange: HTMLInputElement) {
     document.getElementById("calcWrapper")?.addEventListener("input", calculate);
     document.getElementById("calcWrapper")?.addEventListener("change", calculate);
 

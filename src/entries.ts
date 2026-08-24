@@ -5,4 +5,5 @@ export type { PetRationUI, PetRationLocaleContent } from './tool/petRation/entry
 export { petsCategory } from './category';
 import { petAge } from './tool/petAge/entry';
 import { petRation } from './tool/petRation/entry';
-export const ALL_ENTRIES = [petAge, petRation];
+import { petGestation } from './tool/petGestation/entry';
+export const ALL_ENTRIES = [petAge, petRation, petGestation];

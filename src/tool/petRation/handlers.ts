@@ -124,7 +124,7 @@ function updateStateAndUrl(state: RationState): void {
   url.searchParams.set("s", state.species);
   url.searchParams.set("st", state.stage);
   url.searchParams.set("a", state.activity);
-  url.searchParams.set("r", document.getElementById("dietRatioRange")?.value || "0");
+  url.searchParams.set("r", (document.getElementById("dietRatioRange") as HTMLInputElement)?.value || "0");
   window.history.replaceState({}, "", url.toString());
 }
 

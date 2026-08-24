@@ -1,0 +1,68 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { PetGestationUI } from './index';
+
+interface Props {
+  ui: PetGestationUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="pet-gestation-tool" data-gestation-root>
+  <script is:inline type="application/json" data-gestation-ui set:html={JSON.stringify(ui)}></script>
+  <div class="gestation-tool-intro">
+    <p class="gestation-journey">{ui.journeyHint}</p>
+    <p class="gestation-instant-hint">{ui.instantHint}</p>
+  </div>
+  <div class="gestation-form">
+    <fieldset class="gestation-species-fieldset">
+      <legend>{ui.speciesLegend}</legend>
+      <div class="gestation-species-grid">
+        <button type="button" data-species="dog" aria-pressed="true"><Icon name="mdi:dog-side" /><span>{ui.speciesDog}</span><small>{ui.speciesDogMeta}</small></button>
+        <button type="button" data-species="cat" aria-pressed="false"><Icon name="mdi:cat" /><span>{ui.speciesCat}</span><small>{ui.speciesCatMeta}</small></button>
+        <button type="button" data-species="rabbit" aria-pressed="false"><Icon name="mdi:rabbit" /><span>{ui.speciesRabbit}</span><small>{ui.speciesRabbitMeta}</small></button>
+        <button type="button" data-species="ferret" aria-pressed="false"><Icon name="mdi:rodent" /><span>{ui.speciesFerret}</span><small>{ui.speciesFerretMeta}</small></button>
+      </div>
+    </fieldset>
+    <div class="gestation-date-block">
+      <label for="gestation-mating-date">{ui.matingDateLabel}</label>
+      <input id="gestation-mating-date" data-mating-date type="date" required />
+      <span>{ui.matingDateHint}</span>
+      <div class="gestation-presets" aria-label="Quick dates">
+        <button type="button" data-offset="0">{ui.presetToday}</button>
+        <button type="button" data-offset="-7">{ui.presetWeekAgo}</button>
+        <button type="button" data-offset="-14">{ui.presetFortnightAgo}</button>
+      </div>
+    </div>
+    <p class="gestation-error" data-error role="alert"></p>
+  </div>
+  <section class="gestation-result" data-result aria-live="polite">
+    <div class="gestation-result-ribbon">{ui.sampleLabel}</div>
+    <div class="gestation-scene" data-scene>
+      <div class="gestation-scene-placeholder">{ui.resultEmpty}</div>
+    </div>
+    <div class="gestation-result-copy">
+      <p class="gestation-eyebrow">{ui.resultEyebrow}</p>
+      <p class="gestation-status" data-status></p>
+      <p class="gestation-status-detail" data-status-detail></p>
+      <div class="gestation-facts">
+        <div><span>{ui.dueDateLabel}</span><strong data-due-date></strong></div>
+        <div><span>{ui.windowLabel}</span><strong data-window-date></strong></div>
+        <div><span>{ui.remainingLabel}</span><strong data-remaining></strong></div>
+        <div><span>{ui.elapsedLabel}</span><strong data-elapsed></strong></div>
+      </div>
+    </div>
+  </section>
+  <aside class="gestation-note">
+    <strong>{ui.noteTitle}</strong>
+    <span>{ui.noteText}</span>
+  </aside>
+  <p class="gestation-source-note"><strong>{ui.sourceTitle}</strong> {ui.sourceText}</p>
+</div>
+
+<script>
+  import { initGestationController } from './controller';
+  const root = document.querySelector<HTMLElement>('[data-gestation-root]');
+  if (root) initGestationController(root);
+</script>

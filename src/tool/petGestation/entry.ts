@@ -1,16 +1,21 @@
-import type { PetCategoryEntry } from '../types';
-import { petAge } from '../tool/petAge/entry';
-import { petRation } from '../tool/petRation/entry';
-import { petGestation } from '../tool/petGestation/entry';
+import type { PetToolEntry, ToolLocaleContent } from '../../types';
+import type { PetGestationUI } from './ui';
 
-export const petsCategory: PetCategoryEntry = {
-  icon: 'mdi:paw',
-  tools: [petAge, petRation, petGestation],
+export type { PetGestationUI } from './ui';
+
+export type PetGestationLocaleContent = ToolLocaleContent<PetGestationUI>;
+
+export const petGestation: PetToolEntry<PetGestationUI> = {
+  id: 'pet-gestation',
+  icons: {
+    bg: 'mdi:paw',
+    fg: 'mdi:calendar-heart',
+  },
   i18n: {
+    de: () => import('./i18n/de').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),
     es: () => import('./i18n/es').then((m) => m.content),
     fr: () => import('./i18n/fr').then((m) => m.content),
-    de: () => import('./i18n/de').then((m) => m.content),
     id: () => import('./i18n/id').then((m) => m.content),
     it: () => import('./i18n/it').then((m) => m.content),
     ja: () => import('./i18n/ja').then((m) => m.content),
