@@ -15,7 +15,8 @@ export async function getStaticPaths() {
   const paths = [];
 
   for (const { entry, Component: lazyComp } of ALL_TOOLS) {
-    const { default: Component } = await lazyComp();
+    const componentLoader = lazyComp as () => Promise<{ default: ToolComponent }>;
+    const { default: Component } = await componentLoader();
     const localeEntries = Object.entries(entry.i18n) as [
       KnownLocale,
       () => Promise<ToolLocaleContent>,
@@ -71,7 +72,7 @@ interface NavItem {
 }
 
 interface Props {
-  Component: unknown;
+  Component: ToolComponent;
   locale: KnownLocale;
   content: ToolLocaleContent;
   localeUrls: Partial<Record<KnownLocale, string>>;
@@ -79,11 +80,14 @@ interface Props {
   englishSlug: string;
 }
 
-const { Component, locale, content, localeUrls, allToolsNav, englishSlug } = Astro.props;
+type ToolComponent = (props: { ui: Record<string, string> }) => unknown;
+
+const { Component, locale, content, localeUrls, allToolsNav, englishSlug } = Astro.props as Props;
 
 const cssFiles = import.meta.glob("../../tool/*/*.css", { query: "?raw", import: "default" });
 const cssKey = Object.keys(cssFiles).find((k) => k.endsWith(`/${englishSlug}.css`));
-const toolCss = cssKey ? await cssFiles[cssKey]() as string : "";
+const cssLoader = cssKey ? cssFiles[cssKey] : undefined;
+const toolCss = cssLoader ? await cssLoader() as string : "";
 
 const seoContent: UtilitySEOContent = { locale, sections: content.seo ?? [] };
 
@@ -132,7 +136,7 @@ const titleBase = words.slice(1).join(" ") || "";
     </section>
 
     <section class="section-faq">
-      <FAQSection items={content.faq} inLanguage={locale} title={content.faqTitle} />
+      <FAQSection items={content.faq} />
     </section>
 
     <section class="section-bibliography">
@@ -146,17 +150,22 @@ const titleBase = words.slice(1).join(" ") || "";
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    min-width: 0;
+    width: 100%;
   }
 
   .section-tool {
     max-width: 1200px;
     margin: 0 auto;
+    min-width: 0;
     width: 100%;
   }
 
   .section-seo,
   .section-faq,
   .section-bibliography {
+    min-width: 0;
+    width: 100%;
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
   }

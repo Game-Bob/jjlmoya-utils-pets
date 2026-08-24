@@ -1,0 +1,53 @@
+---
+import './pet-food-toxicity-checker.css';
+import { getFoodEvaluation } from './logic';
+import { renderFoodMenu, renderResult, renderScene, renderSpeciesMenu } from './dom-views';
+import { petToxicity } from './entry';
+
+const content = await petToxicity.i18n.en?.();
+if (!content) return null;
+const { ui } = content;
+const defaultSpecies = 'dog';
+const defaultFood = 'chocolate';
+const evaluation = getFoodEvaluation(defaultSpecies, defaultFood);
+const config = { ui, defaultSpecies, defaultFood };
+---
+
+<section class="pet-toxicity" data-pet-toxicity-root aria-label={content.title}>
+  <div class="pet-toxicity-journey">
+    <span class="pet-toxicity-journey-mark" aria-hidden="true">!</span>
+    <p>{ui.journeyHint}</p>
+  </div>
+  <div class="pet-toxicity-workbench">
+    <div class="pet-toxicity-controls">
+      <div class="pet-toxicity-control">
+        <span class="pet-toxicity-label">{ui.speciesLabel}</span>
+        <div class="pet-toxicity-select">
+          <button class="pet-toxicity-select-trigger" type="button" data-menu-trigger data-species-trigger aria-haspopup="listbox" aria-expanded="false"><span data-trigger-value>{ui.speciesDog}</span><span class="pet-toxicity-chevron" aria-hidden="true"></span></button>
+          <div class="pet-toxicity-menu" data-menu data-species-menu role="listbox" hidden>{renderSpeciesMenu(defaultSpecies, ui)}</div>
+        </div>
+      </div>
+      <div class="pet-toxicity-control">
+        <span class="pet-toxicity-label">{ui.foodLabel}</span>
+        <div class="pet-toxicity-select">
+          <button class="pet-toxicity-select-trigger" type="button" data-menu-trigger data-food-trigger aria-haspopup="listbox" aria-expanded="false"><span data-trigger-value>{getFoodEvaluation(defaultSpecies, defaultFood)?.food.name ?? ui.foodPlaceholder}</span><span class="pet-toxicity-chevron" aria-hidden="true"></span></button>
+          <div class="pet-toxicity-menu" data-menu data-food-menu role="listbox" hidden>{renderFoodMenu([{ id: 'chocolate', name: 'Chocolate and caffeine', detail: 'Chocolate, coffee, tea, energy drinks' }], defaultFood)}</div>
+        </div>
+        <small class="pet-toxicity-hint">{ui.foodMenuHint}</small>
+      </div>
+    </div>
+    <div class="pet-toxicity-visual" data-scene>{renderScene(defaultSpecies, evaluation, ui)}</div>
+  </div>
+  <div class="pet-toxicity-result" data-result aria-live="polite">{renderResult(evaluation, ui)}</div>
+  <div class="pet-toxicity-emergency"><strong>{ui.emergencyTitle}</strong><span>{ui.emergencyText}</span></div>
+  <div class="pet-toxicity-sources"><span class="pet-toxicity-label">{ui.sourceLabel}</span><p>{ui.sourceText}</p></div>
+</section>
+
+<script is:inline type="application/json" data-pet-toxicity-config set:html={JSON.stringify(config)}></script>
+<script>
+  import { mountPetToxicity } from './controller';
+
+  const root = document.querySelector<HTMLElement>('[data-pet-toxicity-root]');
+  const configElement = document.querySelector<HTMLScriptElement>('[data-pet-toxicity-config]');
+  if (root && configElement?.textContent) mountPetToxicity(root, JSON.parse(configElement.textContent));
+</script>

@@ -2,10 +2,11 @@ import type { PetCategoryEntry } from '../types';
 import { petAge } from '../tool/petAge/entry';
 import { petRation } from '../tool/petRation/entry';
 import { petGestation } from '../tool/petGestation/entry';
+import { petToxicity } from '../tool/petToxicity/entry';
 
 export const petsCategory: PetCategoryEntry = {
   icon: 'mdi:paw',
-  tools: [petAge, petRation, petGestation],
+  tools: [petAge, petRation, petGestation, petToxicity],
   i18n: {
     en: () => import('./i18n/en').then((m) => m.content),
     es: () => import('./i18n/es').then((m) => m.content),

@@ -1,6 +1,7 @@
 import { bibliography } from '../bibliography';
 import type { FAQPage, HowTo, SoftwareApplication, WithContext } from 'schema-dts';
 import type { PetGestationLocaleContent } from '../index';
+import type { PetGestationUI } from '../ui';
 
 const slug = 'pet-gestation-calculator';
 const title = 'Pet Gestation Calculator';

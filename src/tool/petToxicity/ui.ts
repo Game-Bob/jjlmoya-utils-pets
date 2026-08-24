@@ -1,0 +1,33 @@
+export interface PetToxicityUI {
+  [key: string]: string;
+  journeyHint: string;
+  speciesLabel: string;
+  speciesDog: string;
+  speciesCat: string;
+  speciesDogMeta: string;
+  speciesCatMeta: string;
+  foodLabel: string;
+  foodPlaceholder: string;
+  foodMenuHint: string;
+  resultEyebrow: string;
+  resultEmpty: string;
+  sceneLabel: string;
+  sceneReady: string;
+  sceneSelected: string;
+  riskCritical: string;
+  riskHigh: string;
+  riskCaution: string;
+  riskUnknown: string;
+  riskLabel: string;
+  whyLabel: string;
+  signsLabel: string;
+  actionLabel: string;
+  callVetLabel: string;
+  callVetText: string;
+  sourceLabel: string;
+  sourceText: string;
+  emergencyTitle: string;
+  emergencyText: string;
+  openMenu: string;
+  closeMenu: string;
+}
