@@ -1,0 +1,103 @@
+---
+import './pet-water-intake.css';
+import { calculatePetWaterIntake } from './logic';
+import { renderResult, renderScene } from './dom-views';
+import { petWaterIntake } from './entry';
+
+const content = await petWaterIntake.i18n.en?.();
+if (!content) return null;
+const { ui } = content;
+
+const defaultSpecies = 'dog';
+const defaultWeight = 10;
+const defaultDiet = 'dry';
+const defaultActivity = 'typical';
+const defaultHeat = 'normal';
+
+const initialRes = calculatePetWaterIntake({
+  species: defaultSpecies,
+  weightKg: defaultWeight,
+  diet: defaultDiet,
+  activity: defaultActivity,
+  heat: defaultHeat,
+});
+
+const config = { ui };
+---
+
+<section class="pet-water-intake" data-pet-water-root aria-label={content.title}>
+  <div class="pet-water-journey">
+    <span class="pet-water-journey-mark" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+      </svg>
+    </span>
+    <p>{ui.journeyHint}</p>
+  </div>
+  <div class="pet-water-workbench">
+    <form class="pet-water-controls" data-water-form onsubmit="return false;">
+      <div class="pet-water-control">
+        <span class="pet-water-label">{ui.speciesLegend}</span>
+        <div class="pet-water-radio-group">
+          <label>
+            <input type="radio" name="species" value="dog" checked />
+            {ui.speciesDog}
+          </label>
+          <label>
+            <input type="radio" name="species" value="cat" />
+            {ui.speciesCat}
+          </label>
+        </div>
+      </div>
+      <div class="pet-water-control">
+        <label for="pet-water-weight-input" class="pet-water-label">{ui.weightLabel} ({ui.weightKg})</label>
+        <input
+          id="pet-water-weight-input"
+          type="number"
+          name="weight"
+          class="pet-water-input"
+          value={defaultWeight}
+          min="0.5"
+          max="100"
+          step="0.5"
+        />
+        <small>{ui.weightHint}</small>
+      </div>
+      <div class="pet-water-control">
+        <label for="pet-water-diet-select" class="pet-water-label">{ui.dietLegend}</label>
+        <select id="pet-water-diet-select" name="diet" class="pet-water-select">
+          <option value="dry" selected>{ui.dietDry}</option>
+          <option value="mixed">{ui.dietMixed}</option>
+          <option value="wet">{ui.dietWet}</option>
+        </select>
+      </div>
+      <div class="pet-water-control">
+        <label for="pet-water-activity-select" class="pet-water-label">{ui.activityLegend}</label>
+        <select id="pet-water-activity-select" name="activity" class="pet-water-select">
+          <option value="calm">{ui.activityCalm}</option>
+          <option value="typical" selected>{ui.activityTypical}</option>
+          <option value="active">{ui.activityActive}</option>
+        </select>
+      </div>
+      <div class="pet-water-control">
+        <label for="pet-water-heat-select" class="pet-water-label">{ui.heatLegend}</label>
+        <select id="pet-water-heat-select" name="heat" class="pet-water-select">
+          <option value="normal" selected>{ui.heatNormal}</option>
+          <option value="warm">{ui.heatWarm}</option>
+          <option value="hot">{ui.heatHot}</option>
+        </select>
+      </div>
+    </form>
+    <div class="pet-water-visual" data-scene set:html={renderScene(initialRes, ui)}></div>
+  </div>
+  <div class="pet-water-result" data-result aria-live="polite" set:html={renderResult(initialRes, ui)}></div>
+</section>
+
+<script is:inline type="application/json" data-pet-water-config set:html={JSON.stringify(config)}></script>
+<script>
+  import { mountPetWaterIntake } from './controller';
+
+  const root = document.querySelector<HTMLElement>('[data-pet-water-root]');
+  const configElement = document.querySelector<HTMLScriptElement>('[data-pet-water-config]');
+  if (root && configElement?.textContent) mountPetWaterIntake(root, JSON.parse(configElement.textContent));
+</script>
