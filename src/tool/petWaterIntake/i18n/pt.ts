@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "Dieta de Comida Húmida",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "A comida húmida fornece humidade substancial. É normal beberem menos da taça, mas a água fresca deve estar sempre disponível."
   },
   {

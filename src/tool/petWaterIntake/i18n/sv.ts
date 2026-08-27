@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "Våtfoderdiet",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "Våtfoder ger betydande fukt. Det är normalt att djur på våtfoder dricker mindre ur skålen, men färskt vatten måste alltid finnas."
   },
   {

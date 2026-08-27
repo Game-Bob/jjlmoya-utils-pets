@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "Рацион на влажном корме",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "Консервированный корм дает много влаги. То, что животные пьют меньше из миски, абсолютно нормально."
   },
   {

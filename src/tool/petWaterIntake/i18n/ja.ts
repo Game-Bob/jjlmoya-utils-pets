@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "ウェットフード主食の場合",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "食 事 か ら 十 分 な 水 分 が 得 ら れ る た め 、 ボ ウ ル か ら 飲 む 量 が 少 な く て も 心 配 い り ま せ ん 。 た だ し 、 夏 場 や 運 動 後 は い つ で も 水 が 飲 め る よ う に し て お き ま し ょ う 。"
   },
   {

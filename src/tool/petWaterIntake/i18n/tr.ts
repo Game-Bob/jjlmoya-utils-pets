@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "Yaş Konserve Mama Diyeti",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "Yaş mama önemli miktarda nem sağlar. Kaptan daha az içmeleri normaldir ancak taze su daima hazır olmalıdır."
   },
   {

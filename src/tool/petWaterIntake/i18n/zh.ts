@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "湿粮喂养",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "湿 粮 能 提 供 丰 富 的 水 分 。 即 使 宠 物 去 水 碗 喝 水 较 少 也 是 正 常 的 ， 但 仍 需 保 证 随 时 有 水 。"
   },
   {

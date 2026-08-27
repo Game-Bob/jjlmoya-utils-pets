@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "Natvoeding",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "Blikvoer zorgt voor uitstekende hydratatie. Het is normaal dat het dier minder uit de bak drinkt."
   },
   {

@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "Diete a Cibo Umido in Scatola",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "Le diete con cibo umido forniscono una notevole umidità alimentare. Sebbene gli animali che mangiano cibo in scatola bevano naturalmente meno dalle ciotole, l'acqua fresca deve rimanere accessibile."
   },
   {

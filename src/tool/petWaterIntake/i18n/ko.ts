@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "습식 사료 위주 급여시",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "식사 자체로 풍부한 수분이 공급되므로 물을 적게 마셔도 안심하셔도 됩니다. 다만 여름철이나 운동 후에는 항상 깨끗한 물을 마실 수 있도록 해주세요."
   },
   {

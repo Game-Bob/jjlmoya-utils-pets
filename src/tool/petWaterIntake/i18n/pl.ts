@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "Dieta Mokra (Puszki)",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "Mokra karma dostarcza znacznej wilgoci. Chociaż zwierzęta jedzące puszki piją mniej z miski, świeża woda musi być zawsze dostępna."
   },
   {

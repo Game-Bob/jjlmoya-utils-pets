@@ -181,7 +181,7 @@ const seo: PetWaterIntakeLocaleContent['seo'] = [
   {
     "type": "card",
     "title": "Diet Makanan Basah Kaleng",
-    "icon": "mdi:can",
+    "icon": "mdi:food-drumstick",
     "html": "Diet makanan basah memberikan kelembapan makanan yang signifikan. Meskipun hewan yang makan makanan kaleng secara alami akan minum lebih sedikit dari mangkuk, air segar harus tetap dapat diakses setiap saat."
   },
   {
