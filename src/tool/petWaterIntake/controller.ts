@@ -7,17 +7,22 @@ export interface PetWaterIntakeConfig {
   ui: PetWaterIntakeUI;
 }
 
+function parseFormString(data: FormData, key: string, fallback: string): string {
+  const val = data.get(key);
+  return typeof val === 'string' && val.length > 0 ? val : fallback;
+}
+
 function getWaterInput(form: HTMLFormElement): WaterCalculationInput | null {
   const data = new FormData(form);
-  const weightKg = parseFloat(String(data.get('weight') || '0'));
-  if (isNaN(weightKg) || weightKg <= 0 || weightKg > 100) return null;
+  const weightVal = parseFloat(parseFormString(data, 'weight', '0'));
+  if (isNaN(weightVal) || weightVal <= 0 || weightVal > 100) return null;
 
   return {
-    species: (data.get('species') || 'dog') as any,
-    weightKg,
-    diet: (data.get('diet') || 'dry') as any,
-    activity: (data.get('activity') || 'typical') as any,
-    heat: (data.get('heat') || 'normal') as any,
+    species: parseFormString(data, 'species', 'dog') as WaterCalculationInput['species'],
+    weightKg: weightVal,
+    diet: parseFormString(data, 'diet', 'dry') as WaterCalculationInput['diet'],
+    activity: parseFormString(data, 'activity', 'typical') as WaterCalculationInput['activity'],
+    heat: parseFormString(data, 'heat', 'normal') as WaterCalculationInput['heat'],
   };
 }
 
