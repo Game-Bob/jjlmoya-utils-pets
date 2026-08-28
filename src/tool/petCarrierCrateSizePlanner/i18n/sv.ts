@@ -131,12 +131,12 @@ const seo: PetCarrierCrateSizePlannerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Formlerna bygger på officiella IATA-regler för levande djur: inre längd kombinerar kroppslängd och halva armbågshöjden, bredd är dubbla bogbredden och höjd inkluderar stående höjd plus bäddens tjocklek.',
+    html: 'Formlerna bygger på officiella IATA-regler för levande djur: inre längd kombinerar kroppslängd och halva armbågshöjden, bredd är dubbla bogbredden och höjd inkluderar stående höjd plus bäddens tjocklek. Genom att använda dessa standardiserade mått minskas risken för obehag och stress under längre transporter avsevärt för både hund och katt.',
   },
   { type: 'title', text: 'Att tänka på vid flygresor och transport i fordon och bil', level: 2 },
   {
     type: 'paragraph',
-    html: 'En måttberäkning ersätter inte ett formellt godkännande från flygbolaget. Faktorer som flygplanstyp, ventilation från alla fyra sidor och säsong är avgörande för säkerheten och hälsan under resan och bör alltid verifieras i förväg.',
+    html: 'En måttberäkning ersätter inte ett formellt godkännande från flygbolaget. Faktorer som flygplanstyp, ventilation från alla fyra sidor och säsong är avgörande för säkerheten och hälsan under resan och bör alltid verifieras i förväg. Kontakta alltid flygbolaget god tid innan avresa för att få bekräftat vilka krav som gäller för just din transportbur.',
   },
   {
     type: 'tip',

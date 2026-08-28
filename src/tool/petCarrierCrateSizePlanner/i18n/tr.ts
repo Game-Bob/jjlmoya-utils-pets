@@ -131,17 +131,17 @@ const seo: PetCarrierCrateSizePlannerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Formüller IATA canlı hayvan taşıma kurallarına dayanır: iç uzunluk gövde uzunluğu ve dirsek yüksekliğinin yarısını birleştirir, genişlik omuzların iki katıdır ve yükseklik duruş yüksekliği artı minderi kapsar.',
+    html: 'Formüller IATA canlı hayvan taşıma kurallarına dayanır: iç uzunluk gövde uzunluğu ve dirsek yüksekliğinin yarısını birleştirir, genişlik omuzların iki katıdır ve yükseklik duruş yüksekliği artı minderi kapsar. Bu standartlaştırılmış ölçüm formülü, uzun seyahatlerde kedi veya köpeğinizin stres ve fiziksel rahatsızlık yaşamasını önler.',
   },
   { type: 'title', text: 'Uçak yolculuklarında dikkat edilecekler ve güvenlik kuralları', level: 2 },
   {
     type: 'paragraph',
-    html: 'Boyut tahmini resmi bir uçuş onayı yerine geçmez. Uçak tipi, dört taraflı havalandırma ve mevsimsel koşullar gibi faktörler güvenlik ve hayvan sağlığı için belirleyicidir ve önceden teyit edilmelidir.',
+    html: 'Boyut tahmini resmi bir uçuş onayı yerine geçmez. Uçak tipi, dört taraflı havalandırma ve mevsimsel koşullar gibi faktörler güvenlik ve hayvan sağlığı için belirleyicidir ve önceden teyit edilmelidir. Uçuştan makul bir süre önce ilgili havayolu firmasıyla iletişime geçerek taşıma çantası standartlarını doğrulatmanız tavsiye edilir.',
   },
   {
     type: 'tip',
     title: 'Pratik alan testi evde nasıl yapılır ve değerlendirilir',
-    html: 'Hayvanı sakin bir ortamda çantaya koyun ve hareketlerini birkaç dakika gözlemleyin. Sıkışık görünüyorsa veya dönmekte zorlanıyorsa bir üst boyutu tercih edin ve rahat etmesini sağlayın.',
+    html: 'Hayvanı sakin bir ortamda çantaya koyun ve hareketlerini birkaç dakika gözlemleyin. Sıkışık görünüyorsa veya dönmekte zorlanıyorsa bir üst boyutu tercih edin ve rahat etmesini sağlayın. Evcil hayvanınızın sağlığı her şeyden önce gelir.',
   },
 ];
 
