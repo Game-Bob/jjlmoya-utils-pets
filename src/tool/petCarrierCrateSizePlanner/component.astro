@@ -1,0 +1,89 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { PetCarrierCrateSizePlannerUI } from './index';
+
+interface Props {
+  ui: PetCarrierCrateSizePlannerUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="pet-carrier-crate-size-planner" data-carrier-root>
+  <script is:inline type="application/json" data-carrier-ui set:html={JSON.stringify(ui)}></script>
+  <header class="carrier-hero">
+    <div class="carrier-hero-copy">
+      <p class="carrier-kicker">{ui.heroEyebrow}</p>
+      <p class="carrier-journey">{ui.journeyHint}</p>
+    </div>
+    <div class="unit-switch" role="group" aria-label={ui.unitLegend}>
+      <span>{ui.unitLegend}</span>
+      <button type="button" data-unit="metric" aria-pressed="true">{ui.metricUnit}</button>
+      <button type="button" data-unit="imperial" aria-pressed="false">{ui.imperialUnit}</button>
+    </div>
+  </header>
+  <div class="carrier-workbench">
+    <div class="carrier-controls">
+      <div class="carrier-panel-heading">
+        <span class="carrier-step">01</span>
+        <div><p>{ui.speciesStep}</p><h2>{ui.speciesLegend}</h2></div>
+      </div>
+      <fieldset>
+        <legend>{ui.speciesLegend}</legend>
+        <div class="choice-row">
+          <button type="button" data-species="cat" aria-pressed="true"><Icon name="mdi:cat" /><span>{ui.speciesCat}</span></button>
+          <button type="button" data-species="dog" aria-pressed="false"><Icon name="mdi:dog-side" /><span>{ui.speciesDog}</span></button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>{ui.modeLegend}</legend>
+        <div class="choice-row mode-row">
+          <button type="button" data-mode="car" aria-pressed="true"><Icon name="mdi:car-side" /><span>{ui.modeCar}</span></button>
+          <button type="button" data-mode="air" aria-pressed="false"><Icon name="mdi:airplane" /><span>{ui.modeAir}</span></button>
+        </div>
+      </fieldset>
+      <fieldset class="measurements">
+        <legend>{ui.measurementsLegend}</legend>
+        <label><span>{ui.noseTailLabel}<small>{ui.noseTailHint}</small></span><input data-field="noseToTail" type="number" min="1" step="0.1" inputmode="decimal" /><b data-length-unit>{ui.cmUnit}</b></label>
+        <label><span>{ui.elbowHeightLabel}</span><input data-field="elbowHeight" type="number" min="1" step="0.1" inputmode="decimal" /><b data-length-unit>{ui.cmUnit}</b></label>
+        <label><span>{ui.shoulderWidthLabel}</span><input data-field="shoulderWidth" type="number" min="1" step="0.1" inputmode="decimal" /><b data-length-unit>{ui.cmUnit}</b></label>
+        <label><span>{ui.standingHeightLabel}</span><input data-field="standingHeight" type="number" min="1" step="0.1" inputmode="decimal" /><b data-length-unit>{ui.cmUnit}</b></label>
+        <label><span>{ui.beddingLabel}</span><input data-field="bedding" type="number" min="0" step="0.1" inputmode="decimal" /><b data-length-unit>{ui.cmUnit}</b></label>
+        <label><span>{ui.weightLabel}</span><input data-field="weight" type="number" min="0.1" step="0.1" inputmode="decimal" /><b data-weight-unit>{ui.kgUnit}</b></label>
+      </fieldset>
+      <label class="snub-toggle"><input data-snub-nosed type="checkbox" /><span><strong>{ui.snubNosedLabel}</strong><small>{ui.snubNosedHint}</small></span></label>
+      <div class="preset-strip">
+        <span>{ui.presetLegend}</span>
+        <button type="button" data-preset="cat">{ui.presetCat}</button>
+        <button type="button" data-preset="smallDog">{ui.presetSmallDog}</button>
+        <button type="button" data-preset="mediumDog">{ui.presetMediumDog}</button>
+        <button type="button" data-preset="largeDog">{ui.presetLargeDog}</button>
+      </div>
+      <p class="carrier-error" data-error role="alert"></p>
+    </div>
+    <section class="carrier-result" data-result aria-live="polite">
+      <div class="result-heading"><div class="result-title-row"><div><p>{ui.resultEyebrow}</p><h2>{ui.resultTitle}</h2></div><span class="result-status" data-status></span></div><span class="result-status-detail" data-status-detail></span></div>
+      <div class="carrier-scene" data-scene aria-label={ui.blueprintLabel}></div>
+      <div class="dimension-ledger">
+        <p>{ui.resultDimensionLabel}</p>
+        <div class="dimension-primary"><div><span>{ui.lengthLabel}</span><strong data-length-result></strong></div><div><span>{ui.widthLabel}</span><strong data-width-result></strong></div><div><span>{ui.heightLabel}</span><strong data-height-result></strong></div></div>
+        <div class="dimension-context"><div><span>{ui.petWeightLabel}</span><strong data-weight-result></strong></div><div><span>{ui.journeyLabel}</span><strong data-mode-result></strong></div></div>
+      </div>
+      <div class="carrier-checklist">
+        <h3>{ui.checklistTitle}</h3>
+        <p><span>{ui.checkMark}</span>{ui.checklistStand}</p>
+        <p><span>{ui.checkMark}</span>{ui.checklistTurn}</p>
+        <p><span>{ui.checkMark}</span>{ui.checklistLie}</p>
+        <p><span>{ui.checkMark}</span>{ui.checklistAirline}</p>
+      </div>
+    </section>
+  </div>
+  <aside class="carrier-note"><strong>{ui.noteTitle}</strong><span>{ui.noteText}</span></aside>
+  <p class="carrier-method"><strong>{ui.methodTitle}</strong> {ui.methodText}</p>
+</div>
+
+<script>
+  import { initCarrierController } from './controller';
+  const root = document.querySelector<HTMLElement>('[data-carrier-root]');
+  if (root) initCarrierController(root);
+</script>

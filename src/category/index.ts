@@ -4,10 +4,11 @@ import { petRation } from '../tool/petRation/entry';
 import { petGestation } from '../tool/petGestation/entry';
 import { petToxicity } from '../tool/petToxicity/entry';
 import { petWaterIntake } from '../tool/petWaterIntake/entry';
+import { petCarrierCrateSizePlanner } from '../tool/petCarrierCrateSizePlanner/entry';
 
 export const petsCategory: PetCategoryEntry = {
   icon: 'mdi:paw',
-  tools: [petAge, petRation, petGestation, petToxicity, petWaterIntake],
+  tools: [petAge, petRation, petGestation, petToxicity, petWaterIntake, petCarrierCrateSizePlanner],
   i18n: {
     en: () => import('./i18n/en').then((m) => m.content),
     es: () => import('./i18n/es').then((m) => m.content),

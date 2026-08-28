@@ -4,6 +4,7 @@ import { PET_RATION_TOOL } from './tool/petRation';
 import { PET_GESTATION_TOOL } from './tool/petGestation';
 import { PET_TOXICITY_TOOL } from './tool/petToxicity';
 import { PET_WATER_INTAKE_TOOL } from './tool/petWaterIntake';
+import { PET_CARRIER_CRATE_SIZE_PLANNER_TOOL } from './tool/petCarrierCrateSizePlanner';
 import type { ToolDefinition } from './types';
 
 export const ALL_TOOLS: ToolDefinition[] = [
@@ -12,6 +13,7 @@ export const ALL_TOOLS: ToolDefinition[] = [
   PET_GESTATION_TOOL,
   PET_TOXICITY_TOOL,
   PET_WATER_INTAKE_TOOL,
+  PET_CARRIER_CRATE_SIZE_PLANNER_TOOL,
 ];
 
 export {
@@ -20,4 +22,5 @@ export {
   PET_GESTATION_TOOL,
   PET_TOXICITY_TOOL,
   PET_WATER_INTAKE_TOOL,
+  PET_CARRIER_CRATE_SIZE_PLANNER_TOOL,
 };
