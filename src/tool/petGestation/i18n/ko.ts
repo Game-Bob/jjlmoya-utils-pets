@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "오늘",
   "presetWeekAgo": "7일 전",
   "presetFortnightAgo": "14일 전",
-  "calculateButton": "출산 예정 기간 계산",
   "resultEyebrow": "출산 계산기 결과",
   "dueDateLabel": "대표 예상 출산일",
   "windowLabel": "예상 출산 기간",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "계산 근거",
   "sourceText": "개가 58~72일 범위를 사용하며, 고양이, 토끼, 페럿은 MSD 수의학 매뉴얼 기준을 따릅니다.",
   "invalidDate": "올바른 교배일을 입력하세요.",
-  "futureDate": "미래 교배일은 진행 중인 임신에 적용할 수 없습니다."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

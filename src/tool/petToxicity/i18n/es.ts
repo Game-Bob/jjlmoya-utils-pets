@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "Los perfiles se basan en guías de toxicología veterinaria de ASPCA, FDA y el Manual Veterinario MSD.",
   "emergencyTitle": "¿Tu mascota ha ingerido algo peligroso?",
   "emergencyText": "Llama inmediatamente a tu veterinario, clínica de urgencias o servicio toxicológico. Guarda el envase, ingredientes y cantidad estimada. No provoques el vómito sin indicación médica.",
-  "openMenu": "Abrir opciones",
-  "closeMenu": "Cerrar opciones"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [
@@ -54,7 +52,7 @@ const faq: PetToxicityLocaleContent['faq'] = [
   },
   {
     "question": "¿Por qué el xilitol muestra una alerta diferente en perros y gatos?",
-    "answer": "En perros, el xilitol causa una bajada rápida y grave de azúcar en sangre. En gatos, la evidencia de toxicidad severa no es tan clara según la FDA, pero ello no garantiza la seguridad del producto."
+    "answer": "En perros, el xilitol causa una bajada rápida y grave de azúcar en sangre. En gatos, la evidencia de toxicidad severa no es tan clara según la FDA, así que conviene consultar a un veterinario."
   },
   {
     "question": "¿Qué hago si mi mascota ha ingerido un alimento no listado?",
@@ -103,7 +101,7 @@ const seo: PetToxicityLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: "Diferenciar entre perros y gatos es vital en la evaluación de riesgos alimentarios. El xilitol desencadena hipoglucemias severas y daños hepáticos en perros, mientras que las plantas de la familia de la cebolla y el ajo son especialmente dañinas para el sistema sanguíneo de los gatos al destruir sus glóbulos rojos. La selección previa de la especie garantiza que las recomendaciones y advertencias mostradas se adapten rigurosamente al perfil metabólico del animal.",
+    html: "Diferenciar entre perros y gatos es importante al evaluar riesgos alimentarios. El xilitol puede causar hipoglucemias severas en perros, mientras que la cebolla y el ajo pueden dañar los glóbulos rojos de los gatos. La selección previa de la especie permite adaptar las recomendaciones y advertencias al perfil del animal.",
   },
   {
     type: 'title',

@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "Les fiches reposent sur les recommandations de toxicologie vétérinaire de l ASPCA, de la FDA et du Manuel Vétérinaire MSD.",
   "emergencyTitle": "Si votre animal a ingéré un produit suspect",
   "emergencyText": "Appelez immédiatement votre vétérinaire, une clinique d urgence ou un centre antipoison. Conservez l emballage et la quantité estimée.",
-  "openMenu": "Ouvrir les options",
-  "closeMenu": "Fermer les options"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

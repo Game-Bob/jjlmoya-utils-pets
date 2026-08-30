@@ -8,26 +8,16 @@ const description = '根据体重、饮食类型、活动量和环境温度，�
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "选择宠物类型，输入体重，然后设置当天的食物与气候条件。",
-  "instantHint": "每一个选项都会实时更新水位。结果仅供参考，不能替代兽医诊断。",
-  "unitLegend": "单位",
-  "metricUnit": "公制",
-  "imperialUnit": "英制",
   "speciesLegend": "这是谁的水碗？",
   "speciesDog": "狗",
   "speciesCat": "猫",
-  "speciesDogMeta": "维持量参考 每公斤 60 mL",
-  "speciesCatMeta": "维持量参考 每公斤 40 mL",
   "weightLabel": "体重",
   "weightHint": "请填写宠物目前的健康体重。",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "食物能提供多少水分？",
   "dietDry": "以干粮为主",
-  "dietDryMeta": "绝大部分水分需要从水碗中饮用",
   "dietMixed": "干湿混合喂养",
-  "dietMixedMeta": "一部分水分来自日常餐食",
   "dietWet": "以湿粮（罐头）为主",
-  "dietWetMeta": "餐食提供了绝大部分水分",
   "activityLegend": "今天的活动量",
   "activityCalm": "安静 / 休息",
   "activityTypical": "适中 / 正常",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "请输入有效的体重以显示饮水量估计。",
   "sceneAria": "所选宠物的储水容器",
   "sceneTotal": "总水量",
-  "sceneBowl": "每日建议范围中值",
-  "methodTitle": "计算方法",
-  "methodText": "基于 AAHA 官方指引（犬 60 mL/kg，猫 40 mL/kg），并结合食物水分与气温系数调整。",
   "noteTitle": "水碗不能替代兽医诊断",
   "noteText": "请保持清洁新鲜的水随时可用。若发现饮水量或排尿量突然异常变化，请及时就医。",
-  "invalidWeight": "请输入有效的体重数值。",
-  "weightRange": "体重必须在 0.5 kg 至 100 kg 之间。"
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

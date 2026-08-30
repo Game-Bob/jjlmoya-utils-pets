@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "今天",
   "presetWeekAgo": "7天前",
   "presetFortnightAgo": "14天前",
-  "calculateButton": "计算预产时间段",
   "resultEyebrow": "孕期指南针显示",
   "dueDateLabel": "典型预产期",
   "windowLabel": "预计生产时间段",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "计算依据",
   "sourceText": "犬类采用58至72天区间，猫、兔子和雪山貂参考MSD兽医手册标准。",
   "invalidDate": "请输入有效的交配日期。",
-  "futureDate": "未来的交配日期无法计算当前孕期。"
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

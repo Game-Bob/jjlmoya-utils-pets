@@ -1,26 +1,16 @@
 export interface PetWaterIntakeUI {
   [key: string]: string;
   journeyHint: string;
-  instantHint: string;
-  unitLegend: string;
-  metricUnit: string;
-  imperialUnit: string;
   speciesLegend: string;
   speciesDog: string;
   speciesCat: string;
-  speciesDogMeta: string;
-  speciesCatMeta: string;
   weightLabel: string;
   weightHint: string;
   weightKg: string;
-  weightLb: string;
   dietLegend: string;
   dietDry: string;
-  dietDryMeta: string;
   dietMixed: string;
-  dietMixedMeta: string;
   dietWet: string;
-  dietWetMeta: string;
   activityLegend: string;
   activityCalm: string;
   activityTypical: string;
@@ -45,11 +35,6 @@ export interface PetWaterIntakeUI {
   resultEmpty: string;
   sceneAria: string;
   sceneTotal: string;
-  sceneBowl: string;
-  methodTitle: string;
-  methodText: string;
   noteTitle: string;
   noteText: string;
-  invalidWeight: string;
-  weightRange: string;
 }

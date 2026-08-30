@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
  "sourceText": "ASPCA, FDA 및 MSD 수 의 학 매 뉴 얼 의 지 침 을 바 탕 으 로 제 공 됩 니 다 .",
  "emergencyTitle": " 위 험 한 음 식 을 섭 취 했 을 경 우 ",
  "emergencyText": " 즉 시 동 물 병 원 이 나 응 급 실 에 연 락 하 세 요 . 포 장 지 , 섭 취 량 , 시 간 을 메 모 해 두 세 요 .",
- "openMenu": " 메 뉴 열 기 ",
- "closeMenu": " 메 뉴 닫 기 "
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

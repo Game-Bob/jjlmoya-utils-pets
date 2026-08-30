@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "De profielen zijn gebaseerd op veterinaire toxicologische richtlijnen van ASPCA, FDA en MSD Veterinary Manual.",
   "emergencyTitle": "Als uw huisdier iets zorgwekkends heeft gegeten",
   "emergencyText": "Bel direct uw dierenarts of de spoedkliniek. Bewaar de verpakking, ingrediëntenlijst en geschatte hoeveelheid.",
-  "openMenu": "Opties openen",
-  "closeMenu": "Opties sluiten"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

@@ -8,7 +8,7 @@ export const content: CategoryLocaleContent = {
     { type: 'title', text: 'Nutrición y Bienestar Animal: Ciencia al Servicio de tu Mascota', level: 2 },
     {
       type: 'paragraph',
-      html: 'Cuidar a un perro, un gato o un conejo es mucho más que darles comida y cariño. Implica entender su biología, su ritmo de envejecimiento y sus necesidades energéticas concretas. En esta sección ofrecemos <strong>calculadoras veterinarias gratuitas</strong> que aplican fórmulas científicas validadas para ayudarte a tomar mejores decisiones sobre la salud de tu compañero.',
+      html: 'Cuidar de un perro, gato o conejo implica entender su biología, envejecimiento y necesidades energéticas. Nuestras <strong>calculadoras veterinarias gratuitas</strong> usan fórmulas publicadas para orientar decisiones sobre su salud.',
     },
     {
       type: 'paragraph',

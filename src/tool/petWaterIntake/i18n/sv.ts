@@ -8,26 +8,16 @@ const description = 'Beräkna det dagliga vattenbehovet för din hund eller katt
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "Välj djur, ange kroppsvikt och ställ in foder och väder för dagen.",
-  "instantHint": "Varje val uppdaterar vattennivån direkt. Detta är en vägledande guideline.",
-  "unitLegend": "Enheter",
-  "metricUnit": "Metrisk",
-  "imperialUnit": "Imperial",
   "speciesLegend": "Vem är vattenskålen till för?",
   "speciesDog": "Hund",
   "speciesCat": "Katt",
-  "speciesDogMeta": "Underhållsriktlinje 60 mL per kg",
-  "speciesCatMeta": "Underhållsriktlinje 40 mL per kg",
   "weightLabel": "Kroppsvikt",
   "weightHint": "Ange ditt djurs nuvarande hälsosamma vikt.",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "Hur mycket vatten kommer från fodret?",
   "dietDry": "Huvudsakligen torrfoder (kulor)",
-  "dietDryMeta": "Det mesta vattnet dricks från skålen",
   "dietMixed": "Blandad utfodring",
-  "dietMixedMeta": "En del av vattnet kommer från måltiderna",
   "dietWet": "Huvudsakligen våtfoder (burk/påse)",
-  "dietWetMeta": "Fodret ger det mesta av fukten",
   "activityLegend": "Aktivitet idag",
   "activityCalm": "Lugn / Vila",
   "activityTypical": "Måttlig / Normal",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "Ange en giltig vikt för att se vattennivån.",
   "sceneAria": "Vattenbehållare för det valda djuret",
   "sceneTotal": "TOTALT VATTEN",
-  "sceneBowl": "mitten av det dagliga intervallet",
-  "methodTitle": "Beräkningsmetod",
-  "methodText": "Enligt AAHA-riktlinjer på 60 mL/kg för hundar och 40 mL/kg för katter, anpassat efter foder och väder.",
   "noteTitle": "Vattenskålen ersätter inte en diagnos",
   "noteText": "Ha alltid rent färskt vatten tillgängligt. Kontakta veterinär vid plötsliga förändringar i törst.",
-  "invalidWeight": "Ange en giltig kroppsvikt.",
-  "weightRange": "Vikten måste vara mellan 0.5 kg och 100 kg."
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

@@ -8,26 +8,16 @@ const description = '体重、フードの種類、活動量、気温から犬�
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "ペットの種類を選択し、体重を入力して、フードと気温を設定してください。",
-  "instantHint": "選択を変えると水量が即座に更新されます。これは目安のガイドラインです。",
-  "unitLegend": "単位",
-  "metricUnit": "メートル法",
-  "imperialUnit": "ヤード・ポンド法",
   "speciesLegend": "対象のペット",
   "speciesDog": "犬",
   "speciesCat": "猫",
-  "speciesDogMeta": "維持基準 1kgあたり60mL",
-  "speciesCatMeta": "維持基準 1kgあたり40mL",
   "weightLabel": "体重",
   "weightHint": "現在の適正体重を入力してください。",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "フードからの水分補給量",
   "dietDry": "主にドライフード（カリカリ）",
-  "dietDryMeta": "必要な水分のほとんどを水飲み場から摂取",
   "dietMixed": "ミックス食（ドライ＋ウェット）",
-  "dietMixedMeta": "水分の一部を食事から摂取",
   "dietWet": "主にウェットフード（缶詰・パウチ）",
-  "dietWetMeta": "食事が水分の大部分を供給",
   "activityLegend": "今日の活動量",
   "activityCalm": "おとなしい / 休息",
   "activityTypical": "普通 / 標準的",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "正しい体重を入力すると推定量が表示されます。",
   "sceneAria": "選択されたペットの給水量",
   "sceneTotal": "必要総水量",
-  "sceneBowl": "1日目安の中央値",
-  "methodTitle": "計算方法",
-  "methodText": "AAHAガイドライン（犬60mL/kg、猫40mL/kg）に基づき、フードの種類と気温を考慮して算出しています。",
   "noteTitle": "水飲みボウルは診断器具ではありません",
   "noteText": "常に清潔な新鮮水を用意してください。飲水量や排尿量の急激な変化がある場合は獣医師にご相談ください。",
-  "invalidWeight": "正しい体重を入力してください。",
-  "weightRange": "体重は0.5kgから100kgの間で入力してください。"
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

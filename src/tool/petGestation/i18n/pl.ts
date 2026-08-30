@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Dzisiaj",
   "presetWeekAgo": "7 dni temu",
   "presetFortnightAgo": "14 dni temu",
-  "calculateButton": "Oblicz okres porodu",
   "resultEyebrow": "Kompas ciąży wskazuje",
   "dueDateLabel": "Przewidywany termin porodu",
   "windowLabel": "Oczekiwany przedział",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Metodologia",
   "sourceText": "Psy wykorzystują zakres 58-72 dni, podczas gdy koty, króliki i fretki bazują na Podręczniku Weterynaryjnym MSD.",
   "invalidDate": "Wprowadź prawidłową datę krycia.",
-  "futureDate": "Przyszła data krycia nie dotyczy aktywnej ciąży."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

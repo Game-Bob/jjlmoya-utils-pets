@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "今日",
   "presetWeekAgo": "7日前",
   "presetFortnightAgo": "14日前",
-  "calculateButton": "出産予定期間を計算",
   "resultEyebrow": "出産予定コンパスの計算結果",
   "dueDateLabel": "標準的な出産予定日",
   "windowLabel": "予想される出産期間",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "計算の根拠",
   "sourceText": "犬は58〜72日、猫・ウサギ・フェレットはMSD獣医マニュアルの基準値を参照しています。",
   "invalidDate": "正しい交配日を入力してください。",
-  "futureDate": "未来の交配日はアクティブな妊娠に適用できません。"
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

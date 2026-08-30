@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "Profil berdasarkan panduan toksikologi veteriner ASPCA, FDA, dan Merck Veterinary Manual.",
   "emergencyTitle": "Jika hewan peliharaan Anda memakan sesuatu yang mencurigakan",
   "emergencyText": "Hubungi dokter hewan atau klinik darurat segera. Simpan kemasan, daftar bahan, dan perkiraan jumlah.",
-  "openMenu": "Buka opsi",
-  "closeMenu": "Tutup opsi"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

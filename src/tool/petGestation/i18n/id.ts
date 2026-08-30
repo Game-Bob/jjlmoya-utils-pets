@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Hari ini",
   "presetWeekAgo": "7 hari lalu",
   "presetFortnightAgo": "14 hari lalu",
-  "calculateButton": "Hitung perkiraan melahirkan",
   "resultEyebrow": "Kompas kehamilan menunjukkan",
   "dueDateLabel": "Tanggal perkiraan melahirkan",
   "windowLabel": "Rentang waktu diperkirakan",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Metodologi",
   "sourceText": "Profil anjing menggunakan 58-72 hari, sedangkan kucing, kelinci, dan musang menggunakan panduan Manual Dokter Hewan MSD.",
   "invalidDate": "Masukkan tanggal kawin yang valid.",
-  "futureDate": "Tanggal masa depan tidak dapat menggambarkan kehamilan aktif."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

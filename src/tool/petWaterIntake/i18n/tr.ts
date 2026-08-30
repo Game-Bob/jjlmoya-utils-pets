@@ -8,26 +8,16 @@ const description = 'Vücut ağırlığı, mama türü, aktivite ve sıcaklığa
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "Evcil hayvanı seçin, vücut ağırlığını girin, ardından mamayı ve bugünün hava durumunu ayarlayın.",
-  "instantHint": "Her seçim su seviyesini anında günceller. Bu bir rehber kılavuzdur.",
-  "unitLegend": "Birimler",
-  "metricUnit": "Metrik",
-  "imperialUnit": "İngiliz (Imperial)",
   "speciesLegend": "Su kabı kimin için?",
   "speciesDog": "Köpek",
   "speciesCat": "Kedi",
-  "speciesDogMeta": "Bakım kılavuzu kg başına 60 mL",
-  "speciesCatMeta": "Bakım kılavuzu kg başına 40 mL",
   "weightLabel": "Vücut ağırlığı",
   "weightHint": "Evcil hayvanınızın mevcut sağlıklı ağırlığını girin.",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "Mamanın su katkısı ne kadar?",
   "dietDry": "Ağırlıklı olarak kuru mama (kibble)",
-  "dietDryMeta": "Suyun büyük kısmı kaptan içilir",
   "dietMixed": "Karma beslenme",
-  "dietMixedMeta": "Suyun bir kısmı öğünlerden gelir",
   "dietWet": "Ağırlıklı olarak yaş mama (konserve)",
-  "dietWetMeta": "Mama nemin büyük kısmını karşılar",
   "activityLegend": "Bugünkü aktivite",
   "activityCalm": "Sakin / Dinlenme",
   "activityTypical": "Orta / Normal",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "Su seviyesini görmek için geçerli bir ağırlık girin.",
   "sceneAria": "Seçilen evcil hayvan için su deposu",
   "sceneTotal": "TOPLAM SU",
-  "sceneBowl": "günlük aralığın ortası",
-  "methodTitle": "Hesaplama yöntemi",
-  "methodText": "Köpeklerde 60 mL/kg ve kedilerde 40 mL/kg olan AAHA rehber ilkelerine göre mama ve havaya uyarlanmıştır.",
   "noteTitle": "Su kabı bir teşhis aracı değildir",
   "noteText": "Daima temiz taze su bulundurun. Susuzlukta ani değişiklikler görürseniz bir veterinere danışın.",
-  "invalidWeight": "Lütfen geçerli bir vücut ağırlığı girin.",
-  "weightRange": "Ağırlık 0.5 kg ile 100 kg arasında olmalıdır."
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

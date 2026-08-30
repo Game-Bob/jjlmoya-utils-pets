@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "I profili si basano sulle linee guida di tossicologia veterinaria di ASPCA, FDA e Manuale Veterinario MSD.",
   "emergencyTitle": "Se il tuo animale ha ingerito qualcosa di sospetto",
   "emergencyText": "Chiama immediatamente il veterinario, una clinica d urgenza o il centro antiveleni. Conserva la confezione, gli ingredienti e la quantità stimata.",
-  "openMenu": "Apri opzioni",
-  "closeMenu": "Chiudi opzioni"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

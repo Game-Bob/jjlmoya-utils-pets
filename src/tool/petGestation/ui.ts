@@ -16,7 +16,6 @@ export interface PetGestationUI {
   presetToday: string;
   presetWeekAgo: string;
   presetFortnightAgo: string;
-  calculateButton: string;
   resultEyebrow: string;
   dueDateLabel: string;
   windowLabel: string;
@@ -38,5 +37,4 @@ export interface PetGestationUI {
   sourceTitle: string;
   sourceText: string;
   invalidDate: string;
-  futureDate: string;
 }

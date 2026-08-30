@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Сегодня",
   "presetWeekAgo": "7 дней назад",
   "presetFortnightAgo": "14 дней назад",
-  "calculateButton": "Рассчитать период родов",
   "resultEyebrow": "Компас беременности показывает",
   "dueDateLabel": "Предполагаемая дата родов",
   "windowLabel": "Ожидаемый период",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Методология",
   "sourceText": "Для собак используется диапазон 58-72 дня, для кошек, кроликов и хорьков - данные MSD Veterinary Manual.",
   "invalidDate": "Введите корректную дату вязки.",
-  "futureDate": "Дата из будущего не подходит для активной беременности."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

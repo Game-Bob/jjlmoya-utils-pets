@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Idag",
   "presetWeekAgo": "För 7 dagar sedan",
   "presetFortnightAgo": "För 14 dagar sedan",
-  "calculateButton": "Beräkna förlossningsfönster",
   "resultEyebrow": "Dräktighetskompassen visar",
   "dueDateLabel": "Typiskt förlossningsdatum",
   "windowLabel": "Förväntad tidsperiod",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Metodik",
   "sourceText": "Hundar använder 58-72 dagar, katt, kanin och iller följer MSD Veterinary Manual.",
   "invalidDate": "Ange ett giltigt parningsdatum.",
-  "futureDate": "Ett framtida datum gäller inte aktiv dräktighet."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Heute",
   "presetWeekAgo": "Vor 7 Tagen",
   "presetFortnightAgo": "Vor 14 Tagen",
-  "calculateButton": "Geburtsfenster berechnen",
   "resultEyebrow": "Der Nistkompass zeigt",
   "dueDateLabel": "Typischer Geburtstermin",
   "windowLabel": "Erwarteter Zeitraum",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Methodik",
   "sourceText": "Die Hundespanne nutzt 58 bis 72 Tage ab Bedeckung, während Katzen, Kaninchen und Frettchen Richtwerte aus dem MSD Veterinary Manual verwenden.",
   "invalidDate": "Geben Sie ein gültiges Deckdatum ein.",
-  "futureDate": "Ein zukünftiges Deckdatum entspricht keiner aktiven Trächtigkeit."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

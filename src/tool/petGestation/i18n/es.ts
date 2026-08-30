@@ -24,7 +24,6 @@ const ui: PetGestationUI = {
   presetToday: 'Hoy',
   presetWeekAgo: 'Hace 7 días',
   presetFortnightAgo: 'Hace 14 días',
-  calculateButton: 'Calcular ventana de parto',
   resultEyebrow: 'El compás de anidación indica',
   dueDateLabel: 'Fecha típica de parto',
   windowLabel: 'Ventana estimada',
@@ -46,7 +45,6 @@ const ui: PetGestationUI = {
   sourceTitle: 'Metodología',
   sourceText: 'El rango canino contempla de 58 a 72 días desde la monta, mientras que los perfiles de gato, conejo y hurón utilizan los periodos aproximados documentados por el Manual Veterinario MSD.',
   invalidDate: 'Introduce una fecha de monta válida para calcular el periodo.',
-  futureDate: 'Una fecha de monta futura no puede corresponder a una gestación activa.',
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

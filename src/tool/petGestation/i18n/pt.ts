@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Hoje",
   "presetWeekAgo": "Há 7 dias",
   "presetFortnightAgo": "Há 14 dias",
-  "calculateButton": "Calcular período do parto",
   "resultEyebrow": "A bússola de gestação indica",
   "dueDateLabel": "Data provável do parto",
   "windowLabel": "Intervalo esperado",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Metodologia",
   "sourceText": "Cães utilizam o intervalo de 58 a 72 dias; gatos, coelhos e furões usam dados do Manual Veterinário MSD.",
   "invalidDate": "Insira uma data de cruzamento válida.",
-  "futureDate": "Uma data futura não corresponde a uma gestação ativa."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

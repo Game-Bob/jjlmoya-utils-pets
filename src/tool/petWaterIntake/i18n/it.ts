@@ -8,26 +8,16 @@ const description = "Stima il fabbisogno idrico giornaliero per cani e gatti in 
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "Scegli l'animale, inserisci il peso corporeo e imposta il cibo e il clima della giornata.",
-  "instantHint": "Ogni scelta aggiorna immediatamente il livello d'acqua. È una guida orientativa.",
-  "unitLegend": "Unità",
-  "metricUnit": "Metrico",
-  "imperialUnit": "Imperiale",
   "speciesLegend": "Per chi è la ciotola dell'acqua?",
   "speciesDog": "Cane",
   "speciesCat": "Gatto",
-  "speciesDogMeta": "Guida di mantenimento 60 mL per kg",
-  "speciesCatMeta": "Guida di mantenimento 40 mL per kg",
   "weightLabel": "Peso corporeo",
   "weightHint": "Inserisci il peso sano attuale del tuo animale.",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "Quanta acqua proviene dal cibo?",
   "dietDry": "Prevalentemente cibo secco",
-  "dietDryMeta": "La maggior parte dell'acqua viene bevuta dalla ciotola",
   "dietMixed": "Alimentazione mista",
-  "dietMixedMeta": "Una parte dell'acqua proviene dai pasti",
   "dietWet": "Prevalentemente cibo umido",
-  "dietWetMeta": "Il cibo fornisce la maggior parte dell'umidità",
   "activityLegend": "Attività odierna",
   "activityCalm": "Tranquillo / Riposo",
   "activityTypical": "Moderata / Normale",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "Inserisci un peso valido per visualizzare il livello d'acqua.",
   "sceneAria": "Serbatoio d'acqua per l'animale selezionato",
   "sceneTotal": "ACQUA TOTALE",
-  "sceneBowl": "centro dell'intervallo giornaliero",
-  "methodTitle": "Metodo di calcolo",
-  "methodText": "Segue le linee guida AAHA di 60 mL/kg nei cani e 40 mL/kg nei gatti, adattate a cibo e clima.",
   "noteTitle": "La ciotola dell'acqua non sostituisce la diagnosi",
   "noteText": "Lascia sempre acqua pulita a disposizione. In caso di variazioni improvvise della sete, consulta un veterinario.",
-  "invalidWeight": "Inserisci un peso corporeo valido.",
-  "weightRange": "Il peso deve essere compreso tra 0.5 kg e 100 kg."
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

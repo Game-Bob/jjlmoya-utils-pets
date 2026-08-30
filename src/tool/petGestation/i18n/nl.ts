@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Vandaag",
   "presetWeekAgo": "7 dagen geleden",
   "presetFortnightAgo": "14 dagen geleden",
-  "calculateButton": "Bereken bevallingsvenster",
   "resultEyebrow": "De drachtkompas geeft aan",
   "dueDateLabel": "Typische bevallingsdatum",
   "windowLabel": "Verwachte periode",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Methodologie",
   "sourceText": "Honden gebruiken 58 tot 72 dagen, katten, konijnen en fretten volgen de richtlijnen uit het MSD Veterinary Manual.",
   "invalidDate": "Vul een geldige dekdatum in.",
-  "futureDate": "Een toekomstige dekdatum geldt niet voor een actieve dracht."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

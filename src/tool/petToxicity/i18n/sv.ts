@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "Profilerna baseras på veterinärmedicinska riktlinjer från ASPCA, FDA och MSD Veterinary Manual.",
   "emergencyTitle": "Om ditt husdjur har ätit något olämpligt",
   "emergencyText": "Ring din veterinär eller djursjukhus omedelbart. Ta vara på förpackningen och ingredienslistan.",
-  "openMenu": "Öppna alternativ",
-  "closeMenu": "Stäng alternativ"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

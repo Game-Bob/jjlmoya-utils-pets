@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Aujourd hui",
   "presetWeekAgo": "Il y a 7 jours",
   "presetFortnightAgo": "Il y a 14 jours",
-  "calculateButton": "Calculer la période de mise bas",
   "resultEyebrow": "Le compas de nidification indique",
   "dueDateLabel": "Date de mise bas estimée",
   "windowLabel": "Intervalle attendu",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Méthodologie",
   "sourceText": "Le chien utilise une plage de 58 à 72 jours; chat, lapin et furet suivent les données documentées du Manuel Vétérinaire MSD.",
   "invalidDate": "Entrez une date d accouplement valide.",
-  "futureDate": "Une date future ne peut pas correspondre à une gestation active."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

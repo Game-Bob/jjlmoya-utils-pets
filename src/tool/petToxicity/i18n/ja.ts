@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
  "sourceText": "ASPCA 、 FDA 、 MSD 獣 医 マ ニ ュ ア ル な ど の 中 毒 ガ イ ド ラ イ ン に 基 づ い て い ま す 。 ",
  "emergencyTitle": " 危 険 な も の を 食 べ て し ま っ た 場 合 ",
  "emergencyText": " す ぐ に 獣 医 師 や 夜 間 救 急 病 院 に 連 絡 し て く だ さ い 。 パ ッ ケ ー ジ や 食 べ た 量 、 時 間 メ モ を 手 元 に 用 意 し て く だ さ い 。 ",
- "openMenu": " メ ニ ュ ー を 開 く ",
- "closeMenu": " メ ニ ュ ー を 閉 じ る "
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

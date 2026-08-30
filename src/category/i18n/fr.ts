@@ -8,7 +8,7 @@ export const content: CategoryLocaleContent = {
     { type: 'title', text: 'Nutrition et Bien-être Animal: La Science au Service de votre Animal', level: 2 },
     {
       type: 'paragraph',
-      html: 'Prendre soin d\'un chien, d\'un chat ou d\'un lapin va bien au-delà de leur donner de la nourriture et de l\'affection. Cela implique de comprendre leur biologie, leur rythme de vieillissement et leurs besoins énergétiques spécifiques. Dans cette section, nous proposons des <strong>calculatrices vétérinaires gratuites</strong> qui appliquent des formules scientifiques validées pour vous aider à prendre de meilleures décisions concernant la santé de votre compagnon.',
+      html: 'Prendre soin d\'un chien, d\'un chat ou d\'un lapin implique de comprendre sa biologie, son vieillissement et ses besoins énergétiques. Nos <strong>calculatrices vétérinaires gratuites</strong> utilisent des formules publiées pour éclairer vos décisions.',
     },
     {
       type: 'paragraph',

@@ -8,26 +8,16 @@ const description = 'Calcule a necessidade diária de água do seu cão ou gato 
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "Escolha o animal, introduza o peso corporal e ajuste a alimentação e o clima do dia.",
-  "instantHint": "Cada opção altera o nível de água instantaneamente. É um guia orientativo.",
-  "unitLegend": "Unidades",
-  "metricUnit": "Métrico",
-  "imperialUnit": "Imperial",
   "speciesLegend": "Para quem é a taça de água?",
   "speciesDog": "Cão",
   "speciesCat": "Gato",
-  "speciesDogMeta": "Guia de manutenção 60 mL por kg",
-  "speciesCatMeta": "Guia de manutenção 40 mL por kg",
   "weightLabel": "Peso corporal",
   "weightHint": "Indique o peso saudável atual do seu animal.",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "Quanta água vem da comida?",
   "dietDry": "Principalmente comida seca",
-  "dietDryMeta": "A maioria da água é bebida na taça",
   "dietMixed": "Alimentação mista",
-  "dietMixedMeta": "Uma parte da água vem das refeições",
   "dietWet": "Principalmente comida húmida",
-  "dietWetMeta": "A comida fornece a maioria da humidade",
   "activityLegend": "Atividade de hoje",
   "activityCalm": "Calmo / Repouso",
   "activityTypical": "Moderada / Normal",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "Introduza um peso válido para ver o nível de água.",
   "sceneAria": "Reservatório de água para o animal selecionado",
   "sceneTotal": "ÁGUA TOTAL",
-  "sceneBowl": "meio do intervalo diário",
-  "methodTitle": "Método de cálculo",
-  "methodText": "Segue as orientações AAHA de 60 mL/kg em cães e 40 mL/kg em gatos, ajustadas à comida e clima.",
   "noteTitle": "A taça de água não substitui um diagnóstico",
   "noteText": "Mantenha sempre água limpa disponível. Em caso de alterações na sede, consulte um veterinário.",
-  "invalidWeight": "Por favor introduza um peso corporal válido.",
-  "weightRange": "O peso deve estar entre 0.5 kg e 100 kg."
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

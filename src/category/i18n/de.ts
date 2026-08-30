@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'haustiere',
   title: 'Haustier Tools',
-  description: 'Kostenlose Rechner und Dienstprogramme für Haustierbesitzer. Finden Sie das wahre Alter Ihres Hundes oder Ihrer Katze heraus und berechnen Sie die tägliche Futterration mit tierärztlicher Präzision.',
+  description: 'Kostenlose Rechner für Haustierbesitzer: Hunde- und Katzenalter sowie tägliche Futterrationen einfach einschätzen.',
   seo: [
     { type: 'title', text: 'Tierernährung und Wohlbefinden: Wissenschaft im Dienste Ihres Haustieres', level: 2 },
     {

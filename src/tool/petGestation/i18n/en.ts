@@ -24,7 +24,6 @@ const ui: PetGestationUI = {
   presetToday: 'Today',
   presetWeekAgo: '7 days ago',
   presetFortnightAgo: '14 days ago',
-  calculateButton: 'Plot the delivery window',
   resultEyebrow: 'The nesting compass says',
   dueDateLabel: 'Typical due date',
   windowLabel: 'Expected window',
@@ -46,7 +45,6 @@ const ui: PetGestationUI = {
   sourceTitle: 'Method',
   sourceText: 'The dog range uses 58 to 72 days from breeding, while cat, rabbit, and ferret profiles use the approximate periods documented by the MSD Veterinary Manual.',
   invalidDate: 'Enter a real mating date to plot the window.',
-  futureDate: 'A future mating date cannot describe an active pregnancy.',
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

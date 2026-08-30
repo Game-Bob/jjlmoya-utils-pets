@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "Данные основаны на руководствах по ветеринарной токсикологии ASPCA, FDA и MSD Veterinary Manual.",
   "emergencyTitle": "Если ваш питомец съел что-то опасное",
   "emergencyText": "Срочно позвоните ветеринару или в клинику. Сохраните упаковку, состав и примерный объем съеденного.",
-  "openMenu": "Открыть опции",
-  "closeMenu": "Закрыть опции"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

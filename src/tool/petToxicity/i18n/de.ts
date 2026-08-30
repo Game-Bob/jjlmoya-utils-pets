@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "Die Lebensmittelprofile basieren auf Richtlinien der Giftnotrufzentralen und der Tiertoxikologie von ASPCA, FDA und MSD Veterinary Manual.",
   "emergencyTitle": "Wenn Ihr Haustier etwas Bedenkliches gefressen hat",
   "emergencyText": "Rufen Sie sofort Ihren Tierarzt, eine Notfallklinik oder den Giftnotruf an. Halten Sie Verpackung, Zutatenliste, geschätzte Menge und Zeitpunkt bereit. Leiten Sie kein Erbrechen ein.",
-  "openMenu": "Optionen öffnen",
-  "closeMenu": "Optionen schließen"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

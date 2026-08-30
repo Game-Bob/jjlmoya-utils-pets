@@ -8,26 +8,16 @@ const description = '체중, 사료 종류, 활동량, 기온을 바탕으로 �
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "반려동물을 선택하고 체중을 입력한 후 사료와 기온을 설정하세요.",
-  "instantHint": "선택 항목을 변경하면 수분량이 즉시 업데이트됩니다. 참고용 가이드라인입니다.",
-  "unitLegend": "단위",
-  "metricUnit": "미터법",
-  "imperialUnit": "야드파운드법",
   "speciesLegend": "물그릇의 주인은 누구인가요?",
   "speciesDog": "강아지",
   "speciesCat": "고양이",
-  "speciesDogMeta": "유지 기준 kg당 60 mL",
-  "speciesCatMeta": "유지 기준 kg당 40 mL",
   "weightLabel": "체중",
   "weightHint": "현재의 건강한 체중을 입력하세요.",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "사료를 통한 수분 공급량",
   "dietDry": "주로 건식 사료 (키블)",
-  "dietDryMeta": "수분의 대부분을 물그릇에서 섭취",
   "dietMixed": "혼합 급여 (건식+습식)",
-  "dietMixedMeta": "수분의 일부를 식사에서 섭취",
   "dietWet": "주로 습식 사료 (캔/파우치)",
-  "dietWetMeta": "식사가 수분의 대부분을 공급",
   "activityLegend": "오늘의 활동량",
   "activityCalm": "차분함 / 휴식",
   "activityTypical": "보통 / 일반적",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "올바른 체중을 입력하면 수분량이 표시됩니다.",
   "sceneAria": "선택한 반려동물의 수분 탱크",
   "sceneTotal": "총 수분량",
-  "sceneBowl": "하루 권장 범위의 중간값",
-  "methodTitle": "계산 방법",
-  "methodText": "AAHA 가이드라인(강아지 60mL/kg, 고양이 40mL/kg)을 기준으로 사료와 기온을 반영하여 산출합니다.",
   "noteTitle": "물그릇은 진단 도구가 아닙니다",
   "noteText": "항상 깨끗하고 신선한 물을 마실 수 있게 해주세요. 음수량이나 배뇨량에 급격한 변화가 있으면 수의사와 상담하세요.",
-  "invalidWeight": "올바른 체중을 입력해 주세요.",
-  "weightRange": "체중은 0.5 kg에서 100 kg 사이여야 합니다."
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Bugün",
   "presetWeekAgo": "7 gün önce",
   "presetFortnightAgo": "14 gün önce",
-  "calculateButton": "Doğum aralığını hesapla",
   "resultEyebrow": "Gebelik pusulası sonucu",
   "dueDateLabel": "Tipik doğum tarihi",
   "windowLabel": "Beklenen aralık",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Metodoloji",
   "sourceText": "Köpeklerde 58-72 gün, kedi, tavşan ve ferretlerde MSD Veteriner El Kitabı verileri temel alınır.",
   "invalidDate": "Geçerli bir çiftleşme tarihi girin.",
-  "futureDate": "Gelecek bir tarih aktif gebeliği gösteremez."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

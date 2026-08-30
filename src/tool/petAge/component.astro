@@ -238,6 +238,7 @@ const { ui } = Astro.props;
     state: PetAgeState,
     els: Required<ReturnType<typeof getElements>>,
     birthYearInput: HTMLInputElement,
+    uiData: Record<string, string>,
   ) {
     els.shareBtn?.addEventListener("click", async () => {
       if (!state.birthYear) {
@@ -253,7 +254,7 @@ const { ui } = Astro.props;
       const url = generateShareUrl(state);
       try {
         await navigator.clipboard.writeText(url);
-        if (els.shareText) els.shareText.textContent = "¡Copiado!";
+        if (els.shareText) els.shareText.textContent = uiData.shareSuccess;
         if (els.shareBtn) els.shareBtn.classList.add("age-btn-success");
         setTimeout(() => (window.location.href = url), 800);
       } catch {
@@ -292,7 +293,7 @@ const { ui } = Astro.props;
     setupPetTypeListener(state, els, onUpdate);
     setupSizeListener(state, els, onUpdate);
     setupBirthYearListener(state, birthYearInput, currentYear, onUpdate);
-    setupShareListener(state, els, birthYearInput);
+    setupShareListener(state, els, birthYearInput, uiData);
 
     onUpdate();
     setTimeout(() => els.loader?.classList.add("hidden"), 50);
@@ -305,4 +306,3 @@ const { ui } = Astro.props;
   }
   document.addEventListener("astro:page-load", initPetAge);
 </script>
-

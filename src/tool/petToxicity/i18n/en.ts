@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   sourceText: 'The food profiles are based on poison control and veterinary toxicology guidance from the ASPCA, FDA, and Merck Veterinary Manual. The guide is educational and does not calculate treatments or safe doses.',
   emergencyTitle: 'If your pet has eaten something concerning',
   emergencyText: 'Call your veterinarian, an emergency animal clinic, or an animal poison service now. Keep the package, ingredient list, estimated amount, and time of exposure. Do not induce vomiting or give a home remedy unless a veterinary professional tells you to.',
-  openMenu: 'Open options',
-  closeMenu: 'Close options',
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

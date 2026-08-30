@@ -2,13 +2,13 @@ import type { CategoryLocaleContent } from '../../types';
 
 export const content: CategoryLocaleContent = {
   slug: 'pets',
-  title: 'Pet Tools',
+  title: 'Pet Care Calculators',
   description: 'Free calculators and utilities for pet owners. Find out your dog or cat\'s real age and calculate their daily ration with veterinary precision.',
   seo: [
     { type: 'title', text: 'Animal Nutrition and Wellbeing: Science in the Service of Your Pet', level: 2 },
     {
       type: 'paragraph',
-      html: 'Caring for a dog, cat, or rabbit is much more than giving them food and affection. It involves understanding their biology, their aging rhythm, and their specific energy needs. In this section we offer <strong>free veterinary calculators</strong> that apply validated scientific formulas to help you make better decisions about your companion\'s health.',
+      html: 'Caring for a dog, cat, or rabbit involves understanding biology, aging and energy needs. Our <strong>free veterinary calculators</strong> use published formulas to support informed decisions about your companion\'s health.',
     },
     {
       type: 'paragraph',

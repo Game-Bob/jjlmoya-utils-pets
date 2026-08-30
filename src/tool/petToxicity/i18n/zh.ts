@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
  "sourceText": " 数 据 基 于 ASPCA 、 FDA 及 MSD 兽 医 手 册 的 中 毒 指 南 。 ",
  "emergencyTitle": " 如 果 宠 物 误 食 了 危 险 物 品 ",
  "emergencyText": " 请 立 即 联 系 兽 医 或 宠 物 急 诊 。 保 留 包 装 、 成 分 表 、 估 计 食 用 量 及 时 间 。 ",
- "openMenu": " 打 开 选 项 ",
- "closeMenu": " 关 闭 选 项 "
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

@@ -8,26 +8,16 @@ const description = 'Oblicz codzienne zapotrzebowanie na wodę dla psa lub kota 
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "Wybierz zwierzę, wprowadź masę ciała oraz ustaw karmę i temperaturę otoczenia.",
-  "instantHint": "Każdy wybór natychmiast zmienia poziom wody. To przewodnik orientacyjny.",
-  "unitLegend": "Jednostki",
-  "metricUnit": "Metryczne",
-  "imperialUnit": "Imperialne",
   "speciesLegend": "Dla kogo jest miska z wodą?",
   "speciesDog": "Pies",
   "speciesCat": "Kot",
-  "speciesDogMeta": "Wskazówka 60 mL na kg",
-  "speciesCatMeta": "Wskazówka 40 mL na kg",
   "weightLabel": "Masa ciała",
   "weightHint": "Wprowadź aktualną zdrową wagę zwierzęcia.",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "Ile wody pochodzi z karmy?",
   "dietDry": "Głównie sucha karma",
-  "dietDryMeta": "Większość wody pobierana jest z miski",
   "dietMixed": "Żywienie mieszane",
-  "dietMixedMeta": "Część wody pochodzi z posiłków",
   "dietWet": "Głównie mokra karma",
-  "dietWetMeta": "Mokra karma dostarcza większość wilgoci",
   "activityLegend": "Dzisiejsza aktywność",
   "activityCalm": "Spokojny / Odpoczynek",
   "activityTypical": "Umiarkowana / Normalna",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "Wprowadź prawidłową wagę, aby zobaczyć poziom wody.",
   "sceneAria": "Zbiornik na wodę dla wybranego zwierzęcia",
   "sceneTotal": "WODA CAŁKOWITA",
-  "sceneBowl": "środek zakresu dziennego",
-  "methodTitle": "Metoda obliczeń",
-  "methodText": "Zgodnie z wytycznymi AAHA 60 mL/kg u psów i 40 mL/kg u kotów, dostosowane do karmy i pogody.",
   "noteTitle": "Miska z wodą nie zastępuje diagnozy",
   "noteText": "Zawsze zapewniaj czystą wodę. W przypadku nagłych zmian w piciu skonsultuj się z weterynarzem.",
-  "invalidWeight": "Proszę wprowadzić prawidłową masę ciała.",
-  "weightRange": "Waga musi mieścić się w przedziale od 0.5 kg do 100 kg."
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

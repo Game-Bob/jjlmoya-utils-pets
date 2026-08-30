@@ -8,26 +8,16 @@ const description = 'Hitung kebutuhan air harian untuk anjing atau kucing berdas
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "Pilih hewan, masukkan berat badan, lalu atur makanan dan cuaca hari ini.",
-  "instantHint": "Setiap pilihan memperbarui batas air secara langsung. Ini adalah panduan orientasi.",
-  "unitLegend": "Satuan",
-  "metricUnit": "Metrik",
-  "imperialUnit": "Imperial",
   "speciesLegend": "Untuk siapa mangkuk air ini?",
   "speciesDog": "Anjing",
   "speciesCat": "Kucing",
-  "speciesDogMeta": "Panduan pemeliharaan 60 mL per kg",
-  "speciesCatMeta": "Panduan pemeliharaan 40 mL per kg",
   "weightLabel": "Berat badan",
   "weightHint": "Masukkan berat badan sehat hewan Anda saat ini.",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "Berapa banyak air yang berasal dari makanan?",
   "dietDry": "Sebagian besar makanan kering (kibble)",
-  "dietDryMeta": "Sebagian besar air diminum dari mangkuk",
   "dietMixed": "Makanan campuran",
-  "dietMixedMeta": "Sebagian air berasal dari porsi makanan",
   "dietWet": "Sebagian besar makanan basah (kaleng)",
-  "dietWetMeta": "Makanan memberikan sebagian besar kelembapan",
   "activityLegend": "Aktivitas hari ini",
   "activityCalm": "Tenang / Istirahat",
   "activityTypical": "Sedang / Normal",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "Masukkan berat badan yang valid untuk melihat batas air.",
   "sceneAria": "Wadah air untuk hewan yang dipilih",
   "sceneTotal": "TOTAL AIR",
-  "sceneBowl": "tengah rentang harian",
-  "methodTitle": "Metode perhitungan",
-  "methodText": "Mengikuti panduan AAHA yaitu 60 mL/kg untuk anjing dan 40 mL/kg untuk kucing, disesuaikan dengan makanan dan cuaca.",
   "noteTitle": "Mangkuk air bukan alat diagnosis",
   "noteText": "Selalu sediakan air bersih dan segar. Jika ada perubahan mendadak pada rasa haus, hubungi dokter hewan.",
-  "invalidWeight": "Silakan masukkan berat badan yang valid.",
-  "weightRange": "Berat badan harus antara 0.5 kg dan 100 kg."
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

@@ -23,7 +23,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "presetToday": "Oggi",
   "presetWeekAgo": "7 giorni fa",
   "presetFortnightAgo": "14 giorni fa",
-  "calculateButton": "Calcola finestra del parto",
   "resultEyebrow": "La bussola di nidificazione indica",
   "dueDateLabel": "Data presunta del parto",
   "windowLabel": "Finestra attesa",
@@ -45,7 +44,6 @@ const ui: PetGestationLocaleContent['ui'] = {
   "sourceTitle": "Metodologia",
   "sourceText": "I cani utilizzano un intervallo da 58 a 72 giorni, mentre gatti, conigli e furetti seguono il Manuale Veterinario MSD.",
   "invalidDate": "Inserisci una data di accoppiamento valida.",
-  "futureDate": "Una data futura non può indicare una gravidanza attiva."
 };
 
 const faq: PetGestationLocaleContent['faq'] = [

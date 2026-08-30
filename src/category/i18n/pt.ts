@@ -8,7 +8,7 @@ export const content: CategoryLocaleContent = {
     { type: 'title', text: 'Nutrição e Bem-estar Animal: Ciência ao Serviço do Seu Animal', level: 2 },
     {
       type: 'paragraph',
-      html: 'Cuidar de um cão, gato ou coelho é muito mais do que dar-lhes comida e afeto. Envolve compreender a sua biologia, o seu ritmo de envelhecimento e as suas necessidades energéticas específicas. Nesta secção oferecemos <strong>calculadoras veterinárias gratuitas</strong> que aplicam fórmulas científicas validadas para o ajudar a tomar melhores decisões sobre a saúde do seu companheiro.',
+      html: 'Cuidar de um cão, gato ou coelho implica compreender a sua biologia, envelhecimento e necessidades energéticas. As nossas <strong>calculadoras veterinárias gratuitas</strong> usam fórmulas publicadas para apoiar decisões informadas.',
     },
     {
       type: 'paragraph',

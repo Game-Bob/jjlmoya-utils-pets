@@ -8,26 +8,16 @@ const description = 'Bereken de dagelijkse waterbehoefte van uw hond of kat op b
 
 const ui: PetWaterIntakeUI = {
   "journeyHint": "Kies het dier, voer het lichaamsgewicht in en stel het voer en het weer van vandaag in.",
-  "instantHint": "Elke optie past de waterstand direct aan. Dit is een oriënterende richtlijn.",
-  "unitLegend": "Eenheden",
-  "metricUnit": "Metrisch",
-  "imperialUnit": "Imperiaal",
   "speciesLegend": "Voor wie is de waterbak?",
   "speciesDog": "Hond",
   "speciesCat": "Kat",
-  "speciesDogMeta": "Richtlijn onderhoud 60 mL per kg",
-  "speciesCatMeta": "Richtlijn onderhoud 40 mL per kg",
   "weightLabel": "Lichaamsgewicht",
   "weightHint": "Voer het huidige gezonde gewicht in.",
   "weightKg": "kg",
-  "weightLb": "lb",
   "dietLegend": "Hoeveel water komt uit de voeding?",
   "dietDry": "Voornamelijk droogvoer (brokken)",
-  "dietDryMeta": "Het meeste water wordt uit de bak gedronken",
   "dietMixed": "Gemengde voeding",
-  "dietMixedMeta": "Een deel van het water komt uit de maaltijden",
   "dietWet": "Voornamelijk natvoer (blik/zakjes)",
-  "dietWetMeta": "Voeding levert het grootste deel van het vocht",
   "activityLegend": "Activiteit vandaag",
   "activityCalm": "Rustig / Rust",
   "activityTypical": "Matig / Normaal",
@@ -52,13 +42,8 @@ const ui: PetWaterIntakeUI = {
   "resultEmpty": "Voer een geldig gewicht in om de waterstand te zien.",
   "sceneAria": "Waterreservoir voor het geselecteerde dier",
   "sceneTotal": "TOTAAL WATER",
-  "sceneBowl": "midden van de dagelijkse marge",
-  "methodTitle": "Berekeningsmethode",
-  "methodText": "Volgens de AAHA-richtlijnen van 60 mL/kg voor honden en 40 mL/kg voor katten, aangepast aan voer en weer.",
   "noteTitle": "Een drinkbak vervangt geen diagnose",
   "noteText": "Zorg altijd voor schoon drinkwater. Raadpleeg een dierenarts bij plotselinge veranderingen in dorst.",
-  "invalidWeight": "Voer een geldig lichaamsgewicht in.",
-  "weightRange": "Het gewicht moet tussen 0.5 kg en 100 kg liggen."
 };
 
 const faq: PetWaterIntakeLocaleContent['faq'] = [

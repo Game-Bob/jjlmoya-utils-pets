@@ -35,8 +35,6 @@ const ui: PetToxicityUI = {
   "sourceText": "Profiller ASPCA, FDA ve MSD Veteriner Kılavuzunun veteriner toksikolojisi kılavuzlarına dayanmaktadır.",
   "emergencyTitle": "Evcil hayvanınız tehlikeli bir şey yediyse",
   "emergencyText": "Hemen veteriner hekiminizi veya acil kliniği arayın. Ambalajı, içerik listesini ve tahmini miktarı saklayın.",
-  "openMenu": "Seçenekleri aç",
-  "closeMenu": "Seçenekleri kapat"
 };
 
 const faq: PetToxicityLocaleContent['faq'] = [

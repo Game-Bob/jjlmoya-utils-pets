@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'evcil-hayvanlar',
   title: 'Evcil Hayvan Araçları',
-  description: 'Evcil hayvan sahipleri için ücretsiz hesaplayıcılar ve yardımcı programlar. Köpeğinizin veya kedinizin gerçek yaşını öğrenin ve günlük mama miktarını veteriner hassasiyetiyle hesaplayın.',
+  description: 'Evcil hayvan sahipleri için ücretsiz hesaplayıcılar: köpek ve kedi yaşı ile günlük mama miktarını tahmin edin.',
   seo: [
     { type: 'title', text: 'Hayvan Beslenmesi ve Refahı: Evcil Hayvanınızın Hizmetinde Bilim', level: 2 },
     {

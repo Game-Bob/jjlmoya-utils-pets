@@ -28,6 +28,4 @@ export interface PetToxicityUI {
   sourceText: string;
   emergencyTitle: string;
   emergencyText: string;
-  openMenu: string;
-  closeMenu: string;
 }
