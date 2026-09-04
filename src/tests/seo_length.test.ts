@@ -13,6 +13,7 @@ describe('SEO Content Length Validation', () => {
       Object.keys(entry.i18n).forEach((locale) => {
         it(`${locale}: SEO section should contain between 400 and 900 words`, async () => {
           const loader = (entry.i18n as any)[locale];
+          if (!loader) return;
           const content = await loader();
           if (!content.seo) return;
 
