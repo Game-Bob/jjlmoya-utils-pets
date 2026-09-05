@@ -1,0 +1,45 @@
+---
+import type { PetMedicationSchedulePlannerUI } from './index';
+
+interface Props {
+  ui: PetMedicationSchedulePlannerUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="pet-medication-schedule-planner" data-schedule-root>
+  <script is:inline type="application/json" data-medication-ui set:html={JSON.stringify(ui)}></script>
+  <header class="medication-hero">
+    <div><p class="medication-kicker">{ui.heroEyebrow}</p><p class="medication-hint">{ui.heroHint}</p></div>
+    <span class="local-badge">{ui.localOnlyLabel}</span>
+  </header>
+  <div class="medication-workbench">
+    <form class="medication-form" onsubmit="return false">
+      <div class="form-heading"><span>01</span><div><p>{ui.scheduleTitle}</p><h2>{ui.medicationNameLabel}</h2></div></div>
+      <label class="full-field"><span>{ui.medicationNameLabel}</span><input data-input data-medication-name type="text" placeholder={ui.medicationNamePlaceholder} autocomplete="off" /></label>
+      <div class="two-fields"><label><span>{ui.startDateLabel}</span><input data-input data-start-date type="date" /></label><label><span>{ui.startTimeLabel}</span><input data-input data-start-time type="time" /></label></div>
+      <fieldset class="mode-field"><legend>{ui.scheduleModeLabel}</legend><div class="mode-buttons"><button type="button" data-mode="interval" aria-pressed="true">{ui.intervalMode}</button><button type="button" data-mode="times" aria-pressed="false">{ui.timesMode}</button></div></fieldset>
+      <label data-interval-wrap><span>{ui.intervalHoursLabel}</span><input data-input data-interval-hours type="number" min="1" max="24" step="1" /></label>
+      <label data-times-wrap hidden><span>{ui.timesLabel}<small>{ui.timesHint}</small></span><input data-input data-daily-times type="text" /></label>
+      <label><span>{ui.durationLabel}</span><span class="with-suffix"><input data-input data-duration-days type="number" min="1" max="30" step="1" /><b>{ui.durationUnit}</b></span></label>
+      <label><span>{ui.instructionsLabel}</span><textarea data-input data-instructions rows="3" placeholder={ui.instructionsPlaceholder}></textarea></label>
+      <p class="form-error" data-error role="alert"></p>
+      <button class="reset-button" type="button" data-reset>{ui.reset}</button>
+    </form>
+    <section class="medication-result" data-result aria-live="polite">
+      <div class="result-top"><div><p class="result-kicker">{ui.scheduleSummary}</p><h2>{ui.scheduleTitle}</h2></div><div class="next-dose"><span>{ui.nextDoseLabel}</span><strong data-next-dose>{ui.noNextDose}</strong></div></div>
+      <div class="progress-line"><span data-completed-count></span><span class="progress-rule"></span></div>
+      <div class="schedule-list" data-schedule-list aria-label={ui.scheduleIllustration}></div>
+      <p class="empty-schedule" data-empty-schedule>{ui.emptySchedule}</p>
+    </section>
+  </div>
+  <aside class="medication-safety"><strong>{ui.safetyTitle}</strong><span>{ui.safetyText}</span></aside>
+  <p class="medication-method"><strong>{ui.methodTitle}</strong> {ui.methodText}</p>
+</div>
+
+<script>
+  import { initMedicationSchedulePlanner } from './controller';
+  const root = document.querySelector<HTMLElement>('[data-schedule-root]');
+  if (root) initMedicationSchedulePlanner(root);
+</script>

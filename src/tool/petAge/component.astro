@@ -254,7 +254,7 @@ const { ui } = Astro.props;
       const url = generateShareUrl(state);
       try {
         await navigator.clipboard.writeText(url);
-        if (els.shareText) els.shareText.textContent = uiData.shareSuccess;
+        if (els.shareText) els.shareText.textContent = uiData.shareSuccess || "";
         if (els.shareBtn) els.shareBtn.classList.add("age-btn-success");
         setTimeout(() => (window.location.href = url), 800);
       } catch {
