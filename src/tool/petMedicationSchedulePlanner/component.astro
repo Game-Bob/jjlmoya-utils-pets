@@ -10,10 +10,6 @@ const { ui } = Astro.props;
 
 <div class="pet-medication-schedule-planner" data-schedule-root>
   <script is:inline type="application/json" data-medication-ui set:html={JSON.stringify(ui)}></script>
-  <header class="medication-hero">
-    <div><p class="medication-kicker">{ui.heroEyebrow}</p><p class="medication-hint">{ui.heroHint}</p></div>
-    <span class="local-badge">{ui.localOnlyLabel}</span>
-  </header>
   <div class="medication-workbench">
     <form class="medication-form" onsubmit="return false">
       <div class="form-heading"><span>01</span><div><p>{ui.scheduleTitle}</p><h2>{ui.medicationNameLabel}</h2></div></div>
@@ -28,14 +24,13 @@ const { ui } = Astro.props;
       <button class="reset-button" type="button" data-reset>{ui.reset}</button>
     </form>
     <section class="medication-result" data-result aria-live="polite">
-      <div class="result-top"><div><p class="result-kicker">{ui.scheduleSummary}</p><h2>{ui.scheduleTitle}</h2></div><div class="next-dose"><span>{ui.nextDoseLabel}</span><strong data-next-dose>{ui.noNextDose}</strong></div></div>
+      <div class="result-top"><div><h2>{ui.scheduleTitle}</h2></div><div class="next-dose"><span>{ui.nextDoseLabel}</span><strong data-next-dose>{ui.noNextDose}</strong></div></div>
       <div class="progress-line"><span data-completed-count></span><span class="progress-rule"></span></div>
       <div class="schedule-list" data-schedule-list aria-label={ui.scheduleIllustration}></div>
       <p class="empty-schedule" data-empty-schedule>{ui.emptySchedule}</p>
     </section>
   </div>
   <aside class="medication-safety"><strong>{ui.safetyTitle}</strong><span>{ui.safetyText}</span></aside>
-  <p class="medication-method"><strong>{ui.methodTitle}</strong> {ui.methodText}</p>
 </div>
 
 <script>

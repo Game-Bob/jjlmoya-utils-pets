@@ -9,7 +9,7 @@ function todayValue(): string {
 }
 
 function defaultState(): MedicationStorageState {
-  return { medicationName: '', startDate: todayValue(), startTime: '08:00', mode: 'interval', intervalHours: 8, dailyTimes: '08:00, 16:00, 00:00', durationDays: 5, instructions: '', completedIds: [] };
+  return { medicationName: 'Example medicine', startDate: todayValue(), startTime: '08:00', mode: 'interval', intervalHours: 8, dailyTimes: '08:00, 16:00, 00:00', durationDays: 5, instructions: 'Give exactly as prescribed by your veterinarian.', completedIds: [] };
 }
 
 function readUI(root: HTMLElement): PetMedicationSchedulePlannerUI {
@@ -18,7 +18,9 @@ function readUI(root: HTMLElement): PetMedicationSchedulePlannerUI {
 }
 
 function mergeState(stored: Partial<MedicationStorageState>): MedicationStorageState {
-  return { ...defaultState(), ...stored, completedIds: Array.isArray(stored.completedIds) ? stored.completedIds : [] };
+  const state = { ...defaultState(), ...stored, completedIds: Array.isArray(stored.completedIds) ? stored.completedIds : [] };
+  if (!state.medicationName.trim()) state.medicationName = defaultState().medicationName;
+  return state;
 }
 
 function readForm(root: HTMLElement, state: MedicationStorageState): void {

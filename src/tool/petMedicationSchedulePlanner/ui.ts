@@ -3,8 +3,6 @@ import type { ToolLocaleContent } from '../../types';
 export interface PetMedicationSchedulePlannerUI {
   [key: string]: string;
   dateLocale: string;
-  heroEyebrow: string;
-  heroHint: string;
   medicationNameLabel: string;
   medicationNamePlaceholder: string;
   startDateLabel: string;
@@ -21,7 +19,6 @@ export interface PetMedicationSchedulePlannerUI {
   instructionsPlaceholder: string;
   reset: string;
   scheduleTitle: string;
-  scheduleSummary: string;
   nextDoseLabel: string;
   noNextDose: string;
   completedCount: string;
@@ -32,11 +29,8 @@ export interface PetMedicationSchedulePlannerUI {
   due: string;
   emptySchedule: string;
   invalidInput: string;
-  localOnlyLabel: string;
   safetyTitle: string;
   safetyText: string;
-  methodTitle: string;
-  methodText: string;
   scheduleIllustration: string;
 }
 

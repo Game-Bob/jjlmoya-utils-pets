@@ -1,6 +1,6 @@
 import type { BibliographyEntry } from '../../types';
 
 export const bibliography: BibliographyEntry[] = [
-  { name: 'American Veterinary Medical Association: Medication Safety', url: 'https://www.avma.org/resources/pet-owners/petcare/medication-safety' },
-  { name: 'FDA: Giving Medication to Your Pet', url: 'https://www.fda.gov/animal-veterinary/animal-health-literacy/giving-medication-your-pet' },
+  { name: 'FDA: Medications for Your Pet - Questions for Your Vet', url: 'https://www.fda.gov/animal-veterinary/animal-health-literacy/medications-your-pet-questions-your-vet' },
+  { name: 'FDA: Pet Meds', url: 'https://www.fda.gov/animal-veterinary/animal-health-literacy/pet-meds' },
 ];

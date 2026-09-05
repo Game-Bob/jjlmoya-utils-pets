@@ -2,7 +2,7 @@ import type { FAQPage, HowTo, SoftwareApplication, WithContext } from 'schema-dt
 import { bibliography } from '../bibliography';
 import type { PetMedicationSchedulePlannerLocaleContent, PetMedicationSchedulePlannerUI } from '../ui';
 
-type MedicationUIFields = Pick<PetMedicationSchedulePlannerUI, 'dateLocale' | 'heroEyebrow' | 'heroHint' | 'medicationNameLabel' | 'medicationNamePlaceholder' | 'startDateLabel' | 'startTimeLabel' | 'scheduleModeLabel' | 'intervalMode' | 'timesMode' | 'intervalHoursLabel' | 'timesLabel' | 'timesHint' | 'durationLabel' | 'durationUnit' | 'instructionsLabel' | 'instructionsPlaceholder' | 'reset' | 'scheduleTitle' | 'scheduleSummary' | 'nextDoseLabel' | 'noNextDose' | 'completedCount' | 'markDone' | 'markUndone' | 'completed' | 'upcoming' | 'due' | 'emptySchedule' | 'invalidInput' | 'localOnlyLabel' | 'safetyTitle' | 'safetyText' | 'methodTitle' | 'methodText' | 'scheduleIllustration'>;
+type MedicationUIFields = Pick<PetMedicationSchedulePlannerUI, 'dateLocale' | 'medicationNameLabel' | 'medicationNamePlaceholder' | 'startDateLabel' | 'startTimeLabel' | 'scheduleModeLabel' | 'intervalMode' | 'timesMode' | 'intervalHoursLabel' | 'timesLabel' | 'timesHint' | 'durationLabel' | 'durationUnit' | 'instructionsLabel' | 'instructionsPlaceholder' | 'reset' | 'scheduleTitle' | 'nextDoseLabel' | 'noNextDose' | 'completedCount' | 'markDone' | 'markUndone' | 'completed' | 'upcoming' | 'due' | 'emptySchedule' | 'invalidInput' | 'safetyTitle' | 'safetyText' | 'scheduleIllustration'>;
 
 export interface MedicationCopy extends MedicationUIFields {
   slug: string;
@@ -17,6 +17,7 @@ export interface MedicationCopy extends MedicationUIFields {
   seoSafety: string;
   tipTitle: string;
   tipText: string;
+  methodText: string;
   faq: { question: string; answer: string }[];
   howTo: { name: string; text: string }[];
 }

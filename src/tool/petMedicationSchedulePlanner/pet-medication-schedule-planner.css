@@ -1,0 +1,368 @@
+.pet-medication-schedule-planner {
+  --med-ink: #17343b;
+  --med-muted: #5c7477;
+  --med-paper: #f7f0e6;
+  --med-card: #fffdf8;
+  --med-line: #d2ddd8;
+  --med-teal: #087c78;
+  --med-teal-dark: #073f43;
+  --med-coral: #d9624b;
+  --med-coral-soft: #f4d7ca;
+  --med-yellow: #efc66e;
+  --med-focus: #e99882;
+  --med-result: #123840;
+  --med-result-muted: #b8d4d0;
+
+  box-sizing: border-box;
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--med-line);
+  border-radius: 1.5rem;
+  color: var(--med-ink);
+  background: var(--med-paper);
+  box-shadow: 0.45rem 0.45rem 0 rgba(20, 62, 58, 0.12);
+}
+
+.pet-medication-schedule-planner .medication-workbench,
+.pet-medication-schedule-planner .result-top,
+.pet-medication-schedule-planner .two-fields {
+  display: grid;
+}
+
+.pet-medication-schedule-planner p,
+.pet-medication-schedule-planner h2,
+.pet-medication-schedule-planner h3 {
+  margin: 0;
+}
+
+.pet-medication-schedule-planner .form-heading p,
+.pet-medication-schedule-planner .result-kicker {
+  color: var(--med-coral);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.pet-medication-schedule-planner .medication-workbench {
+  grid-template-columns: minmax(17rem, 0.78fr) minmax(0, 1.22fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pet-medication-schedule-planner .medication-form,
+.pet-medication-schedule-planner .medication-result {
+  min-width: 0;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid var(--med-line);
+  border-radius: 1.15rem;
+}
+
+.theme-dark .pet-medication-schedule-planner {
+  --med-ink: #eaf6f3;
+  --med-muted: #a6c2c2;
+  --med-paper: #10242c;
+  --med-card: #183a43;
+  --med-line: #3b6269;
+  --med-teal: #49cabb;
+  --med-teal-dark: #0a2d34;
+  --med-coral: #ff9a80;
+  --med-coral-soft: #5a3435;
+  --med-yellow: #f2c86d;
+  --med-focus: #ffb39d;
+  --med-result: #0a252d;
+  --med-result-muted: #c1dbd6;
+
+  border-color: var(--med-line);
+  background: var(--med-paper);
+  box-shadow: 0.45rem 0.45rem 0 rgba(0, 0, 0, 0.28);
+}
+
+.pet-medication-schedule-planner .medication-form {
+  background: var(--med-card);
+}
+.pet-medication-schedule-planner .medication-result {
+  overflow: hidden;
+  color: #fffdf8;
+  background: var(--med-result);
+  border-color: var(--med-result);
+}
+
+.pet-medication-schedule-planner .form-heading {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--med-line);
+}
+
+.pet-medication-schedule-planner .form-heading > span {
+  display: grid;
+  flex: 0 0 2.2rem;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.65rem;
+  color: var(--med-card);
+  background: var(--med-coral);
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.pet-medication-schedule-planner .form-heading h2,
+.pet-medication-schedule-planner .result-top h2 {
+  margin-top: 0.15rem;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.pet-medication-schedule-planner .form-heading p {
+  color: var(--med-muted);
+  font-size: 0.68rem;
+}
+
+.pet-medication-schedule-planner label,
+.pet-medication-schedule-planner fieldset {
+  display: grid;
+  gap: 0.4rem;
+  min-width: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+}
+
+.pet-medication-schedule-planner label > span,
+.pet-medication-schedule-planner legend {
+  color: var(--med-ink);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.pet-medication-schedule-planner .two-fields {
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.pet-medication-schedule-planner input,
+.pet-medication-schedule-planner textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--med-line);
+  border-radius: 0.65rem;
+  padding: 0.65rem 0.7rem;
+  color: var(--med-ink);
+  background: var(--med-card);
+  font: inherit;
+}
+
+.pet-medication-schedule-planner textarea {
+  resize: vertical;
+}
+
+.pet-medication-schedule-planner input:focus-visible,
+.pet-medication-schedule-planner textarea:focus-visible,
+.pet-medication-schedule-planner button:focus-visible {
+  outline: 3px solid var(--med-focus);
+  outline-offset: 2px;
+}
+
+.pet-medication-schedule-planner small {
+  display: block;
+  color: var(--med-muted);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.pet-medication-schedule-planner .mode-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.pet-medication-schedule-planner button {
+  min-height: 2.65rem;
+  border: 1px solid var(--med-line);
+  border-radius: 0.7rem;
+  padding: 0.55rem 0.75rem;
+  color: var(--med-ink);
+  background: var(--med-card);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.pet-medication-schedule-planner button:hover,
+.pet-medication-schedule-planner button:focus-visible {
+  border-color: var(--med-teal);
+  transform: translateY(-1px);
+}
+.pet-medication-schedule-planner .mode-buttons button.is-active {
+  color: var(--med-card);
+  background: var(--med-teal);
+  border-color: var(--med-teal);
+}
+.pet-medication-schedule-planner .with-suffix {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.pet-medication-schedule-planner .with-suffix input {
+  max-width: 7rem;
+}
+.pet-medication-schedule-planner .with-suffix b {
+  color: var(--med-muted);
+  font-size: 0.8rem;
+}
+
+.pet-medication-schedule-planner .form-error {
+  min-height: 1.3rem;
+  color: var(--med-coral);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.pet-medication-schedule-planner .reset-button {
+  width: 100%;
+  color: var(--med-muted);
+}
+.pet-medication-schedule-planner .result-top {
+  grid-template-columns: minmax(0, 1fr) minmax(9rem, 0.75fr);
+  gap: 1rem;
+  align-items: start;
+}
+.pet-medication-schedule-planner .result-top h2 {
+  color: #fffdf8;
+}
+.pet-medication-schedule-planner .next-dose {
+  padding: 0.75rem;
+  border: 1px solid rgba(184, 212, 208, 0.35);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.07);
+}
+.pet-medication-schedule-planner .next-dose span,
+.pet-medication-schedule-planner .next-dose strong {
+  display: block;
+}
+.pet-medication-schedule-planner .next-dose span {
+  color: var(--med-result-muted);
+  font-size: 0.7rem;
+}
+.pet-medication-schedule-planner .next-dose strong {
+  margin-top: 0.25rem;
+  line-height: 1.3;
+}
+.pet-medication-schedule-planner .progress-line {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  margin: 1.2rem 0 0.8rem;
+  color: var(--med-result-muted);
+  font-size: 0.78rem;
+}
+.pet-medication-schedule-planner .progress-rule {
+  flex: 1;
+  height: 1px;
+  background: rgba(184, 212, 208, 0.35);
+}
+.pet-medication-schedule-planner .schedule-list {
+  display: grid;
+  gap: 0.95rem;
+  max-height: 35rem;
+  overflow: auto;
+  padding-right: 0.25rem;
+}
+.pet-medication-schedule-planner .dose-day {
+  display: grid;
+  gap: 0.45rem;
+}
+.pet-medication-schedule-planner .dose-day h3 {
+  color: var(--med-yellow);
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+.pet-medication-schedule-planner .dose-row {
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr) auto;
+  gap: 0.65rem;
+  align-items: center;
+  min-height: 3rem;
+  text-align: left;
+  color: #fffdf8;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(184, 212, 208, 0.25);
+}
+.pet-medication-schedule-planner .dose-row.is-complete {
+  color: var(--med-result-muted);
+  background: rgba(59, 195, 181, 0.16);
+}
+.pet-medication-schedule-planner .dose-check {
+  width: 0.95rem;
+  height: 0.95rem;
+  border: 2px solid var(--med-result-muted);
+  border-radius: 0.3rem;
+}
+.pet-medication-schedule-planner .dose-row.is-complete .dose-check {
+  border-color: var(--med-yellow);
+  background: var(--med-yellow);
+  box-shadow: inset 0 0 0 3px var(--med-result);
+}
+.pet-medication-schedule-planner .dose-time {
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+.pet-medication-schedule-planner .dose-state {
+  color: var(--med-result-muted);
+  font-size: 0.72rem;
+}
+.pet-medication-schedule-planner .empty-schedule {
+  color: var(--med-result-muted);
+  font-size: 0.9rem;
+}
+.pet-medication-schedule-planner .medication-safety,
+.pet-medication-schedule-planner .medication-method {
+  display: flex;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+  color: var(--med-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.pet-medication-schedule-planner .medication-safety {
+  padding: 0.9rem 1rem;
+  border-left: 0.25rem solid var(--med-coral);
+  background: color-mix(in srgb, var(--med-coral-soft) 60%, transparent);
+}
+.pet-medication-schedule-planner .medication-safety strong,
+.pet-medication-schedule-planner .medication-method strong {
+  color: var(--med-ink);
+}
+
+@media (max-width: 760px) {
+  .pet-medication-schedule-planner .medication-workbench {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .pet-medication-schedule-planner .two-fields,
+  .pet-medication-schedule-planner .result-top {
+    grid-template-columns: 1fr;
+  }
+  .pet-medication-schedule-planner .medication-safety,
+  .pet-medication-schedule-planner .medication-method {
+    display: block;
+  }
+  .pet-medication-schedule-planner .medication-safety strong,
+  .pet-medication-schedule-planner .medication-method strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}

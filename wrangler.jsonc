@@ -19,6 +19,10 @@
             "zone_name": "jjlmoya.es"
         },
         {
+            "pattern": "www.jjlmoya.es/utilidades/planificador-horario-medicacion-mascota*",
+            "zone_name": "jjlmoya.es"
+        },
+        {
             "pattern": "www.jjlmoya.es/utilidades/calculadora-gestacion-mascotas*",
             "zone_name": "jjlmoya.es"
         },
