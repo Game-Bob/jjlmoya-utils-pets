@@ -1,485 +1,545 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-07T06:41:40.880Z",
+  "generatedAt": "2026-09-09T18:15:34.460Z",
   "pages": {
     "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/gefahrliche-lebensmittel-hunde-katzen-prufer/": {
-      "hash": "0cf380b731f8ec5d5ca3bdc3ff5a7e1d716e66c9ef205fc555944db66e1e3f1a",
+      "hash": "422627dd0cc30375eb030f5782d7780b4ecf9bc28ecc9d6dd29584d122b20de7",
       "route": "/de/werkzeuge/kategorien/haustiere/gefahrliche-lebensmittel-hunde-katzen-prufer/"
     },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/halsband-groesse-haustier-berechnen/": {
+      "hash": "a3ff5c366f8e1736c91252e5ad1093fccc232f0fd947aeed439d4a521e43e1ea",
+      "route": "/de/werkzeuge/kategorien/haustiere/halsband-groesse-haustier-berechnen/"
+    },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/haustier-alter-rechner/": {
-      "hash": "ae4e61e15d19ef4dc8aa74be73c114fbf7759bf639b78d2540fb9ba13925ab9e",
+      "hash": "3c9ed796b2c8dea1e919cd053753492f6a4b15205c7e70b4e2c4b941e6df6a12",
       "route": "/de/werkzeuge/kategorien/haustiere/haustier-alter-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/haustier-tagesration-rechner/": {
-      "hash": "f0dc52591e5ce210af438a2df00a79c3bd8ba93ae640f72577fefbe0aaa3b770",
+      "hash": "d11e01cde6a5e44de46064f188a27f3b2228430f6db1251c17831318c05dc82a",
       "route": "/de/werkzeuge/kategorien/haustiere/haustier-tagesration-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/haustier-transportbox-groessenplaner/": {
-      "hash": "d5629e52ac1143b5c7c5c2cea974a5c84309fa76e234091ccb738192fdf01259",
+      "hash": "9db734f1c57c01b67d8090607db28ee7f1c9d9e5fa36d824658f2b2626ec66f6",
       "route": "/de/werkzeuge/kategorien/haustiere/haustier-transportbox-groessenplaner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/": {
-      "hash": "7056f5127550cf57999cdde1483400401fb2d0a7a36f93aa0b33e003b128f319",
+      "hash": "ebe144ddab44a2b817c16f561ae2acbe932a3462e09577b486acb5251b4571b6",
       "route": "/de/werkzeuge/kategorien/haustiere/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/medikamentenplan-fuer-haustiere/": {
-      "hash": "a40846ee4319887a282027ceb791a1eefb231f70793c928d1e22c2d5d02adf84",
+      "hash": "5433bd6f6dfa18fba7a818ee7fa6b826d11555bf9b035a6c7ce8952df3566b00",
       "route": "/de/werkzeuge/kategorien/haustiere/medikamentenplan-fuer-haustiere/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/trachtigkeitsrechner-haustiere/": {
-      "hash": "d2251a6e0c737bd2ece3333d88a2fbed9588a5e6931121441979ff6d42d2a93c",
+      "hash": "a89a7981203b1551d2b2f05f04ab0cc617b8a113439b125d24a58b01a10db5c5",
       "route": "/de/werkzeuge/kategorien/haustiere/trachtigkeitsrechner-haustiere/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/haustiere/wasserbedarf-rechner-hunde-katzen/": {
-      "hash": "eb06a6839fa4311ea19d28ccd47439233a8d09a49dd13ceaf1d197a44bf00b10",
+      "hash": "3febf77bce4f8c442eb712adb9fdc7401188a7ce3b0184600788c75983e7f925",
       "route": "/de/werkzeuge/kategorien/haustiere/wasserbedarf-rechner-hunde-katzen/"
     },
     "https://www.gamebob.dev/en/utilities/categories/pets/dog-cat-water-intake-calculator/": {
-      "hash": "98cea87c60fdae66f7bef72cb0f8b04174475610dbcabc419ae79e7aa5ccd939",
+      "hash": "cbe48144fb28ae1bcfa7740cac6c2337df1e3712c7bef099936037f9562ff3e4",
       "route": "/en/utilities/categories/pets/dog-cat-water-intake-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/pets/": {
-      "hash": "edb17dfd0885089488d81184a02e811dfcc54ee12326c7c8fafcf573a4193175",
+      "hash": "1cf024f6aca9a72747d433b5ab6556129d02ac33de65ce0bc7c885e62e6c1cc2",
       "route": "/en/utilities/categories/pets/"
     },
     "https://www.gamebob.dev/en/utilities/categories/pets/pet-age-calculator/": {
-      "hash": "ad65bd5667d2801dda9b39ea91444166c5c6dca0337c0fdf205898754754df40",
+      "hash": "49474a4929986fada213f556f4cbb9b0350c5c998dc09ed99faea942f6861c27",
       "route": "/en/utilities/categories/pets/pet-age-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/pets/pet-carrier-crate-size-planner/": {
-      "hash": "3becee0b3f5ecb677236b3d0b4446e1dee88bd555f58c53f8fb3d3f7d27bfcff",
+      "hash": "6295fb30f873c4025f70c3b54be8a64eb7a418d54dec214148ac3c0241cd3985",
       "route": "/en/utilities/categories/pets/pet-carrier-crate-size-planner/"
     },
+    "https://www.gamebob.dev/en/utilities/categories/pets/pet-collar-size-calculator/": {
+      "hash": "37bbfd260a7fcdb8bd0d179aaa60f0c004789e77474c2bbd332a44a3012827df",
+      "route": "/en/utilities/categories/pets/pet-collar-size-calculator/"
+    },
     "https://www.gamebob.dev/en/utilities/categories/pets/pet-daily-ration-calculator/": {
-      "hash": "d6a77554211b88847f794523612ff96791b738ccb365b0558e8c06d5ed90d77a",
+      "hash": "a25d34add7687ec40eb192844e1141aeb8871626521cb63df34c2916fac7cf3a",
       "route": "/en/utilities/categories/pets/pet-daily-ration-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/pets/pet-food-toxicity-checker/": {
-      "hash": "4a056b12851fafba4e2ca5e869735fd1064bc61e95eed6c96e686b71c20a410a",
+      "hash": "abbc893758ba328fc944c7e7dd61f1c6d3240dc9a068b3055a83a408238e980d",
       "route": "/en/utilities/categories/pets/pet-food-toxicity-checker/"
     },
     "https://www.gamebob.dev/en/utilities/categories/pets/pet-gestation-calculator/": {
-      "hash": "451e91c8c6aafb878a66f05159747eee60cb8c9c260ebf4d306e9f05f6168e08",
+      "hash": "fff7dee221f2644a5529de7b2292ada39015bd22d8f27cbd5eac301d23ae13ac",
       "route": "/en/utilities/categories/pets/pet-gestation-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/pets/pet-medication-schedule-planner/": {
-      "hash": "cf19c1b198c23bf754e737652b9783e0398f473700b4de7772487a50de67c450",
+      "hash": "a20f4405dc7e2d541603ec6db6ba2a47fe61ad557dc08fc889c2d46d6af7310b",
       "route": "/en/utilities/categories/pets/pet-medication-schedule-planner/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/animaux/aliments-toxiques-chiens-chats-verificateur/": {
-      "hash": "78eba737f5c8d7989ed0ccfe16801ca442ee1b99bb54bd1b5d73e6eaa0990589",
+      "hash": "823068cfa5237515de90c529208e52690f6de94c2b9924a0369c9fd2800bcc33",
       "route": "/fr/utilitaires/categories/animaux/aliments-toxiques-chiens-chats-verificateur/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/animaux/calculateur-age-animaux/": {
-      "hash": "f578f161ce48e7eb24557a2f121b98fc1ec5aeddae8556466565087a015e211b",
+      "hash": "b9ba9e7248e1f86fe69ba047c0f95a624bbb96dac81789319fab1feb7de298c7",
       "route": "/fr/utilitaires/categories/animaux/calculateur-age-animaux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/animaux/calculateur-besoin-eau-quotidien-chiens-chats/": {
-      "hash": "0965ad47d2a76e9d9206ecb087b80d3d7332b570e140062aa829fc6df32ecf0b",
+      "hash": "339a64342ff4b82d91e647761553d57499f23dc10e412c8b97c8bc17cd3da341",
       "route": "/fr/utilitaires/categories/animaux/calculateur-besoin-eau-quotidien-chiens-chats/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/animaux/calculateur-gestation-animaux/": {
-      "hash": "cc3a42bef45d68a6f1882516ad08a43c876958b08c9b70a4321f26b5d0cbc975",
+      "hash": "dfaa19aaba076f820add9b03a517cb534b6fef20d76bda854618757e365ca770",
       "route": "/fr/utilitaires/categories/animaux/calculateur-gestation-animaux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/animaux/calculateur-ration-journaliere-animaux/": {
-      "hash": "a74b75b7491e76a4270df6b4a9b8c30a2564c00f7ab71c649e00703b6ffc3df9",
+      "hash": "7718596d922dd79a95e768fe84033cc1416529b25cbaee11999b224d8f050452",
       "route": "/fr/utilitaires/categories/animaux/calculateur-ration-journaliere-animaux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/animaux/calculateur-taille-cage-transport-animaux/": {
-      "hash": "f35b55d24f3b2e694045cc700d09545a8b8ca46dacefdabd9d76dbf783325836",
+      "hash": "c230c15ecc48aa7effc0264bf5ec094dc830356602178d6f6dc4bb90ea6e16bf",
       "route": "/fr/utilitaires/categories/animaux/calculateur-taille-cage-transport-animaux/"
     },
+    "https://www.gamebob.dev/fr/utilitaires/categories/animaux/calculateur-taille-collier-animal/": {
+      "hash": "8300cafcd286d47010fa94fef8d37746f5b290169b2c2a1dbc14a7f83cd69e11",
+      "route": "/fr/utilitaires/categories/animaux/calculateur-taille-collier-animal/"
+    },
     "https://www.gamebob.dev/fr/utilitaires/categories/animaux/": {
-      "hash": "300299eecdc9332909d2b8c2d06daa0b34fe38bc94fb3cb50b0a091d542fc098",
+      "hash": "dd7a953ef94d00a1c6cc3b08519a238490548958e11aeb6d58fdd8153538d6c9",
       "route": "/fr/utilitaires/categories/animaux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/animaux/planning-traitement-animal/": {
-      "hash": "e8e4e9ba3c758962b71b2fa603999a807c701327d6910f9913c4ba60183f155c",
+      "hash": "b0450ca26efd557eeb9ad8314ba5bf215b375e9d10645bc627f1b8f74e44d5f0",
       "route": "/fr/utilitaires/categories/animaux/planning-traitement-animal/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/": {
-      "hash": "dddafb910d26346b305b7093ce10b93d75a4fc2d170bd2d2db1d89837cdc52c8",
+      "hash": "069c42f0c560132a94d8da04bf317568adbc83007931632e7f26557ce66bc1aa",
       "route": "/id/utilitas/kategori/hewan-peliharaan/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/jadwal-obat-hewan/": {
-      "hash": "474bd6fc91292ce6fbcc57d7d40e2b45bf5dafd0944492dac9bb64a5cc56279b",
+      "hash": "47a29a152808d9f0b51e98e51c5d4258776acb4765570004d39c3a949dd529ab",
       "route": "/id/utilitas/kategori/hewan-peliharaan/jadwal-obat-hewan/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/kalkulator-kebutuhan-air-anjing-kucing/": {
-      "hash": "fdbdb3d9fb2c6a3bde2d4e6ca30f81b0a8d3082670bb3c84e1cf92e9f1c6e302",
+      "hash": "502e5aee442e0884c96bd82af5aa2b1d8e892a308c6d64ae687e55dee271c79f",
       "route": "/id/utilitas/kategori/hewan-peliharaan/kalkulator-kebutuhan-air-anjing-kucing/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/kalkulator-kehamilan-hewan-peliharaan/": {
-      "hash": "77b6107052480bb16009fd632243308a757be970fd440dd738c3c9d8d321a0e0",
+      "hash": "4abd605bd280f86443da6e61a29b31d99ba5ea7569e76a2f65d68c8cc30af291",
       "route": "/id/utilitas/kategori/hewan-peliharaan/kalkulator-kehamilan-hewan-peliharaan/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/kalkulator-ransum-harian-hewan-peliharaan/": {
-      "hash": "f6e66a5fc8abf7d2de091535f1db7597d82ac2fac161adc8ba444e873d5e8a22",
+      "hash": "e012a08702014a0e67bc77f59fd39f8f8fcdaec9e183eccb96688cb02cc3298a",
       "route": "/id/utilitas/kategori/hewan-peliharaan/kalkulator-ransum-harian-hewan-peliharaan/"
     },
+    "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/kalkulator-ukuran-kalung-hewan/": {
+      "hash": "c6ad679133671652c5095ed6f4292a9da1b2f70123ebd6b23fa25192d116a77c",
+      "route": "/id/utilitas/kategori/hewan-peliharaan/kalkulator-ukuran-kalung-hewan/"
+    },
     "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/kalkulator-usia-hewan-peliharaan/": {
-      "hash": "202820c53356a11665eb277320ac7c104b1b932b3b2d5e5660ce94bd9ab87b05",
+      "hash": "02ce01db73a8cac28fb404cddee1a2ed04316ddcf4a8f386fbcd76b7b4b42371",
       "route": "/id/utilitas/kategori/hewan-peliharaan/kalkulator-usia-hewan-peliharaan/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/pemeriksa-racun-makanan-hewan-peliharaan/": {
-      "hash": "fdca79222356b16988ce950bf3e67a3773667cf37aead974a6eb38907d667bc2",
+      "hash": "87c38a5053b8a3e90b96ffc92583e336084fe7b997c57ed43a4b5bf85cffd677",
       "route": "/id/utilitas/kategori/hewan-peliharaan/pemeriksa-racun-makanan-hewan-peliharaan/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/hewan-peliharaan/perencana-ukuran-kandang-pet-carrier/": {
-      "hash": "4342face3c456896ac40cecaa08265b85111f6ee1e92224ac90114d1ec9a3fef",
+      "hash": "be047fa6b6c7ee980162c9f0769a36692e5fd5ba208e10050a6e0cc2e594dc9e",
       "route": "/id/utilitas/kategori/hewan-peliharaan/perencana-ukuran-kandang-pet-carrier/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/agenda-medicinali-animali/": {
-      "hash": "08c9f9e9713dc20490a2734f0ebae9cc0afa681cfcbe85f12fc99e17082843da",
+      "hash": "44a0ec49b2fd0e5a705250e8cf0feb07b42f807963daaf3c596ab5b7a86f4bfb",
       "route": "/it/utilita/categorie/animali-domestici/agenda-medicinali-animali/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/calcolatore-dimensioni-trasportino-animali/": {
-      "hash": "4b4f3b8cbcccdc655dbbefb2491046138c45c93d4da6bc86c3e7c7f70c360ce1",
+      "hash": "2fcef170c13d0f1b9d3bb8e21774034e008206485dfedf3e2989b0f6f02a05e2",
       "route": "/it/utilita/categorie/animali-domestici/calcolatore-dimensioni-trasportino-animali/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/calcolatore-eta-animali/": {
-      "hash": "632f37caf85de672f2bd0af586057c88c7f7500e7979bfd134d3885ccedea027",
+      "hash": "f15914c2b55d61992a7f4d3597a18c709b4ce591a2352196caf81b310b95fad0",
       "route": "/it/utilita/categorie/animali-domestici/calcolatore-eta-animali/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/calcolatore-fabbisogno-acqua-giornaliero-cani-gatti/": {
-      "hash": "680b8a76bac668832f66fe019fa9a0eeee873b32a5bfcf947b4c4863b10be3e8",
+      "hash": "145463c4f7f1eb09ba9cda25103a8280e6e79d67bff67070dad9fa6692c6bb4a",
       "route": "/it/utilita/categorie/animali-domestici/calcolatore-fabbisogno-acqua-giornaliero-cani-gatti/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/calcolatore-gestazione-animali/": {
-      "hash": "ed7371c6c9bade78f5608d786e5eba4973822ed511212ac8121de7fee066ac33",
+      "hash": "9daba5bf6a2d08445a2de975ce0a55fe0929fe714a21132dda9b8cbcbe94043a",
       "route": "/it/utilita/categorie/animali-domestici/calcolatore-gestazione-animali/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/calcolatore-razione-giornaliera-animali/": {
-      "hash": "12b2a499c9453a1db1442b15130b01722a8198f5d97794028b03cf41e32c1d2d",
+      "hash": "f425a6ee2bf27698e9a06cbae7e4a30ecb4ce97302effb875f7a29f36f7b0ae1",
       "route": "/it/utilita/categorie/animali-domestici/calcolatore-razione-giornaliera-animali/"
     },
+    "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/calcolatore-taglia-collare-animale/": {
+      "hash": "2770db5a51ead0f8878ab4b5b20a16156c0e1e6891ccb7d00e9f4e25316ea6c5",
+      "route": "/it/utilita/categorie/animali-domestici/calcolatore-taglia-collare-animale/"
+    },
     "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/": {
-      "hash": "bbd00026eb1a0ddff35d94e7ef9d54476e7bde81a4648c9f920afcdbc0ce86f4",
+      "hash": "dd72e74802942c30b74f405dc19cf7a4e7ee537bb7c67de3311bc12a7b8a4255",
       "route": "/it/utilita/categorie/animali-domestici/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/animali-domestici/verificatore-alimenti-tossici-cani-gatti/": {
-      "hash": "ddfe230bd5fa3637428dee458a792cf9acaddf5769e5f2da5b5e38ed2a6913d7",
+      "hash": "d4ac80c878c49467b5c5c26ced73c2496e1c2e2d09368e5155c8ab65759cb25b",
       "route": "/it/utilita/categorie/animali-domestici/verificatore-alimenti-tossici-cani-gatti/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/pets/dog-cat-water-intake-calculator/": {
-      "hash": "f3e6a437373ab774791de85a6fa8f9b397fd8cc69f4b8862e7ba58e4ae2a42dd",
+      "hash": "f90b9dfc8788a6ca03542f37cc57cd834dc1838de9bc6ab24ade710b0279d094",
       "route": "/ja/utilities/categories/pets/dog-cat-water-intake-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/pets/": {
-      "hash": "96063063da38077456f56b84027466acb3e8f2f21a4bf6eb05d5cc03d4c9696e",
+      "hash": "d272dbd8d7ff2254abbcc9b3e7c053e3601fe73f52981c0f1b32ff9f31fb933b",
       "route": "/ja/utilities/categories/pets/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/pets/pet-age-calculator/": {
-      "hash": "9d8c06a0225fded9fa5bcabd35302858126f0f0ded6125ac0b0518716c519600",
+      "hash": "e61fdb4387a7cf15361d4fa271c4c393c64c69db81bcdcef31e0875785aabee4",
       "route": "/ja/utilities/categories/pets/pet-age-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/pets/pet-carrier-crate-size-planner/": {
-      "hash": "e26d670fa59ec31d82543ecec705d39cef936057de57a0736bed576f74e7083a",
+      "hash": "03acb0496b079b53d2807d9d9a58f2ac1f4223b8f8b3ce03b1876adc7311015c",
       "route": "/ja/utilities/categories/pets/pet-carrier-crate-size-planner/"
     },
+    "https://www.gamebob.dev/ja/utilities/categories/pets/pet-collar-size-calculator/": {
+      "hash": "7321f94481bc4677d7b625acf79b6d5d95bffd402719dd4e0204ef349423fe4c",
+      "route": "/ja/utilities/categories/pets/pet-collar-size-calculator/"
+    },
     "https://www.gamebob.dev/ja/utilities/categories/pets/pet-daily-ration-calculator/": {
-      "hash": "821000410024e3461581c4272ad2b5755d53116848ee44e21f627bdbbc6223e3",
+      "hash": "cabda80faac9ca8fe588483d83fb3b43377767f60622f9daece0ff6b7fb08625",
       "route": "/ja/utilities/categories/pets/pet-daily-ration-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/pets/pet-food-toxicity-checker/": {
-      "hash": "0bb306ccfd84cb9ad9c5cdacc0c330f02b4bec51dee6e39cac028740df3f7916",
+      "hash": "5dd64dc7aa5c2fc01458e0170948fa5ec61a3a4a5f87ad910f95b75fe623f42d",
       "route": "/ja/utilities/categories/pets/pet-food-toxicity-checker/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/pets/pet-gestation-calculator/": {
-      "hash": "01923ffea586cc884d2f8b1198687fdc0d73101f32a651a6d569a88f637ce262",
+      "hash": "8d57c5268b92d32d086873aa8d9d1f5df4a5b42da61955476d68125a346ab56b",
       "route": "/ja/utilities/categories/pets/pet-gestation-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/pets/pet-medication-schedule-planner/": {
-      "hash": "e78f179b1b3a07f59419e0a49c92d014102a33613e7f28e8e79554eb29a15e5a",
+      "hash": "a6be86a8262258c1fdaaed3f8de4bb60abb10eef98213f5778927bda7f1335c1",
       "route": "/ja/utilities/categories/pets/pet-medication-schedule-planner/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/pets/dog-cat-water-intake-calculator/": {
-      "hash": "e50da438e5dc11f8ad38a3118aebae79ce68a4c0d7b6856ba6385f139b1b8e99",
+      "hash": "50364fa7f9310dfdebd09f5390ce4fd7e56d8420ef736b68f12fbf0a836f244b",
       "route": "/ko/utilities/categories/pets/dog-cat-water-intake-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/pets/": {
-      "hash": "6da7df255b99f8610de9c32b9a73683c871bb971eec36db46d8839dcb1789207",
+      "hash": "81fd74a77d01d163eb19da010711fa47b89b05abe05bcaf032c6f2a7226f05f4",
       "route": "/ko/utilities/categories/pets/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/pets/pet-age-calculator/": {
-      "hash": "efd67c31445907e2b4c19a738555ff14a976bc1a211323140aa1739a57ed7c22",
+      "hash": "167b497821ac532f1ab41122be5c97bf744c1cb14673e25b2f0e03b515164847",
       "route": "/ko/utilities/categories/pets/pet-age-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/pets/pet-carrier-crate-size-planner/": {
-      "hash": "b8f358d7f775bd7d7225153ce25b26fc8aefa5100077a47cf2e105c40d392e7d",
+      "hash": "06666992b0925d4ae15faf1295c333ce2ff659fe055b66b263f46d90deba3268",
       "route": "/ko/utilities/categories/pets/pet-carrier-crate-size-planner/"
     },
+    "https://www.gamebob.dev/ko/utilities/categories/pets/pet-collar-size-calculator/": {
+      "hash": "2efe88ede542285c818fe5005f231c3b8f800491be9a8a4c9c537cde2b43f770",
+      "route": "/ko/utilities/categories/pets/pet-collar-size-calculator/"
+    },
     "https://www.gamebob.dev/ko/utilities/categories/pets/pet-daily-ration-calculator/": {
-      "hash": "a11c24a7d38bc50579113e4fb2d28378b5e949ab5ef50921ed16d01776ae85e3",
+      "hash": "bc96049f315e8da6b3f439cca77c60772d899a09e84aef507fd35b948f43eb7a",
       "route": "/ko/utilities/categories/pets/pet-daily-ration-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/pets/pet-food-toxicity-checker/": {
-      "hash": "17b4d318288467c476aab275053b9f510f89ab7da55902e873d2b4e3be5c7e97",
+      "hash": "eac1fd6f0518b8beda5b28982e9a09ab161507e027bb5be8eba8d35264cb1209",
       "route": "/ko/utilities/categories/pets/pet-food-toxicity-checker/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/pets/pet-gestation-calculator/": {
-      "hash": "68be88af9c09aaef7c9c75e8b3d8d4099352f08e072908cd4e2d5df8e4182ef2",
+      "hash": "3039cd3a2a1b43403e8d7d7bb47387286095822c780164c75de028c4a681937a",
       "route": "/ko/utilities/categories/pets/pet-gestation-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/pets/pet-medication-schedule-planner/": {
-      "hash": "8c77ad70bc6901c7c0ea4de1cbe49086b9fd96c847d3446bad569fc68ba9fbc8",
+      "hash": "fc184d74b105283a46a896213d61387106c48d5ca75941a507e5942cfa47b672",
       "route": "/ko/utilities/categories/pets/pet-medication-schedule-planner/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/dagelijkse-voedingshoeveelheid-berekenen-huisdier/": {
-      "hash": "e03a4da6f15d886bfd2c1444d195a608e7ff2a95b000eca4b74729c1ed563653",
+      "hash": "e88d86e0f9095ad23a280ebf7d1d8abe8e7bd6138b58eed2464d951ab5d350e7",
       "route": "/nl/hulpmiddelen/categorieen/huisdieren/dagelijkse-voedingshoeveelheid-berekenen-huisdier/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/drachtcalculator-huisdieren/": {
-      "hash": "355a81cfd5a29b32863d57de3e035fbde7e934b2a843e338c992c90e37858fc8",
+      "hash": "1dc0284bff633ed8ec05cbcf416540064d184555cb3bfa73be2d020fb002e593",
       "route": "/nl/hulpmiddelen/categorieen/huisdieren/drachtcalculator-huisdieren/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/giftig-voedsel-honden-katten-controle/": {
-      "hash": "f9bae46707e28134dfa83a15429758fce345b9bae05ea0884969d8107195062e",
+      "hash": "20b00debb7e9ea0aa1adb7c0f73e4c35ede8cd595d1b27df8dc97e302b73cecd",
       "route": "/nl/hulpmiddelen/categorieen/huisdieren/giftig-voedsel-honden-katten-controle/"
     },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/halsbandmaat-huisdier-berekenen/": {
+      "hash": "4bb075d6fdd1be16ee415960a57cc6aa7a221d569c2e9bd8edd5620873bcd0ac",
+      "route": "/nl/hulpmiddelen/categorieen/huisdieren/halsbandmaat-huisdier-berekenen/"
+    },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/": {
-      "hash": "ed2b1cc5d402a476897e1c093d6fb6ba867e9ef66956e2ce91e9ffa36eae14f2",
+      "hash": "563c8f4a9d777cef7cabc960a9afcc51e42ee858f6404d24fd8303e5bbc966c5",
       "route": "/nl/hulpmiddelen/categorieen/huisdieren/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/leeftijd-huisdier-berekenen/": {
-      "hash": "931065d0eef80a300ede5f13bcc82b0d09d19c88d4a98d3dfd6b250e11ac1488",
+      "hash": "083f89f4384cedaeff4d141288e8eef9ba8f5b127f853a8f4e00c16747a3f2ac",
       "route": "/nl/hulpmiddelen/categorieen/huisdieren/leeftijd-huisdier-berekenen/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/medicatieschema-huisdier/": {
-      "hash": "db3808d0bb9e6f5f92a38f0cdcb66d457fdac5d088a8d07047e83b6676e4d201",
+      "hash": "bd33c34645709e5753930ec0cf0f84208f1f30108a934981179202310916d0c1",
       "route": "/nl/hulpmiddelen/categorieen/huisdieren/medicatieschema-huisdier/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/rechner-waterbehoefte-honden-katten/": {
-      "hash": "4c08ba15dacea977694e2a95e9e39bf92dfcdd1d410702e820e3e8d536954b9f",
+      "hash": "e92041293be662f6ee89f5fca61916554875dda62014fc139cd5a82c754ee773",
       "route": "/nl/hulpmiddelen/categorieen/huisdieren/rechner-waterbehoefte-honden-katten/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/huisdieren/reismand-transportbox-afmetingen-planner/": {
-      "hash": "54765f887f2b3ab9f56af63d51480917757d36e624168ba9d9c655ba9ef7c807",
+      "hash": "d0166d56a317078e2d072cef0a82bf43d158bca2351faac483f678de24ed2dd5",
       "route": "/nl/hulpmiddelen/categorieen/huisdieren/reismand-transportbox-afmetingen-planner/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/harmonogram-lekow-dla-zwierzat/": {
-      "hash": "ad058f981ab7b77322ca2f25a2babb7343efb82147745046bb1c1944388c894b",
+      "hash": "b03e530afef03462b9fc5db1b36735b42c964b5c9cda8a7685cdc64dd9dbf410",
       "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/harmonogram-lekow-dla-zwierzat/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/": {
-      "hash": "6bfd24f236e82220f97d6a86a50c07545e318f1e6cbd73c847ac7824308b8af0",
+      "hash": "a3a86080785c06ce0a9bacd075a1bf85bae492315d6b834c77700da603e51079",
       "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-ciazy-zwierzat/": {
-      "hash": "7169e0378f9e52e58c029189eea12247de08f690bbc76e670447838a456ec8ed",
+      "hash": "a2b7b19decec5dce8712173ab703c7f4fb63bf53db4d5aee55ab61ffd3d07bae",
       "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-ciazy-zwierzat/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-dziennej-racji-zywieniowej-zwierzat/": {
-      "hash": "73e5817cad4f6af4ce45cdf405348b5804f60c4a0da704cc404475d3dd2a704b",
+      "hash": "008c1d48e97bc4e6f4d08ff63262a624d735594cdd2e433be8a87030f4e946ad",
       "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-dziennej-racji-zywieniowej-zwierzat/"
     },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-rozmiaru-obrozy-dla-zwierzat/": {
+      "hash": "ef680bea7d911f490e1b8378d4897aba8d35081237215570cd73e584cc522bf9",
+      "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-rozmiaru-obrozy-dla-zwierzat/"
+    },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-wieku-zwierzat/": {
-      "hash": "5e30629d8ed9fde74eb27a80f7166defd3a1b0a4fd5553f8f41a0f3c9879636c",
+      "hash": "4cff9ab90033089aba8f9432a01503307fb692665109e671c307868a4e510736",
       "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-wieku-zwierzat/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-wymiarow-transportera-dla-zwierzat/": {
-      "hash": "40e91ae80bd68e3c44c7ac039a09dc5277a67af53e781315f4bdf6e0b4763f24",
+      "hash": "14339cfb32e054f41f20546f2a06de33f16021a6737d3c411c9719e03e7060ba",
       "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-wymiarow-transportera-dla-zwierzat/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-zapotrzebowania-na-wode-psy-koty/": {
-      "hash": "31ae7135b076591902b59fa13445ee3aa7e2571b77ae850de263ef6e50a4032a",
+      "hash": "02f4daa1599d9f13ed0a3799a7be48afb5e05bdcdbfe5b34639c759703cb238c",
       "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/kalkulator-zapotrzebowania-na-wode-psy-koty/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/zwierzeta-domowe/sprawdzian-toksycznej-zywnosci-psy-koty/": {
-      "hash": "553eeebcadf837ae947711dd8b8f3c12c3c658be56657f5181c6251a0622e4cd",
+      "hash": "07eeb2ca59847c5495f534910f748ca35c7abf5b64f0077cf5b7f7f05fa2ae35",
       "route": "/pl/narzedzia/kategorie/zwierzeta-domowe/sprawdzian-toksycznej-zywnosci-psy-koty/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/agenda-medicacao-animais/": {
-      "hash": "1c23d0d4797dccc79dac362b3be27e3cb7d1a9db4f7562c8b2b4f082ac7fc8d5",
+      "hash": "3552088f09f46b5805de274fddf5428af0298245a30baf3987bc7489dd3077eb",
       "route": "/pt/utilidades/categorias/animais-de-estimacao/agenda-medicacao-animais/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/calculadora-gestacao-animais/": {
-      "hash": "6c89d4a8b376bbdee007df157c4ad262c10c14174966be754078b3a5b900c696",
+      "hash": "1b5697164afe6d890eb57ff366b9147bfa485659bae695193411ef580b58081b",
       "route": "/pt/utilidades/categorias/animais-de-estimacao/calculadora-gestacao-animais/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/calculadora-idade-mascotas/": {
-      "hash": "3f321f24a1e9dc14ef15185471374b9f266d1a91ff13bc784dee775041a0bc95",
+      "hash": "fe37549bdccc4b0dceb7bb440c565f163f89d4d42eff8ca6567b5b70b3570d70",
       "route": "/pt/utilidades/categorias/animais-de-estimacao/calculadora-idade-mascotas/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/calculadora-necessidade-agua-caes-gatos/": {
-      "hash": "ced6cfe873619485e4d0431dd622fc72041e52529ae1cc054f2bdfff53993921",
+      "hash": "10da4d128bf5e617ad498df3b891d64f26e2130c62ef429545f5431b1c536eda",
       "route": "/pt/utilidades/categorias/animais-de-estimacao/calculadora-necessidade-agua-caes-gatos/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/calculadora-racao-diaria-pets/": {
-      "hash": "5a70b982e9cfb0c287d484f9b29c70a94c6a9f4abb8e40fccd275115787ceb30",
+      "hash": "bb671e52fcc71935bf2ae5b981ce7b0a52c47ec8dcc2281399b6a702ab479e8e",
       "route": "/pt/utilidades/categorias/animais-de-estimacao/calculadora-racao-diaria-pets/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/calculadora-tamanho-caixa-transporte-animais/": {
-      "hash": "1cf7109385c77f15e4a5f1e962f0f400db16e22817e164869c921404ce186de8",
+      "hash": "930b56534b2d4bbde72fffc7e5bf08f1dd2759b58520ebd56a81c1d904a4afdb",
       "route": "/pt/utilidades/categorias/animais-de-estimacao/calculadora-tamanho-caixa-transporte-animais/"
     },
+    "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/calculadora-tamanho-coleira-animal/": {
+      "hash": "77e29933f7991ecfd0e35022ea54b561fe5f53c6f7f3808801a49ab0c1c21488",
+      "route": "/pt/utilidades/categorias/animais-de-estimacao/calculadora-tamanho-coleira-animal/"
+    },
     "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/": {
-      "hash": "f28ce49664cc680f68e7dce67289ac40cb91db7909462e7dcbcc17ccecc64328",
+      "hash": "81d01bef192659b4a43f93c958d6d757c36e7cfe5e4f6a618d9c0614cd03787a",
       "route": "/pt/utilidades/categorias/animais-de-estimacao/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/animais-de-estimacao/verificador-alimentos-toxicos-caes-gatos/": {
-      "hash": "9aa9c98d755013958122d0a45a85d71451825274f51cd538a72e4c8d249ed88f",
+      "hash": "b2ec17d7e7ed9122e452cc5be3b9986f0aff97f477f67391614daf289d5137fe",
       "route": "/pt/utilidades/categorias/animais-de-estimacao/verificador-alimentos-toxicos-caes-gatos/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/": {
-      "hash": "8d32009263824aa798eeee222b6115b15ad069ce607a531b627239d1b1ced307",
+      "hash": "884ee42db5c1c8fef23a78c56a1fa8204579f5dfc9b4036bec6f7c4ba8ef1212",
       "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-beremennosti-pitomcev/": {
-      "hash": "4a12145a5719008b62349012d424a4848533d53f74dc250475b8c66769cbc7e7",
+      "hash": "9b177180f726a92190c32958515f278344282e706fc192093dd5d51199f28ed7",
       "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-beremennosti-pitomcev/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-dnevnogo-racziona-pitomcza/": {
-      "hash": "ec18c683c3396a1b264b0c3e78524738f20957a026d5d77669aae3161c094b5f",
+      "hash": "d7cae619015006e53b0045f697f4d208f298de1ed9a6c9da6692f5d346a150f3",
       "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-dnevnogo-racziona-pitomcza/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-razmera-konteynera-dlya-perevozki-zhivotnyh/": {
-      "hash": "67e437dfceabbd8d7adda504ea70adcd5aac7533cafb7b43fc1eee17ca8673ce",
+      "hash": "c14316e3bdebb0b6723e51a2a17f822f0d119de06ef87af445758e2567181866",
       "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-razmera-konteynera-dlya-perevozki-zhivotnyh/"
     },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-razmera-osheynika-dlya-pitomca/": {
+      "hash": "1904a9dd04f19056d7332ac26a3db566cb61510e2d4ed0177a349b043e5a8ed3",
+      "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-razmera-osheynika-dlya-pitomca/"
+    },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-sutochnoy-potrebnosti-v-vode-sobak-koshek/": {
-      "hash": "a9f27a73f3c07384585cad152aed239ca66a63963ccb1f27baabb3de3d1244a5",
+      "hash": "b9bdf311fd0ed71f5b735dc0ad8ef7812dede3129a8f21be8eb497bcc2335ade",
       "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-sutochnoy-potrebnosti-v-vode-sobak-koshek/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-vozrasta-pitomtsa/": {
-      "hash": "4e078efabd1a197f98142d2f30e84e80e3fc44b6fce4b6da9a6f8eaac2a26548",
+      "hash": "04dcaf7e0f2f0c3f7ac98c0e61e11473f68225bbceb62d7408baf99383d5663e",
       "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/kalkulyator-vozrasta-pitomtsa/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/proverka-toksichnosti-korma-sobak-koshek/": {
-      "hash": "ceab15f000aec82a744db7007dc527fb713d847c0f57b3bfbd9d062abd232622",
+      "hash": "67f4970724e522fc57fc36f2e530173a680423537d42da0aa87019043b50a2eb",
       "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/proverka-toksichnosti-korma-sobak-koshek/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/domashnie-zhivotnye/raspisanie-lekarstv-dlya-pitomca/": {
-      "hash": "e56a785640fd5ca8192fb669820cba4dc648ff50491fa059041c652b7f8c8998",
+      "hash": "1cf61eb1bb28bd15989b66755dd49d2f696a017dab674a36ba77ea37ace00128",
       "route": "/ru/instrumenty/kategorii/domashnie-zhivotnye/raspisanie-lekarstv-dlya-pitomca/"
     },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/berakna-halsbandsstorlek-husdjur/": {
+      "hash": "0938b2cd23cc0674dae70d41b21068c6dd4bb1cbec2782d663e338f5584c288f",
+      "route": "/sv/verktyg/kategorier/husdjur/berakna-halsbandsstorlek-husdjur/"
+    },
     "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/berakna-vattenbehov-hund-katt/": {
-      "hash": "c56f9cc8d7685bc6ef3b7ad2bec0ade63803db31972e7749092186b794c4ea8a",
+      "hash": "1e62d2754ed7958268280b5beef9b1dd504de372625b1adc8316e665e3f8f517",
       "route": "/sv/verktyg/kategorier/husdjur/berakna-vattenbehov-hund-katt/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/dragtighetsraknare-husdjur/": {
-      "hash": "f07b061cb60942f957029fce6d3ba1dbb595807a990b6c05e57ef8a6fa505bab",
+      "hash": "548ab8ca0dd4ffbfd2d0b79b96bef8d80f72074033e03188d7091d1a299202b1",
       "route": "/sv/verktyg/kategorier/husdjur/dragtighetsraknare-husdjur/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/giftig-mat-hund-katt-kontroll/": {
-      "hash": "6b7e8008c22f28cceb6e87b076f669a223aa5c5c644f47a8919b6dfb40572951",
+      "hash": "a7d33d01f6d414930209676085c1135b36c0e0e36caa7a2cbcb8e2f68a166e1f",
       "route": "/sv/verktyg/kategorier/husdjur/giftig-mat-hund-katt-kontroll/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/": {
-      "hash": "d1217ec4162e5d1383397aae6157af9e62510e724b86481a85b107f171bdcf5f",
+      "hash": "3ef93deaa7815a6ebd7954038eb88a71a87a25eb3a6522345c02a6df03fec03e",
       "route": "/sv/verktyg/kategorier/husdjur/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/kalkylator-daglig-fodergiva-husdjur/": {
-      "hash": "9695fac8da6179055d3732033908dc958a753238845247688a23655a93e6ac76",
+      "hash": "5a1fd460942d6b6ab3e21a5f052422258377b7d6603bb7888e05415ca07e194f",
       "route": "/sv/verktyg/kategorier/husdjur/kalkylator-daglig-fodergiva-husdjur/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/kalkylator-husdjur-alder/": {
-      "hash": "9b9ba1302e379000f3d691f1f94a63feccd4eaef0f570366692667bb2d43b1a5",
+      "hash": "dbb86107c5c95f4a961ad18ff19b88ca5d1dfbb3b234de88070812e6d5fa76bd",
       "route": "/sv/verktyg/kategorier/husdjur/kalkylator-husdjur-alder/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/lakemedelsschema-for-husdjur/": {
-      "hash": "e7e6fda282011f056b0a84b41c702d485252983a722d28b270389a6028245cf0",
+      "hash": "1b877d99c21beacdf87ef158108d85bcff2add02083bcb9158a1fc1f8cd756c7",
       "route": "/sv/verktyg/kategorier/husdjur/lakemedelsschema-for-husdjur/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/husdjur/storleksplanerare-transportbur-husdjur/": {
-      "hash": "04c973697efc6ceba5d2844786cafc86d618e93b3d001b1e3849411642d5f0b7",
+      "hash": "85f6945888ccb00e2ce20c5b0791b4683eb3b395df30588b19940da669516e3d",
       "route": "/sv/verktyg/kategorier/husdjur/storleksplanerare-transportbur-husdjur/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-gebelik-hesaplayici/": {
-      "hash": "c7574cfbc4000db634764563d43d10296c123141d0a7fa534b32ffd9f0f26bf9",
+      "hash": "2264a4487cf29646423aad549b0b211659bfd62ca948ae7c63ee0ea78c2c81b8",
       "route": "/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-gebelik-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-gunluk-mama-hesaplama/": {
-      "hash": "2a6392d9d544e220498883253d98a2e148b5a40102a3f9a96f43cbd5b414ba44",
+      "hash": "6ee8b2a0e9745c6831f067512ec9552dfa163269d3a6fe280146b207926acf9d",
       "route": "/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-gunluk-mama-hesaplama/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-ilac-programi/": {
-      "hash": "5ee0bf350b959a10c35b4f15bfa9406a19d04e7a7d38b46aae90baa3d9c1ec0d",
+      "hash": "3387d789a60a5fc9d7988128b970a141ed334cac43ff9e89a936c68928666948",
       "route": "/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-ilac-programi/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-tasima-cantasi-boyut-planlayici/": {
-      "hash": "f2ea60266dfb80b25138301df27b958127623ab5f4498e662d46ccf4e773424b",
+      "hash": "fb24eed17ce21aeb5e6c3a34d0435dbdac1aa3c24e322adadbf439562225a7f6",
       "route": "/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-tasima-cantasi-boyut-planlayici/"
     },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-tasma-boyutu-hesaplama/": {
+      "hash": "7cca3430c4f7b435814cf32e14c4a054c8f945a572c17289fff5416a601847a6",
+      "route": "/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-tasma-boyutu-hesaplama/"
+    },
     "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-yas-hesaplama/": {
-      "hash": "431e2dfd524520cac2c606628a6430adff0cab1210d79f937e57a8196069282e",
+      "hash": "b41e9b25a12a867f68339007f508a86202c6b600dc9fe87d91d48a623fc1ff4a",
       "route": "/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-yas-hesaplama/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-zehirli-gida-kontrolu/": {
-      "hash": "1ec4817435eaef9bf79f224048b6f1f7b8737af80c7d0b99f6b5c4d7aa2cc045",
+      "hash": "cd49b36ab004e01071bfee46ccb1721e82feee83c952c7fb5fda763aba89b013",
       "route": "/tr/araclar/kategoriler/evcil-hayvanlar/evcil-hayvan-zehirli-gida-kontrolu/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/": {
-      "hash": "82edc3c47c340a69612235c041019fd0c6be30b1d7b23c0b2016810e1af33020",
+      "hash": "cab1c93c00acb1b33dcabe22085374c0e8180c34196b62828c617ef3000f7c95",
       "route": "/tr/araclar/kategoriler/evcil-hayvanlar/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/evcil-hayvanlar/kopek-kedi-gunluk-su-intiyaci-hesaplayici/": {
-      "hash": "9dbf5fb1fc65679ef06ac01fd74b9d2ee0d05b23d172013160add58a41332499",
+      "hash": "33df49e826645482c171fa02d44a81d187839abc623bfb9841d3599433fd71bd",
       "route": "/tr/araclar/kategoriler/evcil-hayvanlar/kopek-kedi-gunluk-su-intiyaci-hesaplayici/"
     },
     "https://www.jjlmoya.es/utilidades/buscador-alimentos-toxicos-perros-gatos/": {
-      "hash": "cc5be37949935023280cd5e1f5a5806353a8b4d25364552bff94e17c2eea30fa",
+      "hash": "f598d169718385c0e1b78a5027767c7b25bf8f8b932785e134d70b0820922c21",
       "route": "/utilidades/buscador-alimentos-toxicos-perros-gatos/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-agua-diaria-perros-gatos/": {
-      "hash": "c36a2a7bc1e0d18ad7d0d16bdc1d3aa7a4ce55f72644d5045575eec4619a307d",
+      "hash": "74ac2b31e4eb4b836bcf12deb33019ca4e71936ea98ef27d5a6beb406e18a7ee",
       "route": "/utilidades/calculadora-agua-diaria-perros-gatos/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-edad-mascotas/": {
-      "hash": "6bda67be68e2609ce933950b26a9aaa3c2760ad41e9ae3cf72cd3e12f0338baa",
+      "hash": "e29a23c16ddf02d54a7362219a96331aeb7229b539f371cabfcff29834be9e00",
       "route": "/utilidades/calculadora-edad-mascotas/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-gestacion-mascotas/": {
-      "hash": "612256826961c2f031944ea65d53c3f5cb5a54c5059df4f72fa82e970614af73",
+      "hash": "f41013ae86c2f4a54cf863fe77114a08ac91a9a9b1b0d21a727267cc4ac0256b",
       "route": "/utilidades/calculadora-gestacion-mascotas/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-racion-diaria-mascotas/": {
-      "hash": "405b5c7eb6778826477fa75dcc4bfcb674be9061478ff324f63575ebe4dbb7c5",
+      "hash": "83fe9cf3f05b4a6db9e94f1d91e1dd6bd4215cb1ec4bb83a5e5e86ed468656ae",
       "route": "/utilidades/calculadora-racion-diaria-mascotas/"
     },
+    "https://www.jjlmoya.es/utilidades/calculadora-talla-collar-mascotas/": {
+      "hash": "686820a5e6d326cae38520f75d299e0cefb74c42721027dd7c010ea72e214832",
+      "route": "/utilidades/calculadora-talla-collar-mascotas/"
+    },
     "https://www.jjlmoya.es/utilidades/categorias/mascotas/": {
-      "hash": "6745e02d563bff747841593c2ff3ec9286678f52d29cea1be4a3536e334ee397",
+      "hash": "527405d52beba3663f22c7d7c617cabd974f5fe6e32867d2b2d4caef9254800a",
       "route": "/utilidades/categorias/mascotas/"
     },
     "https://www.jjlmoya.es/utilidades/planificador-dimensiones-transportin-mascotas/": {
-      "hash": "0fd8350333f28d6ffbe9dab537079ab99cb959c61c01d16cb0f036650c11b324",
+      "hash": "63b88346a7d754064ddeb2fb25749314dd682db8777aa93a7a1649b5540bfe42",
       "route": "/utilidades/planificador-dimensiones-transportin-mascotas/"
     },
     "https://www.jjlmoya.es/utilidades/planificador-horario-medicacion-mascota/": {
-      "hash": "25489927b733592c0c20fd949f8bba83d7c73e791449a6b141d6de9c12e24caf",
+      "hash": "af6c6e97b9dfcebe38f66869bcadb762a2a38a5f108cb5ca5efa14faef4b6878",
       "route": "/utilidades/planificador-horario-medicacion-mascota/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/pets/dog-cat-water-intake-calculator/": {
-      "hash": "c30a594d1d2cef0d956787c387d67a6be65dfd436d8a43404ceb25597f156be7",
+      "hash": "3e89f13fa36bdfb56106d1e6b3452c3966d9749e0831edfd5e8e17879d3e6bb8",
       "route": "/zh/utilities/categories/pets/dog-cat-water-intake-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/pets/": {
-      "hash": "f8e567bc5d3d36f30ab14e28138141261f6a2026f01a87d15b9e41b55c193f5b",
+      "hash": "fd1e784e7b2ba413c7932f823829d657ec62f6261c6d92d039068afdcb88de62",
       "route": "/zh/utilities/categories/pets/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/pets/pet-age-calculator/": {
-      "hash": "ced6570dc8a1685918875d41706a874b8cbec72e1445ec3ffa2a78708f4aadf7",
+      "hash": "0940ee3d2ec46c680d3a47e57c76153eaf8b9866a4a498809b506ca5a85de75c",
       "route": "/zh/utilities/categories/pets/pet-age-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/pets/pet-carrier-crate-size-planner/": {
-      "hash": "97b02a0d30c817586e4ae2e8674035343174a7da5486251112f23c9096685fc5",
+      "hash": "e6601f929dbbe66cd27384afd47dbd00d3fd4f93a3aaf4b2785aca1cc0a092a7",
       "route": "/zh/utilities/categories/pets/pet-carrier-crate-size-planner/"
     },
+    "https://www.gamebob.dev/zh/utilities/categories/pets/pet-collar-size-calculator/": {
+      "hash": "68832b1124998a2f9120c91ab31f47ec3c9d262e371f3ceb940a6fb87c4cab1b",
+      "route": "/zh/utilities/categories/pets/pet-collar-size-calculator/"
+    },
     "https://www.gamebob.dev/zh/utilities/categories/pets/pet-daily-ration-calculator/": {
-      "hash": "82b8a87e9047b88b32ad05e01fdd6633f239e7fed42474ecb8a20e4e82cccc86",
+      "hash": "fb6b222386866e2f3572b557c35b1ebb4223c735f7b3501d67cbb87eceaa766f",
       "route": "/zh/utilities/categories/pets/pet-daily-ration-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/pets/pet-food-toxicity-checker/": {
-      "hash": "02a5cdca66560d1d1f4ac22465e4c6d3b364418b1887e4f949fd9652d0755c07",
+      "hash": "49eecf725f3519cffe0f0774a35f18bd1e4e27540eb47e324378bdbdd8b624a3",
       "route": "/zh/utilities/categories/pets/pet-food-toxicity-checker/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/pets/pet-gestation-calculator/": {
-      "hash": "29cdca92b266911848d9c6ead97d52185098a5369e578174f93f79f47086ad33",
+      "hash": "517b77d545b68f9dce2b15a303cb46931c695c851d1bd2c31a40fb90cf8ab4f0",
       "route": "/zh/utilities/categories/pets/pet-gestation-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/pets/pet-medication-schedule-planner/": {
-      "hash": "b8d61ea64e3f09958ae4cb12b72d996185a169b78737c0478f334855f3e29394",
+      "hash": "1365a3531daae776d89608db08628af73bbcbbd04a90894bb76d960136b6cd8e",
       "route": "/zh/utilities/categories/pets/pet-medication-schedule-planner/"
     }
   }
