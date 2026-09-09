@@ -73,7 +73,7 @@ describe('Tool Validation Suite', () => {
               expect(content.slug).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
 
               if (locale === 'es') {
-                const validSlugs = ['calculadora-edad-mascotas', 'calculadora-racion-diaria-mascotas', 'calculadora-gestacion-mascotas', 'buscador-alimentos-toxicos-perros-gatos', 'calculadora-agua-diaria-perros-gatos', 'planificador-dimensiones-transportin-mascotas', 'planificador-horario-medicacion-mascota'];
+                const validSlugs = ['calculadora-edad-mascotas', 'calculadora-racion-diaria-mascotas', 'calculadora-gestacion-mascotas', 'buscador-alimentos-toxicos-perros-gatos', 'calculadora-agua-diaria-perros-gatos', 'planificador-dimensiones-transportin-mascotas', 'planificador-horario-medicacion-mascota', 'calculadora-talla-collar-mascotas'];
                 expect(validSlugs).toContain(content.slug);
               }
             });
@@ -99,11 +99,11 @@ describe('Tool Validation Suite', () => {
 
   describe('Library Registration', () => {
     it('should have 7 tools in ALL_TOOLS', () => {
-      expect(ALL_TOOLS.length).toBe(7);
+      expect(ALL_TOOLS.length).toBe(8);
     });
 
     it('should have all tools in petsCategory', () => {
-      expect(petsCategory.tools.length).toBe(7);
+      expect(petsCategory.tools.length).toBe(8);
       ALL_TOOLS.forEach(({ entry }) => {
         const exists = petsCategory.tools.some((t: any) => t.id === entry.id);
         expect(exists).toBe(true);

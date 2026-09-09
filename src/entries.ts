@@ -10,6 +10,8 @@ export { petCarrierCrateSizePlanner } from './tool/petCarrierCrateSizePlanner/en
 export type { PetCarrierCrateSizePlannerUI, PetCarrierCrateSizePlannerLocaleContent } from './tool/petCarrierCrateSizePlanner/entry';
 export { petMedicationSchedulePlanner } from './tool/petMedicationSchedulePlanner/entry';
 export type { PetMedicationSchedulePlannerUI, PetMedicationSchedulePlannerLocaleContent } from './tool/petMedicationSchedulePlanner/entry';
+export { petCollarSizeCalculator } from './tool/petCollarSizeCalculator/entry';
+export type { PetCollarSizeCalculatorUI, PetCollarSizeCalculatorLocaleContent } from './tool/petCollarSizeCalculator/entry';
 export { petsCategory } from './category';
 import { petAge } from './tool/petAge/entry';
 import { petRation } from './tool/petRation/entry';
@@ -18,4 +20,5 @@ import { petToxicity } from './tool/petToxicity/entry';
 import { petWaterIntake } from './tool/petWaterIntake/entry';
 import { petCarrierCrateSizePlanner } from './tool/petCarrierCrateSizePlanner/entry';
 import { petMedicationSchedulePlanner } from './tool/petMedicationSchedulePlanner/entry';
-export const ALL_ENTRIES = [petAge, petRation, petGestation, petToxicity, petWaterIntake, petCarrierCrateSizePlanner, petMedicationSchedulePlanner];
+import { petCollarSizeCalculator } from './tool/petCollarSizeCalculator/entry';
+export const ALL_ENTRIES = [petAge, petRation, petGestation, petToxicity, petWaterIntake, petCarrierCrateSizePlanner, petMedicationSchedulePlanner, petCollarSizeCalculator];

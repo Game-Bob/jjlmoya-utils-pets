@@ -1,0 +1,33 @@
+export interface PetCollarSizeCalculatorUI {
+  [key: string]: string;
+  neckCircumferenceLabel: string;
+  unitLabel: string;
+  centimetres: string;
+  inches: string;
+  allowanceLabel: string;
+  collarTypeLabel: string;
+  flatCollar: string;
+  breakawayCollar: string;
+  martingaleCollar: string;
+  statusTight: string;
+  statusBalanced: string;
+  statusLoose: string;
+  statusTightDetail: string;
+  statusBalancedDetail: string;
+  statusLooseDetail: string;
+  fitStudyLabel: string;
+  fitWindowLabel: string;
+  measuredLabel: string;
+  roomLabel: string;
+  checkLabel: string;
+  sceneAria: string;
+  neckMarker: string;
+  easeMarker: string;
+  rangeMarker: string;
+  minimumMarker: string;
+  maximumMarker: string;
+  checkFlat: string;
+  checkBreakaway: string;
+  checkMartingale: string;
+  invalidInput: string;
+}

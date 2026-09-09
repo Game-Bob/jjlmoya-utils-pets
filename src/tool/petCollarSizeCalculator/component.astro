@@ -1,0 +1,65 @@
+---
+import './pet-collar-size-calculator.css';
+import { calculatePetCollarSize } from './logic';
+import { renderResult, renderScene } from './dom-views';
+import { petCollarSizeCalculator } from './entry';
+
+const content = await petCollarSizeCalculator.i18n.en?.();
+if (!content) return null;
+const { ui } = content;
+const initialResult = calculatePetCollarSize({
+  neckCircumference: 32,
+  allowance: 2,
+  unit: 'cm',
+  collarType: 'flat',
+});
+const config = { ui };
+---
+
+<section class="pet-collar-size-calculator" data-pet-collar-root aria-label={content.title}>
+  <div class="pet-collar-atelier">
+    <aside class="pet-collar-atelier-rail" aria-hidden="true">
+      <span class="pet-collar-rail-index">01</span>
+      <span class="pet-collar-rail-word">fit study</span>
+      <span class="pet-collar-rail-mark"></span>
+    </aside>
+    <div class="pet-collar-atelier-body">
+      <header class="pet-collar-atelier-header">
+        <span class="pet-collar-kicker">{ui.fitStudyLabel}</span>
+        <fieldset class="pet-collar-type-field">
+          <legend>{ui.collarTypeLabel}</legend>
+          <div class="pet-collar-type-options">
+            <label><input type="radio" name="pet-collar-type" data-collar-type="flat" value="flat" checked /><span>{ui.flatCollar}</span></label>
+            <label><input type="radio" name="pet-collar-type" data-collar-type="breakaway" value="breakaway" /><span>{ui.breakawayCollar}</span></label>
+            <label><input type="radio" name="pet-collar-type" data-collar-type="martingale" value="martingale" /><span>{ui.martingaleCollar}</span></label>
+          </div>
+        </fieldset>
+      </header>
+      <div class="pet-collar-scene" data-collar-scene set:html={renderScene(initialResult, ui)}></div>
+      <form class="pet-collar-controls" data-collar-form onsubmit="return false;">
+        <div class="pet-collar-control pet-collar-control-neck">
+          <label for="pet-collar-neck-input">{ui.neckCircumferenceLabel}</label>
+          <div class="pet-collar-number-wrap"><input id="pet-collar-neck-input" data-neck-input type="number" value="32" min="5" max="250" step="0.5" inputmode="decimal" /><span data-unit-suffix>cm</span></div>
+        </div>
+        <div class="pet-collar-control pet-collar-control-room">
+          <label for="pet-collar-allowance-range">{ui.allowanceLabel}</label>
+          <div class="pet-collar-range-row"><input id="pet-collar-allowance-range" data-allowance-range type="range" value="2" min="0.5" max="10" step="0.5" aria-label={ui.allowanceLabel} /><output data-allowance-output for="pet-collar-allowance-range">2 <span data-unit-suffix>cm</span></output></div>
+        </div>
+        <div class="pet-collar-control pet-collar-control-unit">
+          <span class="pet-collar-label">{ui.unitLabel}</span>
+          <div class="pet-collar-unit-switch" role="group" aria-label={ui.unitLabel}><button type="button" data-unit-choice="cm" aria-label={ui.centimetres} aria-pressed="true" class="is-active">cm</button><button type="button" data-unit-choice="in" aria-label={ui.inches} aria-pressed="false">in</button></div>
+        </div>
+      </form>
+      <div class="pet-collar-result" data-collar-result aria-live="polite" set:html={renderResult(initialResult, ui)}></div>
+    </div>
+  </div>
+</section>
+
+<script is:inline type="application/json" data-pet-collar-config set:html={JSON.stringify(config)}></script>
+<script>
+  import { mountPetCollarSizeCalculator } from './controller';
+
+  const root = document.querySelector<HTMLElement>('[data-pet-collar-root]');
+  const configElement = document.querySelector<HTMLScriptElement>('[data-pet-collar-config]');
+  if (root && configElement?.textContent) mountPetCollarSizeCalculator(root, JSON.parse(configElement.textContent));
+</script>

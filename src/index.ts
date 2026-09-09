@@ -3,6 +3,7 @@ export { petRation, PET_RATION_TOOL } from './tool/petRation';
 export { petGestation, PET_GESTATION_TOOL } from './tool/petGestation';
 export { petCarrierCrateSizePlanner, PET_CARRIER_CRATE_SIZE_PLANNER_TOOL } from './tool/petCarrierCrateSizePlanner';
 export { petMedicationSchedulePlanner, PET_MEDICATION_SCHEDULE_PLANNER_TOOL } from './tool/petMedicationSchedulePlanner';
+export { petCollarSizeCalculator, PET_COLLAR_SIZE_CALCULATOR_TOOL } from './tool/petCollarSizeCalculator';
 
 export { petsCategory } from './category';
 export const PetsCategorySEO = () => import('./category/seo.astro').then((m) => m.default);

@@ -4,7 +4,7 @@ import { ALL_TOOLS } from '../tools';
 const EXPECTED_LOCALES = [
   'de', 'en', 'es', 'fr', 'id', 'it', 'ja', 'ko', 'nl', 'pl', 'pt', 'ru', 'sv', 'tr', 'zh'
 ];
-const ENGLISH_FIRST_TOOLS = new Set(['pet-carrier-crate-size-planner']);
+const ENGLISH_FIRST_TOOLS = new Set(['pet-carrier-crate-size-planner', 'pet-collar-size-calculator']);
 
 describe('I18n Coverage Validation', () => {
   it('all tools should be registered', () => {

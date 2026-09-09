@@ -12,7 +12,13 @@ if (!categoryImageMatch) {
   throw new Error(`Unexpected CATEGORY_OG_IMAGE format: ${CATEGORY_OG_IMAGE}`);
 }
 
-const [, imageUrlRoot, categoryImage, assetVersion] = categoryImageMatch;
+const [, matchedImageUrlRoot, matchedCategoryImage, matchedAssetVersion] = categoryImageMatch;
+if (!matchedImageUrlRoot || !matchedCategoryImage || !matchedAssetVersion) {
+  throw new Error('Unexpected CATEGORY_OG_IMAGE capture groups');
+}
+const imageUrlRoot = matchedImageUrlRoot;
+const categoryImage = matchedCategoryImage;
+const assetVersion = matchedAssetVersion;
 const assetRoot = join(process.cwd(), 'public', imageUrlRoot.slice(1));
 const categorySlug = basename(categoryImage, '.webp');
 
